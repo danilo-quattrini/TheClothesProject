@@ -17,31 +17,10 @@
         <Class IRI="http://dbpedia.org/ontology/SocietalEvent"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://dbpedia.org/ontology/Rebellion"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="http://dbpedia.org/ontology/participatingIn"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://dbpedia.org/ontology/SocietalEvent"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://dbpedia.org/ontology/SpaceMission"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://dbpedia.org/ontology/FilmFestival"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://dbpedia.org/ontology/MusicFestival"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://dbpedia.org/ontology/Meeting"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://dbpedia.org/ontology/Event"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="http://dbpedia.org/ontology/SportsEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/Rebellion"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://dbpedia.org/ontology/Convention"/>
@@ -51,6 +30,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="http://dbpedia.org/ontology/HistoricalEvent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/participatingIn"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="wdrs:describedby"/>
@@ -68,10 +50,28 @@
         <Class IRI="http://dbpedia.org/ontology/AcademicConference"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="http://dbpedia.org/ontology/SocietalEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/SpaceMission"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/FilmFestival"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty abbreviatedIRI="ov:describes"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/MusicFestival"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty abbreviatedIRI="ov:defines"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/Meeting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/Event"/>
     </Declaration>
     <SubClassOf>
         <Class IRI="http://dbpedia.org/ontology/AcademicConference"/>
@@ -138,39 +138,9 @@
         <IRI>http://dbpedia.org/ontology/SocietalEvent</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://dbpedia.org/ontology/SocietalEvent</IRI>
-        <Literal xml:lang="en">an event that is clearly different from strictly personal events</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://dbpedia.org/ontology/SocietalEvent</IRI>
-        <Literal xml:lang="ur">ایک ایسا واقعہ جو سختی سے ذاتی واقعات سے واضح طور پر مختلف ہو</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
         <IRI>http://dbpedia.org/ontology/SocietalEvent</IRI>
         <IRI>http://dbpedia.org/ontology/</IRI>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://dbpedia.org/ontology/SocietalEvent</IRI>
-        <Literal xml:lang="de">gesellschatliches Ereignis</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://dbpedia.org/ontology/SocietalEvent</IRI>
-        <Literal xml:lang="nl">maatschappelijke gebeurtenis</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://dbpedia.org/ontology/SocietalEvent</IRI>
-        <Literal xml:lang="en">societal event</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://dbpedia.org/ontology/SocietalEvent</IRI>
-        <Literal xml:lang="ur">معاشرتی واقعہ</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="wdrs:describedby"/>

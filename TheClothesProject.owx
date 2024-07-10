@@ -321,63 +321,6 @@
         <NamedIndividual abbreviatedIRI="dbo:Colour"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://dbpedia.org/page/Fall"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://dbpedia.org/page/Summer"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Acrylic_fiber"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Cashmere_wool"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Cotton"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Elastan"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Female"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Fur"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Lace"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Leather"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Linen"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Lycra"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Male"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Mohair"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Nylon"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Polyester"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Silk"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Spandex"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Wool"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#Black"/>
     </Declaration>
     <Declaration>
@@ -393,10 +336,16 @@
         <NamedIndividual IRI="#DiamondPattern"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="#Female"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="#Gingham"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Green"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Male"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Paisley"/>
@@ -424,6 +373,15 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Yellow"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Acrylic_fiber"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Cashmere_wool"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Cotton"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#EU36"/>
@@ -456,13 +414,52 @@
         <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#EU45"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Elastan"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Fall"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Fur"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#L"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Leather"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Linen"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Lycra"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#M"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Mohair"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Nylon"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Polyester"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#S"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Silk"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Spandex"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Spring"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Summer"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#US10"/>
@@ -498,6 +495,12 @@
         <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#W36L36"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Winter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Wool"/>
+    </Declaration>
+    <Declaration>
         <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#XL"/>
     </Declaration>
     <Declaration>
@@ -511,12 +514,6 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="https://dbpedia.org/page/Autumn"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="https://dbpedia.org/page/Winter"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="https://dbpedia.org/page/Spring_(season)"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="dbo:thumbnail"/>
@@ -542,8 +539,8 @@
     <EquivalentClasses>
         <Class IRI="http://dbpedia.org/resource/Gender"/>
         <ObjectOneOf>
-            <NamedIndividual IRI="http://dbpedia.org/resource/Female"/>
-            <NamedIndividual IRI="http://dbpedia.org/resource/Male"/>
+            <NamedIndividual IRI="#Female"/>
+            <NamedIndividual IRI="#Male"/>
         </ObjectOneOf>
     </EquivalentClasses>
     <SubClassOf>
@@ -648,7 +645,7 @@
         <Class IRI="#Formal"/>
         <ObjectHasValue>
             <ObjectProperty IRI="#HasMaterialComposition"/>
-            <NamedIndividual IRI="http://dbpedia.org/resource/Leather"/>
+            <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Leather"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -663,7 +660,7 @@
         <Class IRI="#Gloves"/>
         <ObjectHasValue>
             <ObjectProperty IRI="#isSuitableToBeDressedBySeason"/>
-            <NamedIndividual IRI="https://dbpedia.org/page/Winter"/>
+            <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Winter"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -696,11 +693,11 @@
         <ObjectIntersectionOf>
             <ObjectHasValue>
                 <ObjectProperty IRI="#isSuitableToBeDressedBySeason"/>
-                <NamedIndividual IRI="https://dbpedia.org/page/Autumn"/>
+                <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Winter"/>
             </ObjectHasValue>
             <ObjectHasValue>
                 <ObjectProperty IRI="#isSuitableToBeDressedBySeason"/>
-                <NamedIndividual IRI="https://dbpedia.org/page/Winter"/>
+                <NamedIndividual IRI="https://dbpedia.org/page/Autumn"/>
             </ObjectHasValue>
         </ObjectIntersectionOf>
     </SubClassOf>
@@ -761,7 +758,7 @@
             <Class IRI="#Target"/>
             <ObjectHasValue>
                 <ObjectProperty IRI="#isSuitableToBeDressedByGender"/>
-                <NamedIndividual IRI="http://dbpedia.org/resource/Male"/>
+                <NamedIndividual IRI="#Male"/>
             </ObjectHasValue>
             <DataSomeValuesFrom>
                 <DataProperty IRI="#hasAge"/>
@@ -816,7 +813,7 @@
         <Class IRI="#Sandal"/>
         <ObjectHasValue>
             <ObjectProperty IRI="#isSuitableToBeDressedBySeason"/>
-            <NamedIndividual IRI="http://dbpedia.org/page/Summer"/>
+            <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Summer"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -828,11 +825,11 @@
         <ObjectIntersectionOf>
             <ObjectHasValue>
                 <ObjectProperty IRI="#isSuitableToBeDressedBySeason"/>
-                <NamedIndividual IRI="https://dbpedia.org/page/Autumn"/>
+                <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Winter"/>
             </ObjectHasValue>
             <ObjectHasValue>
                 <ObjectProperty IRI="#isSuitableToBeDressedBySeason"/>
-                <NamedIndividual IRI="https://dbpedia.org/page/Winter"/>
+                <NamedIndividual IRI="https://dbpedia.org/page/Autumn"/>
             </ObjectHasValue>
         </ObjectIntersectionOf>
     </SubClassOf>
@@ -858,7 +855,7 @@
         <Class IRI="#Shirt"/>
         <ObjectHasValue>
             <ObjectProperty IRI="#isSuitableToBeDressedBySeason"/>
-            <NamedIndividual IRI="http://dbpedia.org/page/Summer"/>
+            <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Summer"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -990,7 +987,7 @@
             </ObjectSomeValuesFrom>
             <ObjectHasValue>
                 <ObjectProperty IRI="#isSuitableToBeDressedByGender"/>
-                <NamedIndividual IRI="http://dbpedia.org/resource/Female"/>
+                <NamedIndividual IRI="#Female"/>
             </ObjectHasValue>
         </ObjectIntersectionOf>
     </SubClassOf>
@@ -1052,7 +1049,7 @@
             <Class IRI="#Target"/>
             <ObjectHasValue>
                 <ObjectProperty IRI="#isSuitableToBeDressedByGender"/>
-                <NamedIndividual IRI="http://dbpedia.org/resource/Female"/>
+                <NamedIndividual IRI="#Female"/>
             </ObjectHasValue>
             <DataSomeValuesFrom>
                 <DataProperty IRI="#hasAge"/>
@@ -1166,78 +1163,6 @@
         <NamedIndividual abbreviatedIRI="dbo:Colour"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="https://dbpedia.org/page/Season"/>
-        <NamedIndividual IRI="http://dbpedia.org/page/Fall"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://dbpedia.org/page/Season"/>
-        <NamedIndividual IRI="http://dbpedia.org/page/Summer"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#SyntheticClothesMaterial"/>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Acrylic_fiber"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#NaturalClothesMaterial"/>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Cashmere_wool"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#NaturalClothesMaterial"/>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Cotton"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#SyntheticClothesMaterial"/>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Elastan"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://dbpedia.org/resource/Gender"/>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Female"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#NaturalClothesMaterial"/>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Fur"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#NaturalClothesMaterial"/>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Leather"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#NaturalClothesMaterial"/>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Linen"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#SyntheticClothesMaterial"/>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Lycra"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="http://dbpedia.org/resource/Gender"/>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Male"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#NaturalClothesMaterial"/>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Mohair"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#SyntheticClothesMaterial"/>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Nylon"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#SyntheticClothesMaterial"/>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Polyester"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#NaturalClothesMaterial"/>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Silk"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#SyntheticClothesMaterial"/>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Spandex"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#NaturalClothesMaterial"/>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Wool"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class abbreviatedIRI="dbo:Colour"/>
         <NamedIndividual IRI="#Black"/>
     </ClassAssertion>
@@ -1258,6 +1183,10 @@
         <NamedIndividual IRI="#DiamondPattern"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="http://dbpedia.org/resource/Gender"/>
+        <NamedIndividual IRI="#Female"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Pattern"/>
         <NamedIndividual IRI="#Gingham"/>
     </ClassAssertion>
@@ -1266,12 +1195,20 @@
         <NamedIndividual IRI="#Green"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="http://dbpedia.org/resource/Gender"/>
+        <NamedIndividual IRI="#Male"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#Pattern"/>
         <NamedIndividual IRI="#Paisley"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#CharacteristicOfClothes"/>
         <NamedIndividual IRI="#Pattern"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="dbo:Colour"/>
+        <NamedIndividual IRI="#Pink"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#Pattern"/>
@@ -1296,6 +1233,18 @@
     <ClassAssertion>
         <Class abbreviatedIRI="dbo:Colour"/>
         <NamedIndividual IRI="#Yellow"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SyntheticClothesMaterial"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Acrylic_fiber"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NaturalClothesMaterial"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Cashmere_wool"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NaturalClothesMaterial"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Cotton"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#ShoeSize"/>
@@ -1338,12 +1287,36 @@
         <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#EU45"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#SyntheticClothesMaterial"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Elastan"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://dbpedia.org/page/Season"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Fall"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NaturalClothesMaterial"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Fur"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#AccessorySize"/>
         <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#L"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#UpperClothingSize"/>
         <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#L"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NaturalClothesMaterial"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Leather"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NaturalClothesMaterial"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Linen"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SyntheticClothesMaterial"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Lycra"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#AccessorySize"/>
@@ -1354,12 +1327,40 @@
         <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#M"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="#NaturalClothesMaterial"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Mohair"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SyntheticClothesMaterial"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Nylon"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SyntheticClothesMaterial"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Polyester"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#AccessorySize"/>
         <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#S"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#UpperClothingSize"/>
         <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#S"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NaturalClothesMaterial"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Silk"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SyntheticClothesMaterial"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Spandex"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://dbpedia.org/page/Season"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Spring"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://dbpedia.org/page/Season"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Summer"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#ShoeSize"/>
@@ -1406,6 +1407,14 @@
         <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#W36L36"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="https://dbpedia.org/page/Season"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Winter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#NaturalClothesMaterial"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Wool"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#AccessorySize"/>
         <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#XL"/>
     </ClassAssertion>
@@ -1427,119 +1436,20 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="https://dbpedia.org/page/Season"/>
-        <NamedIndividual IRI="https://dbpedia.org/page/Winter"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://dbpedia.org/page/Season"/>
-        <NamedIndividual IRI="https://dbpedia.org/page/Spring_(season)"/>
+        <NamedIndividual IRI="https://dbpedia.org/page/Autumn"/>
     </ClassAssertion>
     <SameIndividual>
-        <NamedIndividual IRI="http://dbpedia.org/page/Fall"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Elastan"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Spandex"/>
+    </SameIndividual>
+    <SameIndividual>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Fall"/>
         <NamedIndividual IRI="https://dbpedia.org/page/Autumn"/>
     </SameIndividual>
     <SameIndividual>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Elastan"/>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Spandex"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Lycra"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Spandex"/>
     </SameIndividual>
-    <SameIndividual>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Lycra"/>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Spandex"/>
-    </SameIndividual>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#SeasonHasEnd"/>
-        <NamedIndividual IRI="http://dbpedia.org/page/Fall"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gMonthDay">--12-20</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#SeasonHasStart"/>
-        <NamedIndividual IRI="http://dbpedia.org/page/Fall"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gMonthDay">--10-21</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#SeasonHasEnd"/>
-        <NamedIndividual IRI="http://dbpedia.org/page/Summer"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gMonthDay">--10-22</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#SeasonHasStart"/>
-        <NamedIndividual IRI="http://dbpedia.org/page/Summer"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gMonthDay">--06-21</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasChemicalMaterial"/>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Acrylic_fiber"/>
-        <Literal>acrylonitrile</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasSourceFromAnimal"/>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Cashmere_wool"/>
-        <Literal>Goat</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasSourceFromPlant"/>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Cotton"/>
-        <Literal>Cotton plant</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasChemicalMaterial"/>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Elastan"/>
-        <Literal>segmented polyurethane</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasSourceFromAnimal"/>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Fur"/>
-        <Literal>Beaver</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasSourceFromAnimal"/>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Fur"/>
-        <Literal>Fox</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasSourceFromAnimal"/>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Fur"/>
-        <Literal>Mink</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasSourceFromAnimal"/>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Fur"/>
-        <Literal>Rabbit</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasSourceFromAnimal"/>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Fur"/>
-        <Literal>Sable</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasSourceFromPlant"/>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Linen"/>
-        <Literal>Linen Plant</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasChemicalMaterial"/>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Lycra"/>
-        <Literal>segmented polyurethane</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasSourceFromAnimal"/>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Mohair"/>
-        <Literal>Angora goat</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasChemicalMaterial"/>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Nylon"/>
-        <Literal>nylon polymer chips</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasSourceFromAnimal"/>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Silk"/>
-        <Literal>Silkworm</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasSourceFromAnimal"/>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Wool"/>
-        <Literal>Sheep</Literal>
-    </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasColorHex"/>
         <NamedIndividual IRI="#Black"/>
@@ -1611,6 +1521,21 @@
         <Literal>255, 255, 0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#hasChemicalMaterial"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Acrylic_fiber"/>
+        <Literal>acrylonitrile</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSourceFromAnimal"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Cashmere_wool"/>
+        <Literal>Goat</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSourceFromPlant"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Cotton"/>
+        <Literal>Cotton plant</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#hasSize"/>
         <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#EU36"/>
         <Literal>EU36</Literal>
@@ -1661,9 +1586,64 @@
         <Literal>EU45</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#hasChemicalMaterial"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Elastan"/>
+        <Literal>segmented polyurethane</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#SeasonHasEnd"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Fall"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gMonthDay">--12-20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#SeasonHasStart"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Fall"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gMonthDay">--10-21</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSourceFromAnimal"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Fur"/>
+        <Literal>Beaver</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSourceFromAnimal"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Fur"/>
+        <Literal>Fox</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSourceFromAnimal"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Fur"/>
+        <Literal>Mink</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSourceFromAnimal"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Fur"/>
+        <Literal>Rabbit</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSourceFromAnimal"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Fur"/>
+        <Literal>Sable</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#hasSize"/>
         <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#L"/>
         <Literal>L</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSourceFromAnimal"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Leather"/>
+        <Literal>Cow</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSourceFromPlant"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Linen"/>
+        <Literal>Linen Plant</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasChemicalMaterial"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Lycra"/>
+        <Literal>segmented polyurethane</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#hasSize"/>
@@ -1671,9 +1651,59 @@
         <Literal>M</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#hasSourceFromAnimal"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Mohair"/>
+        <Literal>Angora goat</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasChemicalMaterial"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Nylon"/>
+        <Literal>nylon polymer chips</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasChemicalMaterial"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Polyester"/>
+        <Literal>Ethyleneglycol</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasChemicalMaterial"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Polyester"/>
+        <Literal>Polyethylene Terephthalate</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasChemicalMaterial"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Polyester"/>
+        <Literal>Terephthalic Acid</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#hasSize"/>
         <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#S"/>
         <Literal>S</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSourceFromAnimal"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Silk"/>
+        <Literal>Silkworm</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#SeasonHasEnd"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Spring"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gMonthDay">--06-21</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#SeasonHasStart"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Spring"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gMonthDay">--02-22</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#SeasonHasEnd"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Summer"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gMonthDay">--10-22</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#SeasonHasStart"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Summer"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gMonthDay">--06-21</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#hasSize"/>
@@ -1731,6 +1761,21 @@
         <Literal>36x36</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
+        <DataProperty IRI="#SeasonHasEnd"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Winter"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gMonthDay">--03-22</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#SeasonHasStart"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Winter"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gMonthDay">--12-21</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasSourceFromAnimal"/>
+        <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Wool"/>
+        <Literal>Sheep</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
         <DataProperty IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#hasSize"/>
         <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#XL"/>
         <Literal>XL</Literal>
@@ -1749,26 +1794,6 @@
         <DataProperty IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#hasSize"/>
         <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#XXXL"/>
         <Literal>XXXL</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#SeasonHasEnd"/>
-        <NamedIndividual IRI="https://dbpedia.org/page/Winter"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gMonthDay">--03-22</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#SeasonHasStart"/>
-        <NamedIndividual IRI="https://dbpedia.org/page/Winter"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gMonthDay">--12-21</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#SeasonHasEnd"/>
-        <NamedIndividual IRI="https://dbpedia.org/page/Spring_(season)"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gMonthDay">--06-21</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#SeasonHasStart"/>
-        <NamedIndividual IRI="https://dbpedia.org/page/Spring_(season)"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gMonthDay">--02-22</Literal>
     </DataPropertyAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#GenderHasSuitableClothingForDressing"/>
