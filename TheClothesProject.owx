@@ -201,9 +201,6 @@
         <Class IRI="#Tie"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Top"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Trousers"/>
     </Declaration>
     <Declaration>
@@ -304,9 +301,6 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasColorRGB"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasDurability"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasSourceFromAnimal"/>
@@ -613,6 +607,13 @@
         <Class IRI="#UpperClothes"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Coat"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#isSuitableToBeDressedBySeason"/>
+            <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Winter"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#DinnerParty"/>
         <Class abbreviatedIRI="dbo:Event"/>
     </SubClassOf>
@@ -623,6 +624,10 @@
     <SubClassOf>
         <Class IRI="#Dress"/>
         <ObjectIntersectionOf>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#IsSuitableToBeDressedByEvent"/>
+                <Class IRI="#Club"/>
+            </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#IsSuitableToBeDressedByEvent"/>
                 <Class IRI="#Wedding"/>
@@ -640,6 +645,27 @@
     <SubClassOf>
         <Class IRI="#Formal"/>
         <Class IRI="#Shoes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Formal"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#IsSuitableToBeDressedByEvent"/>
+            <Class IRI="#BusinessMeeting"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Formal"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#IsSuitableToBeDressedByEvent"/>
+            <Class IRI="#Funeral"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Formal"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#IsSuitableToBeDressedByEvent"/>
+            <Class IRI="#Wedding"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Formal"/>
@@ -700,6 +726,13 @@
                 <NamedIndividual IRI="https://dbpedia.org/page/Autumn"/>
             </ObjectHasValue>
         </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hoodie"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#IsSuitableToBeDressedByTarget"/>
+            <Class IRI="#Target"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#InfantClothes"/>
@@ -791,6 +824,13 @@
         <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#IsSuitableToBeDressedByEvent"/>
             <Class IRI="#PyjamaParty"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pyjama"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#IsSuitableToBeDressedByTarget"/>
+            <Class IRI="#Target"/>
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -918,8 +958,22 @@
         <Class IRI="#Shoes"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Sneakers"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#IsSuitableToBeDressedByEvent"/>
+            <Class IRI="#Club"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Socks"/>
         <Class IRI="#Underwear"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Socks"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#IsSuitableToBeDressedByTarget"/>
+            <Class IRI="#UnisexTarget"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Sunglasses"/>
@@ -972,23 +1026,6 @@
                 <ObjectProperty IRI="#isSuitableToBeDressedByGender"/>
                 <Class IRI="http://dbpedia.org/resource/Male"/>
             </ObjectSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Top"/>
-        <Class IRI="#UpperClothes"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Top"/>
-        <ObjectIntersectionOf>
-            <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#IsSuitableToBeDressedByTarget"/>
-                <Class IRI="#WomanClothes"/>
-            </ObjectSomeValuesFrom>
-            <ObjectHasValue>
-                <ObjectProperty IRI="#isSuitableToBeDressedByGender"/>
-                <NamedIndividual IRI="#Female"/>
-            </ObjectHasValue>
         </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
@@ -1482,6 +1519,16 @@
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasColorHex"/>
+        <NamedIndividual IRI="#Pink"/>
+        <Literal>FFC0CB</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasColorRGB"/>
+        <NamedIndividual IRI="#Pink"/>
+        <Literal>255,192,203</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#hasColorHex"/>
         <NamedIndividual IRI="#Purple"/>
         <Literal>800080</Literal>
     </DataPropertyAssertion>
@@ -1931,10 +1978,6 @@
         <Class abbreviatedIRI="dbo:Colour"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#hasDurability"/>
-        <Class IRI="#CharacteristicOfClothes"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
         <DataProperty IRI="#hasSourceFromAnimal"/>
         <Class IRI="#NaturalClothesMaterial"/>
     </DataPropertyDomain>
@@ -1968,10 +2011,6 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#hasColorRGB"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#hasDurability"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
@@ -2085,6 +2124,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#dbpedia:Clothes</IRI>
         <Literal xml:lang="en">Clothes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#ClothesSize</IRI>
+        <Literal>These are all the clothes sizes for each type of them</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
