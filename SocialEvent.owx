@@ -17,25 +17,55 @@
         <Class IRI="http://dbpedia.org/ontology/SocietalEvent"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/Rebellion"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="http://dbpedia.org/ontology/participatingIn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://dbpedia.org/ontology/SocietalEvent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/SpaceMission"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/FilmFestival"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/MusicFestival"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/Meeting"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/SportsEvent"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://dbpedia.org/ontology/Convention"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="prov:wasDerivedFrom"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="http://dbpedia.org/ontology/participatingIn"/>
+        <Class IRI="http://dbpedia.org/ontology/HistoricalEvent"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="wdrs:describedby"/>
     </Declaration>
     <Declaration>
+        <Class IRI="http://dbpedia.org/ontology/MilitaryConflict"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="http://dbpedia.org/ontology/Election"/>
     </Declaration>
     <Declaration>
-        <Class IRI="http://dbpedia.org/ontology/AcademicConference"/>
+        <Class IRI="http://dbpedia.org/ontology/Attack"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://dbpedia.org/ontology/SocietalEvent"/>
+        <Class IRI="http://dbpedia.org/ontology/AcademicConference"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="ov:describes"/>
@@ -43,14 +73,12 @@
     <Declaration>
         <AnnotationProperty abbreviatedIRI="ov:defines"/>
     </Declaration>
-    <Declaration>
-        <Class IRI="http://dbpedia.org/ontology/Meeting"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://dbpedia.org/ontology/Event"/>
-    </Declaration>
     <SubClassOf>
         <Class IRI="http://dbpedia.org/ontology/AcademicConference"/>
+        <Class IRI="http://dbpedia.org/ontology/SocietalEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/Attack"/>
         <Class IRI="http://dbpedia.org/ontology/SocietalEvent"/>
     </SubClassOf>
     <SubClassOf>
@@ -62,12 +90,40 @@
         <Class IRI="http://dbpedia.org/ontology/SocietalEvent"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/FilmFestival"/>
+        <Class IRI="http://dbpedia.org/ontology/SocietalEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/HistoricalEvent"/>
+        <Class IRI="http://dbpedia.org/ontology/SocietalEvent"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="http://dbpedia.org/ontology/Meeting"/>
+        <Class IRI="http://dbpedia.org/ontology/SocietalEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/MilitaryConflict"/>
+        <Class IRI="http://dbpedia.org/ontology/SocietalEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/MusicFestival"/>
+        <Class IRI="http://dbpedia.org/ontology/SocietalEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/Rebellion"/>
         <Class IRI="http://dbpedia.org/ontology/SocietalEvent"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://dbpedia.org/ontology/SocietalEvent"/>
         <Class IRI="http://dbpedia.org/ontology/Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/SpaceMission"/>
+        <Class IRI="http://dbpedia.org/ontology/SocietalEvent"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="http://dbpedia.org/ontology/SportsEvent"/>
+        <Class IRI="http://dbpedia.org/ontology/SocietalEvent"/>
     </SubClassOf>
     <SameIndividual>
         <NamedIndividual IRI="http://dbpedia.org/ontology/SocietalEvent"/>
@@ -87,9 +143,24 @@
         <Literal xml:lang="en">an event that is clearly different from strictly personal events</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://dbpedia.org/ontology/SocietalEvent</IRI>
+        <Literal xml:lang="ur">ایک ایسا واقعہ جو سختی سے ذاتی واقعات سے واضح طور پر مختلف ہو</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:isDefinedBy"/>
+        <IRI>http://dbpedia.org/ontology/SocietalEvent</IRI>
+        <IRI>http://dbpedia.org/ontology/</IRI>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://dbpedia.org/ontology/SocietalEvent</IRI>
         <Literal xml:lang="de">gesellschatliches Ereignis</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/ontology/SocietalEvent</IRI>
+        <Literal xml:lang="nl">maatschappelijke gebeurtenis</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>

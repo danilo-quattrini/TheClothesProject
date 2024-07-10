@@ -102,7 +102,7 @@
         <Class IRI="#Formal"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Funneral"/>
+        <Class IRI="#Funeral"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Gloves"/>
@@ -321,10 +321,13 @@
         <NamedIndividual abbreviatedIRI="dbo:Colour"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Acrylic_fiber"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Fall"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Autumn"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Summer"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="http://dbpedia.org/resource/Acrylic_fiber"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://dbpedia.org/resource/Cashmere_wool"/>
@@ -334,9 +337,6 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://dbpedia.org/resource/Elastan"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Fall"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://dbpedia.org/resource/Female"/>
@@ -373,15 +373,6 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://dbpedia.org/resource/Spandex"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Spring"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Summer"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Winter"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="http://dbpedia.org/resource/Wool"/>
@@ -519,6 +510,15 @@
         <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#XXXL"/>
     </Declaration>
     <Declaration>
+        <NamedIndividual IRI="https://dbpedia.org/page/Autumn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://dbpedia.org/page/Winter"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="https://dbpedia.org/page/Spring_(season)"/>
+    </Declaration>
+    <Declaration>
         <AnnotationProperty abbreviatedIRI="dbo:thumbnail"/>
     </Declaration>
     <Declaration>
@@ -652,7 +652,7 @@
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Funneral"/>
+        <Class IRI="#Funeral"/>
         <Class abbreviatedIRI="dbo:Event"/>
     </SubClassOf>
     <SubClassOf>
@@ -663,7 +663,7 @@
         <Class IRI="#Gloves"/>
         <ObjectHasValue>
             <ObjectProperty IRI="#isSuitableToBeDressedBySeason"/>
-            <NamedIndividual IRI="http://dbpedia.org/resource/Winter"/>
+            <NamedIndividual IRI="https://dbpedia.org/page/Winter"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -696,11 +696,11 @@
         <ObjectIntersectionOf>
             <ObjectHasValue>
                 <ObjectProperty IRI="#isSuitableToBeDressedBySeason"/>
-                <NamedIndividual IRI="http://dbpedia.org/resource/Autumn"/>
+                <NamedIndividual IRI="https://dbpedia.org/page/Autumn"/>
             </ObjectHasValue>
             <ObjectHasValue>
                 <ObjectProperty IRI="#isSuitableToBeDressedBySeason"/>
-                <NamedIndividual IRI="http://dbpedia.org/resource/Winter"/>
+                <NamedIndividual IRI="https://dbpedia.org/page/Winter"/>
             </ObjectHasValue>
         </ObjectIntersectionOf>
     </SubClassOf>
@@ -816,7 +816,7 @@
         <Class IRI="#Sandal"/>
         <ObjectHasValue>
             <ObjectProperty IRI="#isSuitableToBeDressedBySeason"/>
-            <NamedIndividual IRI="http://dbpedia.org/resource/Summer"/>
+            <NamedIndividual IRI="http://dbpedia.org/page/Summer"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -825,10 +825,16 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Scarf"/>
-        <ObjectHasValue>
-            <ObjectProperty IRI="#isSuitableToBeDressedBySeason"/>
-            <NamedIndividual IRI="http://dbpedia.org/resource/Winter"/>
-        </ObjectHasValue>
+        <ObjectIntersectionOf>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#isSuitableToBeDressedBySeason"/>
+                <NamedIndividual IRI="https://dbpedia.org/page/Autumn"/>
+            </ObjectHasValue>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#isSuitableToBeDressedBySeason"/>
+                <NamedIndividual IRI="https://dbpedia.org/page/Winter"/>
+            </ObjectHasValue>
+        </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Shirt"/>
@@ -852,7 +858,7 @@
         <Class IRI="#Shirt"/>
         <ObjectHasValue>
             <ObjectProperty IRI="#isSuitableToBeDressedBySeason"/>
-            <NamedIndividual IRI="http://dbpedia.org/resource/Summer"/>
+            <NamedIndividual IRI="http://dbpedia.org/page/Summer"/>
         </ObjectHasValue>
     </SubClassOf>
     <SubClassOf>
@@ -884,6 +890,13 @@
     <SubClassOf>
         <Class IRI="#Skirt"/>
         <Class IRI="#LowerClothes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Skirt"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#IsSuitableToBeDressedByTarget"/>
+            <Class IRI="#ChildrenClothes"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Skirt"/>
@@ -948,22 +961,19 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Tie"/>
-        <Class IRI="#Accessory"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Tie"/>
         <ObjectIntersectionOf>
+            <Class IRI="#Accessory"/>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#IsSuitableToBeDressedByEvent"/>
-                <Class IRI="#Formal"/>
+                <Class IRI="#Funeral"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#IsSuitableToBeDressedByEvent"/>
-                <Class IRI="#Funneral"/>
+                <Class IRI="#Wedding"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#IsSuitableToBeDressedByTarget"/>
-                <Class IRI="#MenClothes"/>
+                <ObjectProperty IRI="#isSuitableToBeDressedByGender"/>
+                <Class IRI="http://dbpedia.org/resource/Male"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </SubClassOf>
@@ -1156,6 +1166,14 @@
         <NamedIndividual abbreviatedIRI="dbo:Colour"/>
     </ClassAssertion>
     <ClassAssertion>
+        <Class IRI="https://dbpedia.org/page/Season"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Fall"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://dbpedia.org/page/Season"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Summer"/>
+    </ClassAssertion>
+    <ClassAssertion>
         <Class IRI="#SyntheticClothesMaterial"/>
         <NamedIndividual IRI="http://dbpedia.org/resource/Acrylic_fiber"/>
     </ClassAssertion>
@@ -1170,10 +1188,6 @@
     <ClassAssertion>
         <Class IRI="#SyntheticClothesMaterial"/>
         <NamedIndividual IRI="http://dbpedia.org/resource/Elastan"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://dbpedia.org/page/Season"/>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Fall"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="http://dbpedia.org/resource/Gender"/>
@@ -1218,18 +1232,6 @@
     <ClassAssertion>
         <Class IRI="#SyntheticClothesMaterial"/>
         <NamedIndividual IRI="http://dbpedia.org/resource/Spandex"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://dbpedia.org/page/Season"/>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Spring"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://dbpedia.org/page/Season"/>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Summer"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="https://dbpedia.org/page/Season"/>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Winter"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#NaturalClothesMaterial"/>
@@ -1423,9 +1425,17 @@
         <Class IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#UpperClothingSize"/>
         <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#XXXL"/>
     </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://dbpedia.org/page/Season"/>
+        <NamedIndividual IRI="https://dbpedia.org/page/Winter"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://dbpedia.org/page/Season"/>
+        <NamedIndividual IRI="https://dbpedia.org/page/Spring_(season)"/>
+    </ClassAssertion>
     <SameIndividual>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Autumn"/>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Fall"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Fall"/>
+        <NamedIndividual IRI="https://dbpedia.org/page/Autumn"/>
     </SameIndividual>
     <SameIndividual>
         <NamedIndividual IRI="http://dbpedia.org/resource/Elastan"/>
@@ -1435,6 +1445,26 @@
         <NamedIndividual IRI="http://dbpedia.org/resource/Lycra"/>
         <NamedIndividual IRI="http://dbpedia.org/resource/Spandex"/>
     </SameIndividual>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#SeasonHasEnd"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Fall"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gMonthDay">--12-20</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#SeasonHasStart"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Fall"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gMonthDay">--10-21</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#SeasonHasEnd"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Summer"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gMonthDay">--10-22</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#SeasonHasStart"/>
+        <NamedIndividual IRI="http://dbpedia.org/page/Summer"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gMonthDay">--06-21</Literal>
+    </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasChemicalMaterial"/>
         <NamedIndividual IRI="http://dbpedia.org/resource/Acrylic_fiber"/>
@@ -1454,16 +1484,6 @@
         <DataProperty IRI="#hasChemicalMaterial"/>
         <NamedIndividual IRI="http://dbpedia.org/resource/Elastan"/>
         <Literal>segmented polyurethane</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#SeasonHasEnd"/>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Fall"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gMonthDay">--12-20</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#SeasonHasStart"/>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Fall"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gMonthDay">--10-21</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasSourceFromAnimal"/>
@@ -1514,36 +1534,6 @@
         <DataProperty IRI="#hasSourceFromAnimal"/>
         <NamedIndividual IRI="http://dbpedia.org/resource/Silk"/>
         <Literal>Silkworm</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#SeasonHasEnd"/>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Spring"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gMonthDay">--06-21</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#SeasonHasStart"/>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Spring"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gMonthDay">--02-22</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#SeasonHasEnd"/>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Summer"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gMonthDay">--10-22</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#SeasonHasStart"/>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Summer"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gMonthDay">--06-21</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#SeasonHasEnd"/>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Winter"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gMonthDay">--03-22</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#SeasonHasStart"/>
-        <NamedIndividual IRI="http://dbpedia.org/resource/Winter"/>
-        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gMonthDay">--12-21</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasSourceFromAnimal"/>
@@ -1760,6 +1750,26 @@
         <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#XXXL"/>
         <Literal>XXXL</Literal>
     </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#SeasonHasEnd"/>
+        <NamedIndividual IRI="https://dbpedia.org/page/Winter"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gMonthDay">--03-22</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#SeasonHasStart"/>
+        <NamedIndividual IRI="https://dbpedia.org/page/Winter"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gMonthDay">--12-21</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#SeasonHasEnd"/>
+        <NamedIndividual IRI="https://dbpedia.org/page/Spring_(season)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gMonthDay">--06-21</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#SeasonHasStart"/>
+        <NamedIndividual IRI="https://dbpedia.org/page/Spring_(season)"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#gMonthDay">--02-22</Literal>
+    </DataPropertyAssertion>
     <SubObjectPropertyOf>
         <ObjectProperty IRI="#GenderHasSuitableClothingForDressing"/>
         <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
@@ -1953,6 +1963,16 @@
     </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dbo:Colour</AbbreviatedIRI>
+        <Literal xml:lang="en">That&apos;s cointain all the main colors of the clothes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbo:Colour</AbbreviatedIRI>
+        <Literal xml:lang="en">Colours</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <AbbreviatedIRI>dbo:Event</AbbreviatedIRI>
         <Literal xml:lang="en">That&apos;s the class that describe all the event possible</Literal>
     </AnnotationAssertion>
@@ -1970,6 +1990,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>http://dbpedia.org/resource/Gender</IRI>
         <Literal>Genders</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/resource/Raw_material</IRI>
+        <Literal xml:lang="en">RawMaterials</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dbo:thumbnail"/>
@@ -2037,9 +2062,14 @@
         <Literal xml:lang="en">Clothes</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#ClothesSize</IRI>
+        <Literal xml:lang="en">Clothes Sizes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>https://dbpedia.org/page/Season</IRI>
-        <Literal xml:lang="en">That&apos;s a set of all the season, for categorize each type of cothes</Literal>
+        <Literal xml:lang="en">That&apos;s a set of all the season, for categorize each type of cothes is suitable for the season</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>

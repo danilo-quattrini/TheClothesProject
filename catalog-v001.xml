@@ -7,7 +7,7 @@
     <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/TEMP" uri="sparql_2024-06-07_22-04-12Z.rdf"/>
     <uri id="Imports Wizard Entry" name="http://www.w3.org/2002/07/owl" uri="ListOfColor.rdf"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1720621936401" name="http://www.semanticweb.org/hellfox53/ontologies/2024/5/TheClothesProject" uri="TheClothesProject.owx"/>
-        <uri id="Automatically generated entry, Timestamp=1720621936401" name="http://www.w3.org/2002/07/owl#" uri="SocialEvent.owx"/>
+        <uri id="Automatically generated entry, Timestamp=1720625016189" name="http://www.semanticweb.org/hellfox53/ontologies/2024/5/TheClothesProject" uri="TheClothesProject.owx"/>
+        <uri id="Automatically generated entry, Timestamp=1720625016189" name="http://www.w3.org/2002/07/owl#" uri="SocialEvent.owx"/>
     </group>
 </catalog>
