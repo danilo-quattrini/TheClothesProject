@@ -17,6 +17,7 @@
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
     <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
     <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>https://dbpedia.org/ontology/SocietalEvent</Import>
     <Annotation>
         <AnnotationProperty abbreviatedIRI="dc:creator"/>
         <Literal xml:lang="en">Danilo Quattrini</Literal>
@@ -545,120 +546,6 @@
             <NamedIndividual IRI="http://dbpedia.org/resource/Male"/>
         </ObjectOneOf>
     </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#ChildrenClothes"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#Target"/>
-            <DataSomeValuesFrom>
-                <DataProperty IRI="#hasAge"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:integer"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
-                    </FacetRestriction>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">12</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#InfantClothes"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#Target"/>
-            <DataSomeValuesFrom>
-                <DataProperty IRI="#hasAge"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:integer"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
-                    </FacetRestriction>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#MenClothes"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#Target"/>
-            <ObjectHasValue>
-                <ObjectProperty IRI="#isSuitableToBeDressedByGender"/>
-                <NamedIndividual IRI="http://dbpedia.org/resource/Male"/>
-            </ObjectHasValue>
-            <DataSomeValuesFrom>
-                <DataProperty IRI="#hasAge"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:integer"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">18</Literal>
-                    </FacetRestriction>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">65</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#TeenagerClothes"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#Target"/>
-            <DataSomeValuesFrom>
-                <DataProperty IRI="#hasAge"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:integer"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">13</Literal>
-                    </FacetRestriction>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">18</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#UnisexTarget"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#Target"/>
-            <ObjectIntersectionOf>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#IsSuitableToBeDressedByTarget"/>
-                    <Class IRI="#MenClothes"/>
-                </ObjectSomeValuesFrom>
-                <ObjectSomeValuesFrom>
-                    <ObjectProperty IRI="#IsSuitableToBeDressedByTarget"/>
-                    <Class IRI="#WomanClothes"/>
-                </ObjectSomeValuesFrom>
-            </ObjectIntersectionOf>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
-    <EquivalentClasses>
-        <Class IRI="#WomanClothes"/>
-        <ObjectIntersectionOf>
-            <Class IRI="#Target"/>
-            <ObjectHasValue>
-                <ObjectProperty IRI="#isSuitableToBeDressedByGender"/>
-                <NamedIndividual IRI="http://dbpedia.org/resource/Female"/>
-            </ObjectHasValue>
-            <DataSomeValuesFrom>
-                <DataProperty IRI="#hasAge"/>
-                <DatatypeRestriction>
-                    <Datatype abbreviatedIRI="xsd:integer"/>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">18</Literal>
-                    </FacetRestriction>
-                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
-                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">65</Literal>
-                    </FacetRestriction>
-                </DatatypeRestriction>
-            </DataSomeValuesFrom>
-        </ObjectIntersectionOf>
-    </EquivalentClasses>
     <SubClassOf>
         <Class IRI="http://dbpedia.org/resource/Female"/>
         <Class IRI="http://dbpedia.org/resource/Gender"/>
@@ -700,7 +587,21 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ChildrenClothes"/>
-        <Class IRI="#Target"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Target"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#hasAge"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">4</Literal>
+                    </FacetRestriction>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">12</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ClothesMaterial"/>
@@ -805,7 +706,21 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#InfantClothes"/>
-        <Class IRI="#Target"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Target"/>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#hasAge"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">0</Literal>
+                    </FacetRestriction>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">3</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Jeans"/>
@@ -842,7 +757,25 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#MenClothes"/>
-        <Class IRI="#Target"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Target"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#isSuitableToBeDressedByGender"/>
+                <NamedIndividual IRI="http://dbpedia.org/resource/Male"/>
+            </ObjectHasValue>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#hasAge"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minExclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">18</Literal>
+                    </FacetRestriction>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">65</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#NaturalClothesMaterial"/>
@@ -999,6 +932,21 @@
         <Class IRI="#Target"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#TeenagerClothes"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#hasAge"/>
+            <DatatypeRestriction>
+                <Datatype abbreviatedIRI="xsd:integer"/>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">13</Literal>
+                </FacetRestriction>
+                <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                    <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">18</Literal>
+                </FacetRestriction>
+            </DatatypeRestriction>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#Tie"/>
         <Class IRI="#Accessory"/>
     </SubClassOf>
@@ -1006,12 +954,16 @@
         <Class IRI="#Tie"/>
         <ObjectIntersectionOf>
             <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#IsSuitableToBeDressedByTarget"/>
-                <Class IRI="#MenClothes"/>
+                <ObjectProperty IRI="#IsSuitableToBeDressedByEvent"/>
+                <Class IRI="#Formal"/>
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
-                <ObjectProperty IRI="#isSuitableToBeDressedByGender"/>
-                <Class IRI="http://dbpedia.org/resource/Male"/>
+                <ObjectProperty IRI="#IsSuitableToBeDressedByEvent"/>
+                <Class IRI="#Funneral"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#IsSuitableToBeDressedByTarget"/>
+                <Class IRI="#MenClothes"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </SubClassOf>
@@ -1056,6 +1008,20 @@
         <Class IRI="#dbpedia:Clothes"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#UnisexTarget"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Target"/>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#IsSuitableToBeDressedByTarget"/>
+                <Class IRI="#MenClothes"/>
+            </ObjectSomeValuesFrom>
+            <ObjectSomeValuesFrom>
+                <ObjectProperty IRI="#IsSuitableToBeDressedByTarget"/>
+                <Class IRI="#WomanClothes"/>
+            </ObjectSomeValuesFrom>
+        </ObjectIntersectionOf>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#UpperClothes"/>
         <Class IRI="#dbpedia:Clothes"/>
     </SubClassOf>
@@ -1072,7 +1038,25 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#WomanClothes"/>
-        <Class IRI="#Target"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Target"/>
+            <ObjectHasValue>
+                <ObjectProperty IRI="#isSuitableToBeDressedByGender"/>
+                <NamedIndividual IRI="http://dbpedia.org/resource/Female"/>
+            </ObjectHasValue>
+            <DataSomeValuesFrom>
+                <DataProperty IRI="#hasAge"/>
+                <DatatypeRestriction>
+                    <Datatype abbreviatedIRI="xsd:integer"/>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">18</Literal>
+                    </FacetRestriction>
+                    <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">65</Literal>
+                    </FacetRestriction>
+                </DatatypeRestriction>
+            </DataSomeValuesFrom>
+        </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#AccessorySize"/>
@@ -1285,10 +1269,6 @@
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#CharacteristicOfClothes"/>
-        <NamedIndividual IRI="#Pattern"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class IRI="#Pattern"/>
         <NamedIndividual IRI="#Pattern"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1971,6 +1951,26 @@
         <DataProperty IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#hasSize"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>dbo:Event</AbbreviatedIRI>
+        <Literal xml:lang="en">That&apos;s the class that describe all the event possible</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>dbo:Event</AbbreviatedIRI>
+        <Literal>List of Events</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>http://dbpedia.org/resource/Gender</IRI>
+        <Literal xml:lang="en">This class describe all the gender and their restriction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>http://dbpedia.org/resource/Gender</IRI>
+        <Literal>Genders</Literal>
+    </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="dbo:thumbnail"/>
         <IRI>#CoinDot</IRI>
