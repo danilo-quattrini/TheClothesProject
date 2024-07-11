@@ -6,12 +6,8 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.semanticweb.org/hellfox53/ontologies/2024/5/TheClothesProject">
-    <Prefix name="" IRI="http://www.semanticweb.org/hellfox53/ontologies/2024/5/TheClothesProject#"/>
     <Prefix name="cp" IRI="http://www.semanticweb.org/hellfox53/ontologies/2024/5/TheClothesProject/"/>
     <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
-    <Prefix name="dbo" IRI="http://dbpedia.org/ontology/"/>
-    <Prefix name="dbp" IRI="http://dbpedia.org/property/"/>
-    <Prefix name="dbr" IRI="http://dbpedia.org/resources/"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -39,19 +35,10 @@
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">1.0</Literal>
     </Annotation>
     <Declaration>
-        <Class abbreviatedIRI="dbo:Colour"/>
+        <Class IRI="http://dbpedia.org/ontology/Colour"/>
     </Declaration>
     <Declaration>
-        <Class abbreviatedIRI="dbo:Event"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://dbpedia.org/resource/Female"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://dbpedia.org/resource/Gender"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="http://dbpedia.org/resource/Male"/>
+        <Class IRI="http://dbpedia.org/ontology/Event"/>
     </Declaration>
     <Declaration>
         <Class IRI="http://dbpedia.org/resource/Raw_material"/>
@@ -99,10 +86,16 @@
         <Class IRI="#Earrings"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Female"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Formal"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Funeral"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Gender"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Gloves"/>
@@ -129,6 +122,9 @@
         <Class IRI="#LowerClothes"/>
     </Declaration>
     <Declaration>
+        <Class IRI="#Male"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#MenClothes"/>
     </Declaration>
     <Declaration>
@@ -151,6 +147,9 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Ring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Running"/>
     </Declaration>
     <Declaration>
         <Class IRI="#Sandal"/>
@@ -312,7 +311,7 @@
         <DataProperty IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#hasSize"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual abbreviatedIRI="dbo:Colour"/>
+        <NamedIndividual IRI="http://dbpedia.org/ontology/Colour"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#Black"/>
@@ -510,7 +509,7 @@
         <NamedIndividual IRI="https://dbpedia.org/page/Autumn"/>
     </Declaration>
     <Declaration>
-        <AnnotationProperty abbreviatedIRI="dbo:thumbnail"/>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/thumbnail"/>
     </Declaration>
     <Declaration>
         <AnnotationProperty abbreviatedIRI="dc:creator"/>
@@ -531,20 +530,12 @@
         <Datatype abbreviatedIRI="xsd:gYearMonth"/>
     </Declaration>
     <EquivalentClasses>
-        <Class IRI="http://dbpedia.org/resource/Gender"/>
+        <Class IRI="#Gender"/>
         <ObjectOneOf>
             <NamedIndividual IRI="#Female"/>
             <NamedIndividual IRI="#Male"/>
         </ObjectOneOf>
     </EquivalentClasses>
-    <SubClassOf>
-        <Class IRI="http://dbpedia.org/resource/Female"/>
-        <Class IRI="http://dbpedia.org/resource/Gender"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="http://dbpedia.org/resource/Male"/>
-        <Class IRI="http://dbpedia.org/resource/Gender"/>
-    </SubClassOf>
     <SubClassOf>
         <Class IRI="#Accessory"/>
         <Class IRI="#dbpedia:Clothes"/>
@@ -574,7 +565,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#BusinessMeeting"/>
-        <Class abbreviatedIRI="dbo:Event"/>
+        <Class IRI="http://dbpedia.org/ontology/Event"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#ChildrenClothes"/>
@@ -600,7 +591,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Club"/>
-        <Class abbreviatedIRI="dbo:Event"/>
+        <Class IRI="http://dbpedia.org/ontology/Event"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Coat"/>
@@ -615,7 +606,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#DinnerParty"/>
-        <Class abbreviatedIRI="dbo:Event"/>
+        <Class IRI="http://dbpedia.org/ontology/Event"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Dress"/>
@@ -641,6 +632,10 @@
     <SubClassOf>
         <Class IRI="#Earrings"/>
         <Class IRI="#Jewellery"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Female"/>
+        <Class IRI="#Gender"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Formal"/>
@@ -676,7 +671,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Funeral"/>
-        <Class abbreviatedIRI="dbo:Event"/>
+        <Class IRI="http://dbpedia.org/ontology/Event"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Gloves"/>
@@ -702,13 +697,20 @@
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#isSuitableToBeDressedByGender"/>
-                <Class IRI="http://dbpedia.org/resource/Female"/>
+                <Class IRI="#Female"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Hat"/>
         <Class IRI="#Accessory"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hat"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#IsSuitableToBeDressedByTarget"/>
+            <Class IRI="#UnisexTarget"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Hoodie"/>
@@ -786,6 +788,10 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Male"/>
+        <Class IRI="#Gender"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#MenClothes"/>
         <ObjectIntersectionOf>
             <Class IRI="#Target"/>
@@ -822,6 +828,13 @@
     <SubClassOf>
         <Class IRI="#Pyjama"/>
         <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#HasPattern"/>
+            <Class IRI="#Pattern"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pyjama"/>
+        <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#IsSuitableToBeDressedByEvent"/>
             <Class IRI="#PyjamaParty"/>
         </ObjectSomeValuesFrom>
@@ -835,7 +848,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PyjamaParty"/>
-        <Class abbreviatedIRI="dbo:Event"/>
+        <Class IRI="http://dbpedia.org/ontology/Event"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#RegularFitTrousers"/>
@@ -844,6 +857,17 @@
     <SubClassOf>
         <Class IRI="#Ring"/>
         <Class IRI="#Jewellery"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Running"/>
+        <Class IRI="#Shoes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Running"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#IsSuitableToBeDressedByEvent"/>
+            <Class IRI="http://dbpedia.org/ontology/SportsEvent"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Sandal"/>
@@ -943,13 +967,6 @@
         </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Skirt"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#isSuitableToBeDressedByGender"/>
-            <Class IRI="http://dbpedia.org/resource/Female"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#SlimFitTrousers"/>
         <Class IRI="#Trousers"/>
     </SubClassOf>
@@ -971,6 +988,13 @@
     <SubClassOf>
         <Class IRI="#Socks"/>
         <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#HasSize"/>
+            <Class IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#ShoeSize"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Socks"/>
+        <ObjectSomeValuesFrom>
             <ObjectProperty IRI="#IsSuitableToBeDressedByTarget"/>
             <Class IRI="#UnisexTarget"/>
         </ObjectSomeValuesFrom>
@@ -980,12 +1004,26 @@
         <Class IRI="#Accessory"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Sunglasses"/>
+        <ObjectHasValue>
+            <ObjectProperty IRI="#isSuitableToBeDressedBySeason"/>
+            <NamedIndividual IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Summer"/>
+        </ObjectHasValue>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#SyntheticClothesMaterial"/>
         <Class IRI="#ClothesMaterial"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#TShirt"/>
         <Class IRI="#UpperClothes"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TShirt"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#HasPattern"/>
+            <Class IRI="#Pattern"/>
+        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Target"/>
@@ -1024,7 +1062,7 @@
             </ObjectSomeValuesFrom>
             <ObjectSomeValuesFrom>
                 <ObjectProperty IRI="#isSuitableToBeDressedByGender"/>
-                <Class IRI="http://dbpedia.org/resource/Male"/>
+                <Class IRI="#Male"/>
             </ObjectSomeValuesFrom>
         </ObjectIntersectionOf>
     </SubClassOf>
@@ -1078,7 +1116,7 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#Wedding"/>
-        <Class abbreviatedIRI="dbo:Event"/>
+        <Class IRI="http://dbpedia.org/ontology/Event"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#WomanClothes"/>
@@ -1119,13 +1157,13 @@
         <Class IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#ClothesSize"/>
     </SubClassOf>
     <DisjointClasses>
-        <Class abbreviatedIRI="dbo:Colour"/>
-        <Class IRI="http://dbpedia.org/resource/Gender"/>
+        <Class IRI="http://dbpedia.org/ontology/Colour"/>
+        <Class IRI="#Gender"/>
     </DisjointClasses>
     <DisjointClasses>
-        <Class abbreviatedIRI="dbo:Event"/>
-        <Class IRI="http://dbpedia.org/resource/Gender"/>
+        <Class IRI="http://dbpedia.org/ontology/Event"/>
         <Class IRI="http://dbpedia.org/resource/Raw_material"/>
+        <Class IRI="#Gender"/>
         <Class IRI="#Pattern"/>
         <Class IRI="#dbpedia:Clothes"/>
         <Class IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#ClothesSize"/>
@@ -1150,11 +1188,6 @@
         <Class IRI="#SyntheticClothesMaterial"/>
     </DisjointClasses>
     <DisjointUnion>
-        <Class IRI="http://dbpedia.org/resource/Gender"/>
-        <Class IRI="http://dbpedia.org/resource/Female"/>
-        <Class IRI="http://dbpedia.org/resource/Male"/>
-    </DisjointUnion>
-    <DisjointUnion>
         <Class IRI="#Accessory"/>
         <Class IRI="#Bag"/>
         <Class IRI="#Belt"/>
@@ -1167,7 +1200,7 @@
     </DisjointUnion>
     <DisjointUnion>
         <Class IRI="#CharacteristicOfClothes"/>
-        <Class abbreviatedIRI="dbo:Colour"/>
+        <Class IRI="http://dbpedia.org/ontology/Colour"/>
         <Class IRI="#ClothesMaterial"/>
         <Class IRI="#Pattern"/>
         <Class IRI="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#ClothesSize"/>
@@ -1176,6 +1209,11 @@
         <Class IRI="#ClothesMaterial"/>
         <Class IRI="#NaturalClothesMaterial"/>
         <Class IRI="#SyntheticClothesMaterial"/>
+    </DisjointUnion>
+    <DisjointUnion>
+        <Class IRI="#Gender"/>
+        <Class IRI="#Female"/>
+        <Class IRI="#Male"/>
     </DisjointUnion>
     <DisjointUnion>
         <Class IRI="#Shoes"/>
@@ -1197,14 +1235,14 @@
     </DisjointUnion>
     <ClassAssertion>
         <Class IRI="#CharacteristicOfClothes"/>
-        <NamedIndividual abbreviatedIRI="dbo:Colour"/>
+        <NamedIndividual IRI="http://dbpedia.org/ontology/Colour"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI="dbo:Colour"/>
+        <Class IRI="http://dbpedia.org/ontology/Colour"/>
         <NamedIndividual IRI="#Black"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI="dbo:Colour"/>
+        <Class IRI="http://dbpedia.org/ontology/Colour"/>
         <NamedIndividual IRI="#Blue"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1220,7 +1258,7 @@
         <NamedIndividual IRI="#DiamondPattern"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://dbpedia.org/resource/Gender"/>
+        <Class IRI="#Gender"/>
         <NamedIndividual IRI="#Female"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1228,11 +1266,11 @@
         <NamedIndividual IRI="#Gingham"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI="dbo:Colour"/>
+        <Class IRI="http://dbpedia.org/ontology/Colour"/>
         <NamedIndividual IRI="#Green"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class IRI="http://dbpedia.org/resource/Gender"/>
+        <Class IRI="#Gender"/>
         <NamedIndividual IRI="#Male"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1244,7 +1282,7 @@
         <NamedIndividual IRI="#Pattern"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI="dbo:Colour"/>
+        <Class IRI="http://dbpedia.org/ontology/Colour"/>
         <NamedIndividual IRI="#Pink"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1252,11 +1290,11 @@
         <NamedIndividual IRI="#Plaid"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI="dbo:Colour"/>
+        <Class IRI="http://dbpedia.org/ontology/Colour"/>
         <NamedIndividual IRI="#Purple"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI="dbo:Colour"/>
+        <Class IRI="http://dbpedia.org/ontology/Colour"/>
         <NamedIndividual IRI="#Red"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1264,11 +1302,11 @@
         <NamedIndividual IRI="#Stripes"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI="dbo:Colour"/>
+        <Class IRI="http://dbpedia.org/ontology/Colour"/>
         <NamedIndividual IRI="#White"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI="dbo:Colour"/>
+        <Class IRI="http://dbpedia.org/ontology/Colour"/>
         <NamedIndividual IRI="#Yellow"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -1903,7 +1941,7 @@
     </ObjectPropertyDomain>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#HasColor"/>
-        <Class abbreviatedIRI="dbo:Colour"/>
+        <Class IRI="http://dbpedia.org/ontology/Colour"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#HasMaterialComposition"/>
@@ -1919,7 +1957,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#IsSuitableToBeDressedByEvent"/>
-        <Class abbreviatedIRI="dbo:Event"/>
+        <Class IRI="http://dbpedia.org/ontology/Event"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#IsSuitableToBeDressedByTarget"/>
@@ -1927,7 +1965,7 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isSuitableToBeDressedByGender"/>
-        <Class IRI="http://dbpedia.org/resource/Gender"/>
+        <Class IRI="#Gender"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#isSuitableToBeDressedBySeason"/>
@@ -1967,15 +2005,15 @@
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasColor"/>
-        <Class abbreviatedIRI="dbo:Colour"/>
+        <Class IRI="http://dbpedia.org/ontology/Colour"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasColorHex"/>
-        <Class abbreviatedIRI="dbo:Colour"/>
+        <Class IRI="http://dbpedia.org/ontology/Colour"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasColorRGB"/>
-        <Class abbreviatedIRI="dbo:Colour"/>
+        <Class IRI="http://dbpedia.org/ontology/Colour"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#hasSourceFromAnimal"/>
@@ -2027,33 +2065,28 @@
     </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>dbo:Colour</AbbreviatedIRI>
+        <IRI>http://dbpedia.org/ontology/Colour</IRI>
         <Literal xml:lang="en">That&apos;s cointain all the main colors of the clothes</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>dbo:Colour</AbbreviatedIRI>
+        <IRI>http://dbpedia.org/ontology/Colour</IRI>
         <Literal xml:lang="en">Colours</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>dbo:Event</AbbreviatedIRI>
+        <IRI>http://dbpedia.org/ontology/Event</IRI>
         <Literal xml:lang="en">That&apos;s the class that describe all the event possible</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>dbo:Event</AbbreviatedIRI>
+        <IRI>http://dbpedia.org/ontology/Event</IRI>
         <Literal>List of Events</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <IRI>http://dbpedia.org/resource/Gender</IRI>
-        <Literal xml:lang="en">This class describe all the gender and their restriction</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://dbpedia.org/resource/Gender</IRI>
-        <Literal>Genders</Literal>
+        <IRI>http://dbpedia.org/resource/Raw_material</IRI>
+        <Literal>This is a class of a materials that a specific clothes is made that could be natural or synthetic</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
@@ -2061,22 +2094,72 @@
         <Literal xml:lang="en">RawMaterials</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dbo:thumbnail"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CharacteristicOfClothes</IRI>
+        <Literal>These class containb the main characteristic of clothes that we wanto to give to them</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#ChildrenClothes</IRI>
+        <Literal>This is the target for only children that have age between 4 and 12 years old</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#ChildrenClothes</IRI>
+        <Literal>ChildrenTarget</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/thumbnail"/>
         <IRI>#CoinDot</IRI>
         <IRI>https://cdn.shopify.com/s/files/1/0657/6052/6551/files/counterchange-pattern-thumb-2.png</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dbo:thumbnail"/>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/thumbnail"/>
         <IRI>#DiamondPattern</IRI>
         <IRI>https://cdn.shopify.com/s/files/1/0657/6052/6551/files/diamond-pattern-300x299.png</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dbo:thumbnail"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Gender</IRI>
+        <Literal xml:lang="en">This class describe all the gender and their restriction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Gender</IRI>
+        <Literal>Genders</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/thumbnail"/>
         <IRI>#Gingham</IRI>
         <IRI>https://cdn.shopify.com/s/files/1/0657/6052/6551/files/gingham-pattern-thumb.png</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dbo:thumbnail"/>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#InfantClothes</IRI>
+        <Literal>This is the target for only infant yhat have age between 0 and 3 years old</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#InfantClothes</IRI>
+        <Literal>InfantTarget</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#LowerClothes</IRI>
+        <Literal>These are all the lower clothes like jeans,trousers ecc..</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MenClothes</IRI>
+        <Literal>This is the target for only men yhat have age between 18 and 65 years old</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#MenClothes</IRI>
+        <Literal>MenClothes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/thumbnail"/>
         <IRI>#Paisley</IRI>
         <IRI>https://cdn.shopify.com/s/files/1/0657/6052/6551/files/paisley-pattern-thumb.png</IRI>
     </AnnotationAssertion>
@@ -2086,12 +2169,12 @@
         <Literal xml:lang="en">Clothes pattern</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dbo:thumbnail"/>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/thumbnail"/>
         <IRI>#Plaid</IRI>
         <IRI>https://as1.ftcdn.net/v2/jpg/02/98/04/52/1000_F_298045204_OjJqLYWHOEmaDPLURhec7qEfmsw2eHRs.jpg</IRI>
     </AnnotationAssertion>
     <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="dbo:thumbnail"/>
+        <AnnotationProperty IRI="http://dbpedia.org/ontology/thumbnail"/>
         <IRI>#Stripes</IRI>
         <IRI>https://as1.ftcdn.net/v2/jpg/02/95/17/06/1000_F_295170647_8K1XMDlkmnmb0RsrVOt5ovcBX7pIBXz9.jpg</IRI>
     </AnnotationAssertion>
@@ -2104,6 +2187,36 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Target</IRI>
         <Literal xml:lang="en">Clothes target</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TeenagerClothes</IRI>
+        <Literal>This is the target for only man yhat have age between 13 and 18 years old</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#TeenagerClothes</IRI>
+        <Literal>TeenagerTarget</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#UnisexTarget</IRI>
+        <Literal>This is the target for every type of genderdefined that have age between 18 and 65 years old</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#UpperClothes</IRI>
+        <Literal>These are all the upper clothes like tshirt, shirt, coat ecc..</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#WomanClothes</IRI>
+        <Literal>This is the target for only woman yhat have age between 18 and 65 years old</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#WomanClothes</IRI>
+        <Literal>WomanTarget</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
