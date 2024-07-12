@@ -6,6 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.semanticweb.org/hellfox53/ontologies/2024/5/TheClothesProject">
+    <Prefix name="" IRI="http://www.semanticweb.org/hellfox53/ontologies/2024/5/TheClothesProject#"/>
     <Prefix name="cp" IRI="http://www.semanticweb.org/hellfox53/ontologies/2024/5/TheClothesProject/"/>
     <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
@@ -293,13 +294,7 @@
         <DataProperty IRI="#hasChemicalMaterial"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#hasColor"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#hasColorHex"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#hasColorRGB"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#hasSourceFromAnimal"/>
@@ -1531,19 +1526,9 @@
         <Literal>000000</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#hasColorRGB"/>
-        <NamedIndividual IRI="#Black"/>
-        <Literal>0, 0, 0</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="#hasColorHex"/>
         <NamedIndividual IRI="#Blue"/>
         <Literal>0000FF</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasColorRGB"/>
-        <NamedIndividual IRI="#Blue"/>
-        <Literal>0, 0, 255</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasColorHex"/>
@@ -1551,19 +1536,9 @@
         <Literal>00FF00</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#hasColorRGB"/>
-        <NamedIndividual IRI="#Green"/>
-        <Literal>0, 255, 0</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="#hasColorHex"/>
         <NamedIndividual IRI="#Pink"/>
         <Literal>FFC0CB</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasColorRGB"/>
-        <NamedIndividual IRI="#Pink"/>
-        <Literal>255,192,203</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasColorHex"/>
@@ -1571,19 +1546,9 @@
         <Literal>800080</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#hasColorRGB"/>
-        <NamedIndividual IRI="#Purple"/>
-        <Literal>128,0,128</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="#hasColorHex"/>
         <NamedIndividual IRI="#Red"/>
         <Literal>FF0000</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasColorRGB"/>
-        <NamedIndividual IRI="#Red"/>
-        <Literal>255, 0, 0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasColorHex"/>
@@ -1591,19 +1556,9 @@
         <Literal>FFFFFF</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
-        <DataProperty IRI="#hasColorRGB"/>
-        <NamedIndividual IRI="#White"/>
-        <Literal>255, 255, 255</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
         <DataProperty IRI="#hasColorHex"/>
         <NamedIndividual IRI="#Yellow"/>
         <Literal>FFFF00</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty IRI="#hasColorRGB"/>
-        <NamedIndividual IRI="#Yellow"/>
-        <Literal>255, 255, 0</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty IRI="#hasChemicalMaterial"/>
@@ -1973,11 +1928,7 @@
     </ObjectPropertyRange>
     <SubDataPropertyOf>
         <DataProperty IRI="#hasColorHex"/>
-        <DataProperty IRI="#hasColor"/>
-    </SubDataPropertyOf>
-    <SubDataPropertyOf>
-        <DataProperty IRI="#hasColorRGB"/>
-        <DataProperty IRI="#hasColor"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
     </SubDataPropertyOf>
     <SubDataPropertyOf>
         <DataProperty IRI="#hasSourceFromAnimal"/>
@@ -2004,15 +1955,7 @@
         <Class IRI="#SyntheticClothesMaterial"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#hasColor"/>
-        <Class IRI="http://dbpedia.org/ontology/Colour"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
         <DataProperty IRI="#hasColorHex"/>
-        <Class IRI="http://dbpedia.org/ontology/Colour"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#hasColorRGB"/>
         <Class IRI="http://dbpedia.org/ontology/Colour"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
@@ -2045,10 +1988,6 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#hasColorHex"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#hasColorRGB"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>

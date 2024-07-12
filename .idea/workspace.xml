@@ -5,38 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5aa5aaa-134f-4c88-89b2-12ed635acc6c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copyright/MIT.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/MessageUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/MessageUtilsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/buildSrc/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/buildSrc/settings.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/buildSrc/src/main/kotlin/buildlogic.java-application-conventions.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/buildSrc/src/main/kotlin/buildlogic.java-common-conventions.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/buildSrc/src/main/kotlin/buildlogic.java-library-conventions.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/libs.versions.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_script_runtime_1_9_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_script_runtime_Latest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/owl/catalog-v001.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/copyright/MIT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/copyright/MIT.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/SocialEvent.owx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/owl/SocialEvent.owx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SocialEvent.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TheClothesProject.owx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/owl/TheClothesProject.owx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TheClothesProject.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/catalog-v001.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,10 +41,10 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2j8aPD9Pt6EF9IkYNEMIhvBG42l" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -79,11 +57,13 @@
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "Gradle.TheOntologyProject [app:run].executor": "Run",
+    "Gradle.TheOntologyProject [build].executor": "Run",
+    "Gradle.TheOntologyProject [builf].executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/danil/Documents/University/Modellazione/ExoplanetCataloguer",
+    "last_opened_file_path": "C:/Users/danil/Documents/University/Modellazione/progettoMGC",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -109,9 +89,11 @@
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="gradlew app:run" />
+      <command value="gradlew builf" />
+      <command value="gradlew build" />
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gradle.TheOntologyProject [build]">
     <configuration name="TheOntologyProject [app:run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -134,8 +116,54 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="TheOntologyProject [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="TheOntologyProject [builf]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="builf" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.TheOntologyProject [build]" />
+        <item itemvalue="Gradle.TheOntologyProject [builf]" />
         <item itemvalue="Gradle.TheOntologyProject [app:run]" />
       </list>
     </recent_temporary>
@@ -156,7 +184,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1720771133220</updated>
-      <workItem from="1720771134909" duration="833000" />
+      <workItem from="1720771134909" duration="1538000" />
+      <workItem from="1720772713414" duration="114000" />
+      <workItem from="1720772864940" duration="1368000" />
     </task>
     <servers />
   </component>

@@ -10,5 +10,5 @@ plugins {
     id("org.gradle.toolchains.foojay-resolver-convention") version "0.8.0"
 }
 
-rootProject.name = "it.unicam.cs.TheClothesProject"
+rootProject.name = "it.unicam.cs.mgc.TheClothesProject"
 include("app")
