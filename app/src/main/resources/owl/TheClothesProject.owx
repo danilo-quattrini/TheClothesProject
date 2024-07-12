@@ -6,8 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.semanticweb.org/hellfox53/ontologies/2024/5/TheClothesProject">
-    <Prefix name="" IRI="http://www.semanticweb.org/hellfox53/ontologies/2024/5/TheClothesProject#"/>
-    <Prefix name="cp" IRI="http://www.semanticweb.org/hellfox53/ontologies/2024/5/TheClothesProject/"/>
+    <Prefix name="cp" IRI="http://www.semanticweb.org/hellfox53/ontologies/2024/5/TheClothesProject#"/>
     <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
