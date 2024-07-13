@@ -5,14 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5aa5aaa-134f-4c88-89b2-12ed635acc6c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.$ConfiguratoStages.drawio.bkp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.$UMLDiagram.drawio.bkp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ConfiguratoStages.drawio" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/builder/RDFModelBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/builder/TheInferredModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/builder/TheMainBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/utilites/AllTheURI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/owl/SocietalEvent.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/owl/SocietalEvent.rdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/owl/TheClothesProject.rdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UMLDiagram.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/UMLDiagram.drawio" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/owl/TheClothesProject.owx" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/owl/TheClothesProject.owx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/MessageUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/owl/SocialEvent.owx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/owl/TheClothesProject.owx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/resources/owl/TheClothesProject.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/owl/TheClothesProject.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/owl/catalog-v001.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/owl/catalog-v001.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/MessageUtilsTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +43,15 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="Enum" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -54,6 +70,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
     &quot;Gradle.TheOntologyProject [app:run].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.TheOntologyProject [build].executor&quot;: &quot;Run&quot;,
     &quot;Gradle.TheOntologyProject [builf].executor&quot;: &quot;Run&quot;,
@@ -86,12 +103,12 @@
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
-      <command value="gradlew app:run" />
       <command value="gradlew builf" />
       <command value="gradlew build" />
+      <command value="gradlew app:run" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.TheOntologyProject [build]">
+  <component name="RunManager" selected="Gradle.TheOntologyProject [app:run]">
     <configuration name="TheOntologyProject [app:run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -186,7 +203,8 @@
       <workItem from="1720772713414" duration="114000" />
       <workItem from="1720772864940" duration="1368000" />
       <workItem from="1720782199123" duration="604000" />
-      <workItem from="1720881034316" duration="1010000" />
+      <workItem from="1720881034316" duration="4168000" />
+      <workItem from="1720888678465" duration="1752000" />
     </task>
     <servers />
   </component>
