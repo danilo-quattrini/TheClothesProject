@@ -6,6 +6,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      ontologyIRI="http://www.semanticweb.org/hellfox53/ontologies/2024/5/TheClothesProject">
+    <Prefix name="" IRI="http://www.semanticweb.org/hellfox53/ontologies/2024/5/TheClothesProject#"/>
     <Prefix name="cp" IRI="http://www.semanticweb.org/hellfox53/ontologies/2024/5/TheClothesProject#"/>
     <Prefix name="dc" IRI="http://purl.org/dc/elements/1.1/"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
@@ -2180,11 +2181,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#ClothesSize</IRI>
         <Literal>These are all the clothes sizes for each type of them</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <IRI>http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#ClothesSize</IRI>
-        <Literal xml:lang="en">Clothes Sizes</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
