@@ -21,14 +21,15 @@
  */
 
 package it.unicam.cs.mgc.TheClothesProjectConfigurator.utilites;
-
+/**
+ * This enumeration holds the location of all the ontologies URIs web and locals one
+ */
 public enum AllTheURI {
 
-   /* EXO("https://www.unicam.it/cs/daniloquattrini/TheClothesProject#"),
-    FOAF("http://xmlns.com/foaf/0.1/"),
-    LOCAL("/owl/exoplanet-ontology.rdf"),
-    OM("http://www.ontology-of-units-of-measure.org/resource/om-2/"),
-    OM_LOCAL("/owl/om-2.0.rdf"),
+    CP("https://www.unicam.it/cs/daniloquattrini/TheClothesProject#"),
+    LOCAL("/owl/TheClothesProject.rdf"),
+    SE_LOCAL("/owl/SocietalEvent.rdf"),
+    SE("http://dbpedia.org/ontology/SocietalEvent"),
     OWL("http://www.w3.org/2002/07/owl#"),
     RDF("http://www.w3.org/1999/02/22-rdf-syntax-ns#"),
     RDFS("http://www.w3.org/2000/01/rdf-schema#"),
@@ -36,12 +37,11 @@ public enum AllTheURI {
 
     private final String URI;
 
-    OntologyURI(String URI) {
+    AllTheURI(String URI) {
         this.URI = URI;
     }
 
     public String getURI() {
         return URI;
-    }*/
-
+    }
 }

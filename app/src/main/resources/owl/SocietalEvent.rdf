@@ -94,7 +94,7 @@
     <!-- http://dbpedia.org/ontology/SocietalEvent -->
 
     <owl:Class rdf:about="http://dbpedia.org/ontology/SocietalEvent">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Event"/>
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Event"/>
     </owl:Class>
     
 
@@ -107,9 +107,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Event -->
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Event -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/ontologies/2024/6/ClothingSizeOntology#Event"/>
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Event"/>
     
 
 
