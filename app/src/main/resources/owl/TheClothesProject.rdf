@@ -345,7 +345,9 @@
 
     <!-- http://dbpedia.org/ontology/Event -->
 
-    <owl:Class rdf:about="http://dbpedia.org/ontology/Event"/>
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Event">
+        <rdfs:label>Event</rdfs:label>
+    </owl:Class>
     
 
 
@@ -452,6 +454,7 @@
             <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Tie"/>
             <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Umbrella"/>
         </owl:disjointUnionOf>
+        <rdfs:label>Accessory</rdfs:label>
     </owl:Class>
     
 
@@ -460,6 +463,7 @@
 
     <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#AccessorySize">
         <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ClothesSize"/>
+        <rdfs:label>AccessorySize</rdfs:label>
     </owl:Class>
     
 
@@ -468,6 +472,7 @@
 
     <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Bag">
         <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Accessory"/>
+        <rdfs:label>Bag</rdfs:label>
     </owl:Class>
     
 
@@ -476,6 +481,7 @@
 
     <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Belt">
         <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Accessory"/>
+        <rdfs:label>Belt</rdfs:label>
     </owl:Class>
     
 
@@ -484,6 +490,7 @@
 
     <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Boot">
         <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Shoes"/>
+        <rdfs:label>Boot</rdfs:label>
     </owl:Class>
     
 
@@ -492,6 +499,7 @@
 
     <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Bracelet">
         <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Jewellery"/>
+        <rdfs:label>Bracelet</rdfs:label>
     </owl:Class>
     
 
@@ -554,7 +562,7 @@
 
     <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Clothes">
         <rdfs:isDefinedBy xml:lang="en">Represents the set of clothes (e.g. Skirt, Jeans, Shoes, etc.)  which is formed from multiple items. We need to abstract the posibility that a clothing item can be formed from one or multiple clothing items.</rdfs:isDefinedBy>
-        <rdfs:label xml:lang="en">Clothes</rdfs:label>
+        <rdfs:label>Clothes</rdfs:label>
     </owl:Class>
     
 
@@ -574,6 +582,7 @@
 
     <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ClothesSize">
         <rdfs:comment>These are all the clothes sizes for each type of them</rdfs:comment>
+        <rdfs:label>ClothesSize</rdfs:label>
     </owl:Class>
     
 
@@ -596,6 +605,7 @@
                 <owl:hasValue rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Winter"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>Coat</rdfs:label>
     </owl:Class>
     
 
@@ -638,6 +648,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <rdfs:label>Dress</rdfs:label>
     </owl:Class>
     
 
@@ -646,6 +657,7 @@
 
     <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Earrings">
         <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Jewellery"/>
+        <rdfs:label>Earrings</rdfs:label>
     </owl:Class>
     
 
@@ -695,6 +707,7 @@
                 <owl:hasValue rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Leather"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>Formal</rdfs:label>
     </owl:Class>
     
 
@@ -738,6 +751,7 @@
                 <owl:hasValue rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Winter"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>Gloves</rdfs:label>
     </owl:Class>
     
 
@@ -760,6 +774,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <rdfs:label>Handbag</rdfs:label>
     </owl:Class>
     
 
@@ -774,6 +789,7 @@
                 <owl:someValuesFrom rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UnisexTarget"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>Hat</rdfs:label>
     </owl:Class>
     
 
@@ -802,6 +818,7 @@
                 <owl:someValuesFrom rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Target"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>Hoodie</rdfs:label>
     </owl:Class>
     
 
@@ -848,6 +865,7 @@
                 <owl:someValuesFrom rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UnisexTarget"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>Jeans</rdfs:label>
     </owl:Class>
     
 
@@ -862,6 +880,7 @@
                 <owl:someValuesFrom rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UnisexTarget"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>Jewellery</rdfs:label>
     </owl:Class>
     
 
@@ -877,6 +896,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>These are all the lower clothes like jeans,trousers ecc..</rdfs:comment>
+        <rdfs:label>LowerClothes</rdfs:label>
     </owl:Class>
     
 
@@ -885,6 +905,7 @@
 
     <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#LowerSize">
         <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ClothesSize"/>
+        <rdfs:label>LowerSize</rdfs:label>
     </owl:Class>
     
 
@@ -938,6 +959,7 @@
     <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#NaturalClothesMaterial">
         <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ClothesMaterial"/>
         <owl:disjointWith rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#SyntheticClothesMaterial"/>
+        <rdfs:label>NaturalClothesMaterial</rdfs:label>
     </owl:Class>
     
 
@@ -946,6 +968,7 @@
 
     <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Necklace">
         <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Jewellery"/>
+        <rdfs:label>Necklace</rdfs:label>
     </owl:Class>
     
 
@@ -978,6 +1001,7 @@
                 <owl:someValuesFrom rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Target"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>Pyjama</rdfs:label>
     </owl:Class>
     
 
@@ -994,6 +1018,7 @@
 
     <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#RegularFitTrousers">
         <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Trousers"/>
+        <rdfs:label>RegularFitTrousers</rdfs:label>
     </owl:Class>
     
 
@@ -1002,6 +1027,7 @@
 
     <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Ring">
         <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Jewellery"/>
+        <rdfs:label>Ring</rdfs:label>
     </owl:Class>
     
 
@@ -1016,6 +1042,7 @@
                 <owl:someValuesFrom rdf:resource="http://dbpedia.org/ontology/SportsEvent"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>Running</rdfs:label>
     </owl:Class>
     
 
@@ -1030,6 +1057,7 @@
                 <owl:hasValue rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Summer"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>Sandal</rdfs:label>
     </owl:Class>
     
 
@@ -1052,6 +1080,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <rdfs:label>Scarf</rdfs:label>
     </owl:Class>
     
 
@@ -1087,6 +1116,7 @@
                 <owl:hasValue rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Summer"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>Shirt</rdfs:label>
     </owl:Class>
     
 
@@ -1095,6 +1125,7 @@
 
     <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoeSize">
         <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ClothesSize"/>
+        <rdfs:label>ShoeSize</rdfs:label>
     </owl:Class>
     
 
@@ -1115,6 +1146,7 @@
             <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Sandal"/>
             <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Sneakers"/>
         </owl:disjointUnionOf>
+        <rdfs:label>Shoes</rdfs:label>
     </owl:Class>
     
 
@@ -1129,6 +1161,7 @@
                 <owl:someValuesFrom rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UnisexTarget"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>ShoulderBag</rdfs:label>
     </owl:Class>
     
 
@@ -1137,6 +1170,7 @@
 
     <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#SkinnyFitTrousers">
         <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Trousers"/>
+        <rdfs:label>SkinnyFitTrousers</rdfs:label>
     </owl:Class>
     
 
@@ -1157,6 +1191,7 @@
                 <owl:someValuesFrom rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#WomanClothes"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>Skirt</rdfs:label>
     </owl:Class>
     
 
@@ -1165,6 +1200,7 @@
 
     <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#SlimFitTrousers">
         <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Trousers"/>
+        <rdfs:label>SlimFitTrousers</rdfs:label>
     </owl:Class>
     
 
@@ -1179,6 +1215,7 @@
                 <owl:someValuesFrom rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Club"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>Sneakers</rdfs:label>
     </owl:Class>
     
 
@@ -1199,6 +1236,7 @@
                 <owl:someValuesFrom rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UnisexTarget"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>Socks</rdfs:label>
     </owl:Class>
     
 
@@ -1213,6 +1251,7 @@
                 <owl:hasValue rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Summer"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>Sunglasses</rdfs:label>
     </owl:Class>
     
 
@@ -1221,6 +1260,7 @@
 
     <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#SyntheticClothesMaterial">
         <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ClothesMaterial"/>
+        <rdfs:label>SyntheticClothesMaterial</rdfs:label>
     </owl:Class>
     
 
@@ -1235,6 +1275,7 @@
                 <owl:someValuesFrom rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Pattern"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>TShirt</rdfs:label>
     </owl:Class>
     
 
@@ -1299,6 +1340,7 @@
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <rdfs:label>Tie</rdfs:label>
     </owl:Class>
     
 
@@ -1318,6 +1360,7 @@
             <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#SkinnyFitTrousers"/>
             <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#SlimFitTrousers"/>
         </owl:disjointUnionOf>
+        <rdfs:label>Trousers</rdfs:label>
     </owl:Class>
     
 
@@ -1326,6 +1369,7 @@
 
     <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Umbrella">
         <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Accessory"/>
+        <rdfs:label>Umbrella</rdfs:label>
     </owl:Class>
     
 
@@ -1334,6 +1378,7 @@
 
     <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Underpants">
         <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Underwear"/>
+        <rdfs:label>Underpants</rdfs:label>
     </owl:Class>
     
 
@@ -1346,6 +1391,7 @@
             <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Socks"/>
             <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Underpants"/>
         </owl:disjointUnionOf>
+        <rdfs:label>Underwear</rdfs:label>
     </owl:Class>
     
 
@@ -1369,6 +1415,7 @@
             </owl:Class>
         </rdfs:subClassOf>
         <rdfs:comment>This is the target for every type of genderdefined that have age between 18 and 65 years old</rdfs:comment>
+        <rdfs:label>UnisexTarget</rdfs:label>
     </owl:Class>
     
 
@@ -1384,6 +1431,7 @@
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment>These are all the upper clothes like tshirt, shirt, coat ecc..</rdfs:comment>
+        <rdfs:label>UpperClothes</rdfs:label>
     </owl:Class>
     
 
@@ -1392,6 +1440,7 @@
 
     <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperClothingSize">
         <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ClothesSize"/>
+        <rdfs:label>UpperClothingSize</rdfs:label>
     </owl:Class>
     
 
@@ -1456,6 +1505,7 @@
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Acrylic_fiber">
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#SyntheticClothesMaterial"/>
         <hasChemicalMaterial>acrylonitrile</hasChemicalMaterial>
+        <rdfs:label>Acrylic_fiber</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1465,6 +1515,7 @@
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Autumn">
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Season"/>
         <owl:sameAs rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Fall"/>
+        <rdfs:label>Autumn</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1480,6 +1531,7 @@
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Black">
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Colour"/>
         <hasColorHex>000000</hasColorHex>
+        <rdfs:label>Black</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1489,6 +1541,7 @@
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Blue">
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Colour"/>
         <hasColorHex>0000FF</hasColorHex>
+        <rdfs:label>Blue</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1498,6 +1551,7 @@
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Cashmere_wool">
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#NaturalClothesMaterial"/>
         <hasSourceFromAnimal>Goat</hasSourceFromAnimal>
+        <rdfs:label>Cashmere_wool</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1515,6 +1569,7 @@
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#CoinDot">
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Pattern"/>
         <ontology:thumbnail rdf:resource="https://cdn.shopify.com/s/files/1/0657/6052/6551/files/counterchange-pattern-thumb-2.png"/>
+        <rdfs:label>CoinDot</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1532,6 +1587,7 @@
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Cotton">
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#NaturalClothesMaterial"/>
         <hasSourceFromPlant>Cotton plant</hasSourceFromPlant>
+        <rdfs:label>Cotton</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1541,6 +1597,7 @@
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#DiamondPattern">
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Pattern"/>
         <ontology:thumbnail rdf:resource="https://cdn.shopify.com/s/files/1/0657/6052/6551/files/diamond-pattern-300x299.png"/>
+        <rdfs:label>DiamondPattern</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1550,6 +1607,7 @@
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#EU36">
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoeSize"/>
         <hasSize>EU36</hasSize>
+        <rdfs:label>EU36</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1559,6 +1617,7 @@
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#EU37">
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoeSize"/>
         <hasSize>EU37</hasSize>
+        <rdfs:label>EU37</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1568,6 +1627,7 @@
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#EU38">
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoeSize"/>
         <hasSize>EU38</hasSize>
+        <rdfs:label>EU38</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1577,6 +1637,7 @@
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#EU39">
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoeSize"/>
         <hasSize>EU39</hasSize>
+        <rdfs:label>EU39</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1586,6 +1647,7 @@
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#EU40">
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoeSize"/>
         <hasSize>EU40</hasSize>
+        <rdfs:label>EU40</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1595,6 +1657,7 @@
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#EU41">
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoeSize"/>
         <hasSize>EU41</hasSize>
+        <rdfs:label>EU41</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1604,6 +1667,7 @@
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#EU42">
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoeSize"/>
         <hasSize>EU42</hasSize>
+        <rdfs:label>EU42</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1613,6 +1677,7 @@
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#EU43">
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoeSize"/>
         <hasSize>EU43</hasSize>
+        <rdfs:label>EU43</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1622,6 +1687,7 @@
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#EU44">
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoeSize"/>
         <hasSize>EU44</hasSize>
+        <rdfs:label>EU44</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1631,6 +1697,7 @@
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#EU45">
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoeSize"/>
         <hasSize>EU45</hasSize>
+        <rdfs:label>EU45</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1641,6 +1708,7 @@
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#SyntheticClothesMaterial"/>
         <owl:sameAs rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Spandex"/>
         <hasChemicalMaterial>segmented polyurethane</hasChemicalMaterial>
+        <rdfs:label>Elastan</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1657,6 +1725,7 @@
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Season"/>
         <SeasonHasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#gMonthDay">--12-20</SeasonHasEnd>
         <SeasonHasStart rdf:datatype="http://www.w3.org/2001/XMLSchema#gMonthDay">--10-21</SeasonHasStart>
+        <rdfs:label>Fall</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1678,6 +1747,7 @@
         <hasSourceFromAnimal>Mink</hasSourceFromAnimal>
         <hasSourceFromAnimal>Rabbit</hasSourceFromAnimal>
         <hasSourceFromAnimal>Sable</hasSourceFromAnimal>
+        <rdfs:label>Fur</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1687,6 +1757,7 @@
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Gingham">
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Pattern"/>
         <ontology:thumbnail rdf:resource="https://cdn.shopify.com/s/files/1/0657/6052/6551/files/gingham-pattern-thumb.png"/>
+        <rdfs:label>Gingham</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1696,6 +1767,7 @@
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Green">
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Colour"/>
         <hasColorHex>00FF00</hasColorHex>
+        <rdfs:label>Green</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1706,6 +1778,7 @@
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#AccessorySize"/>
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperClothingSize"/>
         <hasSize>L</hasSize>
+        <rdfs:label>L</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1715,6 +1788,7 @@
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Leather">
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#NaturalClothesMaterial"/>
         <hasSourceFromAnimal>Cow</hasSourceFromAnimal>
+        <rdfs:label>Leather</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1724,6 +1798,7 @@
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Linen">
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#NaturalClothesMaterial"/>
         <hasSourceFromPlant>Linen Plant</hasSourceFromPlant>
+        <rdfs:label>Linen</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1734,6 +1809,7 @@
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#SyntheticClothesMaterial"/>
         <owl:sameAs rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Spandex"/>
         <hasChemicalMaterial>segmented polyurethane</hasChemicalMaterial>
+        <rdfs:label>Lycra</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1750,6 +1826,7 @@
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#AccessorySize"/>
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperClothingSize"/>
         <hasSize>M</hasSize>
+        <rdfs:label>M</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1767,6 +1844,7 @@
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Mohair">
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#NaturalClothesMaterial"/>
         <hasSourceFromAnimal>Angora goat</hasSourceFromAnimal>
+        <rdfs:label>Mohair</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1776,6 +1854,7 @@
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Nylon">
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#SyntheticClothesMaterial"/>
         <hasChemicalMaterial>nylon polymer chips</hasChemicalMaterial>
+        <rdfs:label>Nylon</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1785,6 +1864,7 @@
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Paisley">
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Pattern"/>
         <ontology:thumbnail rdf:resource="https://cdn.shopify.com/s/files/1/0657/6052/6551/files/paisley-pattern-thumb.png"/>
+        <rdfs:label>Paisley</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1802,6 +1882,7 @@
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Pink">
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Colour"/>
         <hasColorHex>FFC0CB</hasColorHex>
+        <rdfs:label>Pink</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1811,6 +1892,7 @@
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Plaid">
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Pattern"/>
         <ontology:thumbnail rdf:resource="https://as1.ftcdn.net/v2/jpg/02/98/04/52/1000_F_298045204_OjJqLYWHOEmaDPLURhec7qEfmsw2eHRs.jpg"/>
+        <rdfs:label>Plaid</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1822,6 +1904,7 @@
         <hasChemicalMaterial>Ethyleneglycol</hasChemicalMaterial>
         <hasChemicalMaterial>Polyethylene Terephthalate</hasChemicalMaterial>
         <hasChemicalMaterial>Terephthalic Acid</hasChemicalMaterial>
+        <rdfs:label>Polyester</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1831,6 +1914,7 @@
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Purple">
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Colour"/>
         <hasColorHex>800080</hasColorHex>
+        <rdfs:label>Purple</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1840,6 +1924,7 @@
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Red">
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Colour"/>
         <hasColorHex>FF0000</hasColorHex>
+        <rdfs:label>Red</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1850,6 +1935,7 @@
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#AccessorySize"/>
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperClothingSize"/>
         <hasSize>S</hasSize>
+        <rdfs:label>S</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1859,6 +1945,7 @@
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Silk">
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#NaturalClothesMaterial"/>
         <hasSourceFromAnimal>Silkworm</hasSourceFromAnimal>
+        <rdfs:label>Silk</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1867,6 +1954,7 @@
 
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Spandex">
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#SyntheticClothesMaterial"/>
+        <rdfs:label>Spandex</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1877,6 +1965,7 @@
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Season"/>
         <SeasonHasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#gMonthDay">--06-21</SeasonHasEnd>
         <SeasonHasStart rdf:datatype="http://www.w3.org/2001/XMLSchema#gMonthDay">--02-22</SeasonHasStart>
+        <rdfs:label>Spring</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1886,6 +1975,7 @@
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Stripes">
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Pattern"/>
         <ontology:thumbnail rdf:resource="https://as1.ftcdn.net/v2/jpg/02/95/17/06/1000_F_295170647_8K1XMDlkmnmb0RsrVOt5ovcBX7pIBXz9.jpg"/>
+        <rdfs:label>Stripes</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1896,60 +1986,7 @@
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Season"/>
         <SeasonHasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#gMonthDay">--10-22</SeasonHasEnd>
         <SeasonHasStart rdf:datatype="http://www.w3.org/2001/XMLSchema#gMonthDay">--06-21</SeasonHasStart>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#US10 -->
-
-    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#US10">
-        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoeSize"/>
-        <hasSize>US10</hasSize>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#US11 -->
-
-    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#US11">
-        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoeSize"/>
-        <hasSize>US11</hasSize>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#US12 -->
-
-    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#US12">
-        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoeSize"/>
-        <hasSize>US12</hasSize>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#US7 -->
-
-    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#US7">
-        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoeSize"/>
-        <hasSize>US7</hasSize>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#US8 -->
-
-    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#US8">
-        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoeSize"/>
-        <hasSize>US8</hasSize>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#US9 -->
-
-    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#US9">
-        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoeSize"/>
-        <hasSize>US9</hasSize>
+        <rdfs:label>Summer</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1959,6 +1996,7 @@
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#W28L32">
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#LowerSize"/>
         <hasSize>28x32</hasSize>
+        <rdfs:label>W28L32</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1968,6 +2006,7 @@
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#W30L32">
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#LowerSize"/>
         <hasSize>30x32</hasSize>
+        <rdfs:label>W30L32</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1977,6 +2016,7 @@
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#W32L34">
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#LowerSize"/>
         <hasSize>32x34</hasSize>
+        <rdfs:label>W32L34</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1986,6 +2026,7 @@
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#W34L34">
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#LowerSize"/>
         <hasSize>34x34</hasSize>
+        <rdfs:label>W34L34</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -1995,6 +2036,7 @@
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#W36L36">
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#LowerSize"/>
         <hasSize>36x36</hasSize>
+        <rdfs:label>W36L36</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2004,6 +2046,7 @@
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#White">
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Colour"/>
         <hasColorHex>FFFFFF</hasColorHex>
+        <rdfs:label>White</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2014,6 +2057,7 @@
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Season"/>
         <SeasonHasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#gMonthDay">--03-22</SeasonHasEnd>
         <SeasonHasStart rdf:datatype="http://www.w3.org/2001/XMLSchema#gMonthDay">--12-21</SeasonHasStart>
+        <rdfs:label>Winter</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2023,6 +2067,7 @@
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Wool">
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#NaturalClothesMaterial"/>
         <hasSourceFromAnimal>Sheep</hasSourceFromAnimal>
+        <rdfs:label>Wool</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2033,6 +2078,7 @@
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#AccessorySize"/>
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperClothingSize"/>
         <hasSize>XL</hasSize>
+        <rdfs:label>XL</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2042,6 +2088,7 @@
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#XS">
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperClothingSize"/>
         <hasSize>XS</hasSize>
+        <rdfs:label>XS</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2051,6 +2098,7 @@
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#XXL">
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperClothingSize"/>
         <hasSize>XXL</hasSize>
+        <rdfs:label>XXL</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2060,6 +2108,7 @@
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#XXXL">
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperClothingSize"/>
         <hasSize>XXXL</hasSize>
+        <rdfs:label>XXXL</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2069,6 +2118,7 @@
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Yellow">
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Colour"/>
         <hasColorHex>FFFF00</hasColorHex>
+        <rdfs:label>Yellow</rdfs:label>
     </owl:NamedIndividual>
     
 
@@ -2087,9 +2137,18 @@
     <rdf:Description rdf:about="http://dbpedia.org/ontology/data/definitions.ttl">
         <terms:describes rdf:resource="http://dbpedia.org/ontology/SocietalEvent"/>
     </rdf:Description>
+    <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ClothesMaterial">
+        <rdfs:label>ClothesMaterial</rdfs:label>
+    </rdf:Description>
     <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Colour">
         <rdfs:comment xml:lang="en">That&apos;s cointain all the main colors of the clothes</rdfs:comment>
         <rdfs:label xml:lang="en">Colours</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Female">
+        <rdfs:label>Female</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Male">
+        <rdfs:label>Male</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Pattern">
         <rdfs:label xml:lang="en">Clothes pattern</rdfs:label>

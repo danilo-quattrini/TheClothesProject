@@ -33,11 +33,11 @@ public enum SelectDataQueries implements SPARQLqueries {
     LOWER_SIZES("SELECT DISTINCT ?lowersizes  WHERE { ?lowersizes rdf:type cp:LowerSize}"),
     SHOES_SIZES("SELECT DISTINCT ?shoesize  WHERE { ?shoesize rdf:type cp:ShoeSize}"),
     ACCESORY_SIZES("SELECT DISTINCT ?accessoysize  WHERE { ?accessoysize rdf:type cp:AccessorySize}"),
-    CLOTHES_LIST("SELECT ?clothes  WHERE { ?accessoysize rdf:subClassOf cp:Clothes} "),
+    CLOTHES_LIST("SELECT ?clothes  WHERE { ?clothes rdf:subClassOf cp:Clothes} "),
     SYNTHETIC_LIST("SELECT ?synthetic  WHERE { ?synthetic rdf:type cp:SyntheticClothesMaterial} "),
-    NATURAL_LIST("SELECT ?synthetic  WHERE { ?synthetic rdf:type cp:NaturalClothesMaterial} "),
-    SEASON_LIST("SELECT ?season WHERE { ?season rdf:type cp:Season }"),;
-
+    NATURAL_LIST("SELECT ?natural  WHERE { ?natural rdf:type cp:NaturalClothesMaterial} "),
+    SEASON_LIST("SELECT ?season WHERE { ?season rdf:type cp:Season }"),
+    SELECT_CLOTHES("SELECT ?label ?value WHERE { ?clothes rdf:type cp:subClassOf. BIND(?clothes AS ?label) . ?clothes rdfs:label ?value . FILTER(STRSTARTS(?value, \"%s\")) }");
 
     private final String sparqlQuery;
 
