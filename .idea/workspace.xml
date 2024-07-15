@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5aa5aaa-134f-4c88-89b2-12ed635acc6c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/utilites/SPARQLqueries.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/SPARQLqueries/ExecuteQueries.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/SPARQLqueries/SelectDataQueries.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/utilites/AllTheURI.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/utilites/AllTheURI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/owl/SocietalEvent.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/owl/SocietalEvent.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/owl/SocietalEvent.rdf" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/owl/SocietalEvent.rdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/owl/TheClothesProject.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/owl/TheClothesProject.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/owl/TheClothesProject.rdf" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/owl/TheClothesProject.rdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/utilites/SPARQLqueries.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/SPARQLqueries/SPARQLqueries.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/resources/owl/catalog-v001.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/owl/catalog-v001.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,9 +25,17 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
-            <expand />
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="it.unicam.cs.mgc.TheClothesProject" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
             <select />
           </tree_state>
         </projects_view>
@@ -39,9 +45,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
-        <option value="Enum" />
         <option value="Interface" />
+        <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -60,35 +66,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Gradle.Download Sources.executor": "Run",
-    "Gradle.TheOntologyProject [app:run].executor": "Run",
-    "Gradle.TheOntologyProject [build].executor": "Run",
-    "Gradle.TheOntologyProject [builf].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/danil/Documents/University/Modellazione/TheOntologyProject",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "copyright.profiles",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TheOntologyProject [app:run].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TheOntologyProject [build].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.TheOntologyProject [builf].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/danil/Documents/University/Modellazione/TheOntologyProject&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;copyright.profiles&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "kotlin-gradle-user-dirs": [
-      "C:\\Users\\danil\\.gradle"
+  &quot;keyToStringList&quot;: {
+    &quot;kotlin-gradle-user-dirs&quot;: [
+      &quot;C:\\Users\\danil\\.gradle&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\danil\Documents\University\Modellazione\TheOntologyProject\app\src\main\resources\owl" />
@@ -97,11 +103,11 @@
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="gradlew builf" />
-      <command value="gradlew build" />
       <command value="gradlew app:run" />
+      <command value="gradlew build" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.TheOntologyProject [app:run]">
+  <component name="RunManager" selected="Gradle.TheOntologyProject [build]">
     <configuration name="TheOntologyProject [app:run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -198,7 +204,8 @@
       <workItem from="1720782199123" duration="604000" />
       <workItem from="1720881034316" duration="4168000" />
       <workItem from="1720888678465" duration="2660000" />
-      <workItem from="1720946162840" duration="2479000" />
+      <workItem from="1720946162840" duration="5315000" />
+      <workItem from="1721028831909" duration="7511000" />
     </task>
     <servers />
   </component>

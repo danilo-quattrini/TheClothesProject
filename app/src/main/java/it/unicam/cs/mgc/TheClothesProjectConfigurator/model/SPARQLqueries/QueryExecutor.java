@@ -20,10 +20,25 @@
  * SOFTWARE.
  */
 
-package it.unicam.cs.mgc.TheClothesProjectConfigurator;
+package it.unicam.cs.mgc.TheClothesProjectConfigurator.model.SPARQLqueries;
 
-public class App {
-    public static void main(String[] args) {
+import org.apache.jena.query.Query;
+import org.apache.jena.query.QueryExecution;
+import org.apache.jena.query.QueryExecutionFactory;
+import org.apache.jena.query.QueryFactory;
+import org.apache.jena.rdf.model.Model;
 
+public class QueryExecutor implements ExecuteQueries{
+
+    @Override
+    public QueryExecution perform(SPARQLqueries query, Model model) {
+        Query queryToPerform = QueryFactory.create(query.getFullQuery());
+        return QueryExecutionFactory.create(queryToPerform, model);
+    }
+
+    @Override
+    public QueryExecution perform(SPARQLqueries query, Model model, Object... args) {
+        Query queryToPerform = QueryFactory.create(query.getFullQuery());
+        return QueryExecutionFactory.create(queryToPerform, model);
     }
 }

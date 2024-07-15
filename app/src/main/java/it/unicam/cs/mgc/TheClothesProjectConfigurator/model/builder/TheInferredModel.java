@@ -20,7 +20,7 @@
  * SOFTWARE.
  */
 
-package it.unicam.cs.mgc.TheClothesProjectConfigurator.builder;
+package it.unicam.cs.mgc.TheClothesProjectConfigurator.model.builder;
 
 import org.apache.jena.rdf.model.*;
 import org.apache.jena.reasoner.Reasoner;

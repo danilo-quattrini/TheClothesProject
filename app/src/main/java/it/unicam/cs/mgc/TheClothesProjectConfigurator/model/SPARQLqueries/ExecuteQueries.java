@@ -20,28 +20,33 @@
  * SOFTWARE.
  */
 
-package it.unicam.cs.mgc.TheClothesProjectConfigurator.utilites;
+
+package it.unicam.cs.mgc.TheClothesProjectConfigurator.model.SPARQLqueries;
+import org.apache.jena.query.QueryExecution;
+import org.apache.jena.rdf.model.Model;
+
 /**
- * This enumeration holds the location of all the ontologies URIs web and locals one
+ * Classes implementing this interface are used to execute SPARQL query on an ontology.
  */
-public enum AllTheURI {
+public interface ExecuteQueries {
+    /**
+     * Performs a Sparql query on the given model.
+     *
+     * @param query the query to perform
+     * @param model the target of the query
+     * @return the query execution
+     */
+    QueryExecution perform(SPARQLqueries query, Model model);
 
-    CP("https://www.unicam.it/cs/daniloquattrini/TheClothesProject#"),
-    LOCAL("/owl/TheClothesProject.rdf"),
-    SE_LOCAL("/owl/SocietalEvent.rdf"),
-    SE("http://dbpedia.org/ontology/SocietalEvent"),
-    OWL("http://www.w3.org/2002/07/owl#"),
-    RDF("http://www.w3.org/1999/02/22-rdf-syntax-ns#"),
-    RDFS("http://www.w3.org/2000/01/rdf-schema#"),
-    XSD("http://www.w3.org/2001/XMLSchema#");
+    /**
+     * Performs a parameterized Sparql query on the given model.
+     *
+     * @param query the query to perform
+     * @param model the target of the query
+     * @param args the arguments for the query
+     * @return the query execution
+     */
+    QueryExecution perform(SPARQLqueries query, Model model, Object... args);
 
-    private final String URI;
 
-    AllTheURI(String URI) {
-        this.URI = URI;
-    }
-
-    public String getURI() {
-        return URI;
-    }
 }

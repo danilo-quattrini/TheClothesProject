@@ -20,7 +20,7 @@
  * SOFTWARE.
  */
 
-package it.unicam.cs.mgc.TheClothesProjectConfigurator.utilites;
+package it.unicam.cs.mgc.TheClothesProjectConfigurator.model.SPARQLqueries;
 /**
  * Enumerations implementing this interface are used to represent and group SPARQL queries
  */
@@ -39,11 +39,11 @@ public interface SPARQLqueries {
      */
     String getSPARQLQuery(Object... args);
 
-    default String getCompleteQuery() {
+    default String getFullQuery() {
         return getPrefixes() + this.getSPARQLQuery();
     }
 
-    default String getCompleteQuery(Object...args) {
+    default String getFullQuery(Object...args) {
         return getPrefixes() + this.getSPARQLQuery(args);
     }
 
