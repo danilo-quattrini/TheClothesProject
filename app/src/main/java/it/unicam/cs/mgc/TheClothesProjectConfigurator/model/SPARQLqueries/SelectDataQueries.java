@@ -24,7 +24,7 @@ package it.unicam.cs.mgc.TheClothesProjectConfigurator.model.SPARQLqueries;
 
 public enum SelectDataQueries implements SPARQLqueries {
 
-    COLOR_LIST_WITH_HEX("SELECT ?individual ?value WHERE {  ?individual rdf:type cp:Colour ?individual cp:hasColorHex ?value   FILTER (isLiteral(?value))}"),
+    COLOR_LIST_WITH_HEX("SELECT ?individual ?value WHERE {  ?individual rdf:type cp:Colour. ?individual cp:hasColorHex ?value   FILTER (isLiteral(?value))}"),
     GENDER_LIST("SELECT DISTINCT ?gender WHERE { ?individual rdf:type cp:Gender .}"),
     TARGET_LIST("SELECT DISTINCT ?target WHERE { ?target rdfs:subClassOf cp:Target }"),
     EVENT_LIST("SELECT DISTINCT ?events WHERE { ?events rdfs:subClassOf cp:Event }"),
@@ -33,12 +33,12 @@ public enum SelectDataQueries implements SPARQLqueries {
     LOWER_SIZES("SELECT DISTINCT ?lowersizes  WHERE { ?lowersizes rdf:type cp:LowerSize}"),
     SHOES_SIZES("SELECT DISTINCT ?shoesize  WHERE { ?shoesize rdf:type cp:ShoeSize}"),
     ACCESORY_SIZES("SELECT DISTINCT ?accessoysize  WHERE { ?accessoysize rdf:type cp:AccessorySize}"),
-    CLOTHES_LIST("SELECT ?clothes  WHERE { ?clothes rdf:subClassOf cp:Clothes} "),
+    CLOTHES_LIST("SELECT ?clothes  WHERE { ?clothes rdfs:subClassOf cp:Clothes} "),
     SYNTHETIC_LIST("SELECT ?synthetic  WHERE { ?synthetic rdf:type cp:SyntheticClothesMaterial} "),
     NATURAL_LIST("SELECT ?natural  WHERE { ?natural rdf:type cp:NaturalClothesMaterial} "),
     SEASON_LIST("SELECT ?season WHERE { ?season rdf:type cp:Season }"),
-    SELECT_CLOTHES("SELECT ?label ?value WHERE { ?clothes rdf:type cp:subClassOf. BIND(?clothes AS ?label) . ?clothes rdfs:label ?value . FILTER(STRSTARTS(?value, \"%s\")) }");
-
+    SELECT_CLOTHES("SELECT ?label ?value WHERE { (?clothes) rdfs:subClassOf cp:Clothes. BIND(?clothes AS ?label) . ?clothes rdfs:label ?value . FILTER(STRSTARTS(?value, \"%s\")) }"),
+    SELECT_MATERIAL_NATURAL("SELECT ?label ?value WHERE { ?naturalmaterial rdf:type cp:NaturalClothesMaterial. BIND(?naturalmaterial AS ?label) . ?naturalmaterial rdfs:label ?value . FILTER(STRSTARTS(?value, \"%s\")) }");
     private final String sparqlQuery;
 
     SelectDataQueries(String sparqlQuery){

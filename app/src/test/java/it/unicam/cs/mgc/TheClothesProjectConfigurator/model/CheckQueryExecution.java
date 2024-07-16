@@ -20,7 +20,7 @@
  * SOFTWARE.
  */
 
-package it.unicam.cs.mgc.TheClothesProjectConfigurator.tester;
+package it.unicam.cs.mgc.TheClothesProjectConfigurator.model;
 import it.unicam.cs.mgc.TheClothesProjectConfigurator.model.SPARQLqueries.SelectDataQueries;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -28,5 +28,35 @@ import static org.junit.jupiter.api.Assertions.*;
 
 import java.util.Collection;
 
-public class CheckQueriesExecution {
-}
+public class CheckQueryExecution {
+
+    private  ControllerOfOntology ontology;
+
+   @BeforeEach
+    @Test
+   public void setUp() {
+        ontology = new ControllerOfOntology();
+        assertNotNull(ontology);
+    }
+
+    @Test
+    public void queryAllClothes() {
+        ParsedData data = ontology.get(SelectDataQueries.CLOTHES_LIST);
+        Collection<String> clothes = data.getAllValues();
+        assertEquals(48, clothes.size());
+    }
+
+    @Test
+    public void querySearchedClothes() {
+        ParsedData data = ontology.get(SelectDataQueries.SELECT_CLOTHES, "Hand");
+        Collection<String> clothes = data.getAllValues();
+        assertEquals(1, clothes.size());
+    }
+
+    @Test
+    public void queryClothesDetails() {
+        ParsedData data = ontology.get(SelectDataQueries.COLOR_LIST_WITH_HEX, "Black");
+        assertFalse(data.getAllValues().isEmpty());
+    }
+
+   }

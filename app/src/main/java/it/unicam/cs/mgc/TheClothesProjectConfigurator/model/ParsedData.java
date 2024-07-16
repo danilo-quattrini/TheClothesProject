@@ -20,28 +20,25 @@
  * SOFTWARE.
  */
 
-package it.unicam.cs.mgc.TheClothesProjectConfigurator.model.SPARQLqueries;
+package it.unicam.cs.mgc.TheClothesProjectConfigurator.model;
 
-import org.apache.jena.query.Query;
-import org.apache.jena.query.QueryExecution;
-import org.apache.jena.query.QueryExecutionFactory;
-import org.apache.jena.query.QueryFactory;
-import org.apache.jena.rdf.model.Model;
-
+import java.util.Collection;
 /**
- * This class is used to perform SPARQL queries on the underlying application ontology
+ * Classes implementing this interface are used to expose parsed data.
  */
-public class QueryExecutor implements ExecuteQueries{
+public interface ParsedData {
+    /**
+     * Returns the value of a specific property in the data.
+     *
+     * @param property the key value
+     * @return the value corresponding to the key
+     */
+    String getProperty(String property);
 
-    @Override
-    public QueryExecution perform(SPARQLqueries query, Model model) {
-        Query queryToPerform = QueryFactory.create(query.getFullQuery());
-        return QueryExecutionFactory.create(queryToPerform, model);
-    }
-
-    @Override
-    public QueryExecution perform(SPARQLqueries query, Model model, Object... args) {
-        Query queryToPerform = QueryFactory.create(query.getFullQuery());
-        return QueryExecutionFactory.create(queryToPerform, model);
-    }
+    /**
+     * Returns all the values from the data.
+     *
+     * @return the collection of values
+     */
+    Collection<String> getAllValues();
 }

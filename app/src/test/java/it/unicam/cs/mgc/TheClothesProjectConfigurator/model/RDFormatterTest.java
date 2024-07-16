@@ -20,28 +20,30 @@
  * SOFTWARE.
  */
 
-package it.unicam.cs.mgc.TheClothesProjectConfigurator.model.SPARQLqueries;
+package it.unicam.cs.mgc.TheClothesProjectConfigurator.model;
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
+import it.unicam.cs.mgc.TheClothesProjectConfigurator.model.utilites.FormatRDF;
+public class RDFormatterTest {
 
-import org.apache.jena.query.Query;
-import org.apache.jena.query.QueryExecution;
-import org.apache.jena.query.QueryExecutionFactory;
-import org.apache.jena.query.QueryFactory;
-import org.apache.jena.rdf.model.Model;
-
-/**
- * This class is used to perform SPARQL queries on the underlying application ontology
- */
-public class QueryExecutor implements ExecuteQueries{
-
-    @Override
-    public QueryExecution perform(SPARQLqueries query, Model model) {
-        Query queryToPerform = QueryFactory.create(query.getFullQuery());
-        return QueryExecutionFactory.create(queryToPerform, model);
+    @Test
+    public void testRemoveUselessTypes() {
+        String test = "Thing, colors, clothes, leather, NamedIndividual";
+        String result = FormatRDF.removeUselessTypes(test);
+        assertEquals("colors, clothes, leather", result);
     }
 
-    @Override
-    public QueryExecution perform(SPARQLqueries query, Model model, Object... args) {
-        Query queryToPerform = QueryFactory.create(query.getFullQuery());
-        return QueryExecutionFactory.create(queryToPerform, model);
+    @Test
+    public void testRemoveURI() {
+        String test = "http://www.w3.org/2000/01/rdf-schema#type";
+        String result = FormatRDF.removeUriPrefix(test);
+        assertEquals("type", result);
+    }
+
+    @Test
+    public void testCamelCaseToSpacedString() {
+        String test = "IsSuitableToBeDressedByTarget";
+        String result = FormatRDF.camelCaseToSpacedString(test);
+        assertEquals("is suitable to be dressed by target", result);
     }
 }

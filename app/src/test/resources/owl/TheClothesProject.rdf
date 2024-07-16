@@ -1,0 +1,2185 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#"
+     xml:base="https://www.unicam.it/cs/daniloquattrini/TheClothesProject"
+     xmlns:cp="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://open.vocab.org/terms/"
+     xmlns:ontology="http://dbpedia.org/ontology/"
+     xmlns:powder-s="http://www.w3.org/2007/05/powder-s#">
+    <owl:Ontology rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject">
+        <owl:imports rdf:resource="https://dbpedia.org/ontology/SocietalEvent"/>
+        <dc:creator xml:lang="en">Danilo Quattrini</dc:creator>
+        <dc:date rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2024-06-02</dc:date>
+        <rdfs:comment xml:lang="en">This is an ontology usefull for create your clothes and styles</rdfs:comment>
+        <rdfs:label xml:lang="en">The Clothes Project</rdfs:label>
+        <owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</owl:versionInfo>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/ontology/thumbnail -->
+
+    <owl:AnnotationProperty rdf:about="http://dbpedia.org/ontology/thumbnail"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#anyURI -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#gMonthDay -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#gMonthDay"/>
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#gYearMonth -->
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#gYearMonth"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/ontology/participatingIn -->
+
+    <owl:ObjectProperty rdf:about="http://dbpedia.org/ontology/participatingIn">
+        <rdfs:range rdf:resource="http://dbpedia.org/ontology/SocietalEvent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#EventHasSuitableClothingForDressing -->
+
+    <owl:ObjectProperty rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#EventHasSuitableClothingForDressing">
+        <owl:inverseOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#IsSuitableToBeDressedByEvent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#GenderHasSuitableClothingForDressing -->
+
+    <owl:ObjectProperty rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#GenderHasSuitableClothingForDressing">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#isSuitableToBeDressedByGender"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#HasColor -->
+
+    <owl:ObjectProperty rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#HasColor">
+        <rdfs:domain rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Clothes"/>
+        <rdfs:range rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Colour"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#HasMaterialComposition -->
+
+    <owl:ObjectProperty rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#HasMaterialComposition">
+        <rdfs:domain rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Clothes"/>
+        <rdfs:range rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ClothesMaterial"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#HasPattern -->
+
+    <owl:ObjectProperty rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#HasPattern">
+        <rdfs:domain rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Clothes"/>
+        <rdfs:range rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Pattern"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#HasSize -->
+
+    <owl:ObjectProperty rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#HasSize">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Clothes"/>
+        <rdfs:range rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ClothesSize"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#IsSuitableToBeDressedByEvent -->
+
+    <owl:ObjectProperty rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#IsSuitableToBeDressedByEvent">
+        <rdfs:domain rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Clothes"/>
+        <rdfs:range rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Event"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#IsSuitableToBeDressedByTarget -->
+
+    <owl:ObjectProperty rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#IsSuitableToBeDressedByTarget">
+        <owl:inverseOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#TargetHasSuitableClothingForDressing"/>
+        <rdfs:domain rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Clothes"/>
+        <rdfs:range rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Target"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#SeasonHasSuitableClothingForDressing -->
+
+    <owl:ObjectProperty rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#SeasonHasSuitableClothingForDressing">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#isSuitableToBeDressedBySeason"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#TargetHasSuitableClothingForDressing -->
+
+    <owl:ObjectProperty rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#TargetHasSuitableClothingForDressing"/>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#isSuitableToBeDressedByGender -->
+
+    <owl:ObjectProperty rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#isSuitableToBeDressedByGender">
+        <rdfs:domain rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Clothes"/>
+        <rdfs:range rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Gender"/>
+        <rdfs:comment xml:lang="en">This property specifies the genre(s) for which a clothing item is suitable for. We need to make this general enough since some clothing items can be suitable for both sexes.</rdfs:comment>
+        <rdfs:label xml:lang="en">Is suitable to be dressed by the gender</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#isSuitableToBeDressedBySeason -->
+
+    <owl:ObjectProperty rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#isSuitableToBeDressedBySeason">
+        <rdfs:domain rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Clothes"/>
+        <rdfs:range rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Season"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#SeasonHasEnd -->
+
+    <owl:DatatypeProperty rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#SeasonHasEnd">
+        <rdfs:domain rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Season"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gMonthDay"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#SeasonHasStart -->
+
+    <owl:DatatypeProperty rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#SeasonHasStart">
+        <rdfs:domain rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Season"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#gMonthDay"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#hasAge -->
+
+    <owl:DatatypeProperty rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#hasAge">
+        <rdfs:domain rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Target"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#hasChemicalMaterial -->
+
+    <owl:DatatypeProperty rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#hasChemicalMaterial">
+        <rdfs:domain rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#SyntheticClothesMaterial"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#hasColorHex -->
+
+    <owl:DatatypeProperty rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#hasColorHex">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Colour"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#hasSize -->
+
+    <owl:DatatypeProperty rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#hasSize">
+        <rdfs:domain rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ClothesSize"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#hasSourceFromAnimal -->
+
+    <owl:DatatypeProperty rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#hasSourceFromAnimal">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#NaturalClothesMaterial"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#hasSourceFromPlant -->
+
+    <owl:DatatypeProperty rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#hasSourceFromPlant">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#NaturalClothesMaterial"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/ontology/AcademicConference -->
+
+    <rdf:Description rdf:about="http://dbpedia.org/ontology/AcademicConference">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SocietalEvent"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Attack -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Attack">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SocietalEvent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Convention -->
+
+    <rdf:Description rdf:about="http://dbpedia.org/ontology/Convention">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SocietalEvent"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Election -->
+
+    <rdf:Description rdf:about="http://dbpedia.org/ontology/Election">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SocietalEvent"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Event -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Event">
+        <rdfs:label>Event</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/FilmFestival -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/FilmFestival">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SocietalEvent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/HistoricalEvent -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/HistoricalEvent">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SocietalEvent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Meeting -->
+
+    <rdf:Description rdf:about="http://dbpedia.org/ontology/Meeting">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SocietalEvent"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://dbpedia.org/ontology/MilitaryConflict -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/MilitaryConflict">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SocietalEvent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/MusicFestival -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/MusicFestival">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SocietalEvent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Rebellion -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Rebellion">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SocietalEvent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/SocietalEvent -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/SocietalEvent">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/Event"/>
+        <rdfs:comment xml:lang="en">an event that is clearly different from strictly personal events</rdfs:comment>
+        <rdfs:comment xml:lang="ur">ایک ایسا واقعہ جو سختی سے ذاتی واقعات سے واضح طور پر مختلف ہو</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://dbpedia.org/ontology/"/>
+        <rdfs:label xml:lang="de">gesellschatliches Ereignis</rdfs:label>
+        <rdfs:label xml:lang="nl">maatschappelijke gebeurtenis</rdfs:label>
+        <rdfs:label xml:lang="en">societal event</rdfs:label>
+        <rdfs:label xml:lang="fr">évènement collectif</rdfs:label>
+        <rdfs:label xml:lang="ur">معاشرتی واقعہ</rdfs:label>
+        <powder-s:describedby rdf:resource="http://dbpedia.org/ontology/data/definitions.ttl"/>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:SocietalEvent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/SpaceMission -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/SpaceMission">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SocietalEvent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/SportsEvent -->
+
+    <rdf:Description rdf:about="http://dbpedia.org/ontology/SportsEvent">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SocietalEvent"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Accessory -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Accessory">
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Clothes"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#HasSize"/>
+                <owl:someValuesFrom rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#AccessorySize"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Target"/>
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Bag"/>
+            <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Belt"/>
+            <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Hat"/>
+            <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Jewellery"/>
+            <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Scarf"/>
+            <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Sunglasses"/>
+            <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Tie"/>
+            <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Umbrella"/>
+        </owl:disjointUnionOf>
+        <rdfs:label>Accessory</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#AccessorySize -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#AccessorySize">
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ClothesSize"/>
+        <rdfs:label>AccessorySize</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Bag -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Bag">
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Accessory"/>
+        <rdfs:label>Bag</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Belt -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Belt">
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Accessory"/>
+        <rdfs:label>Belt</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Boot -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Boot">
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Shoes"/>
+        <rdfs:label>Boot</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Bracelet -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Bracelet">
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Jewellery"/>
+        <rdfs:label>Bracelet</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#BusinessMeeting -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#BusinessMeeting">
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#CharacteristicOfClothes -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#CharacteristicOfClothes">
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ClothesMaterial"/>
+            <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ClothesSize"/>
+            <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Colour"/>
+            <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Pattern"/>
+        </owl:disjointUnionOf>
+        <rdfs:comment>These class containb the main characteristic of clothes that we wanto to give to them</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ChildrenClothes -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ChildrenClothes">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Target"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#hasAge"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</xsd:minInclusive>
+                                    </rdf:Description>
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment>This is the target for only children that have age between 4 and 12 years old</rdfs:comment>
+        <rdfs:label>ChildrenTarget</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Clothes -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Clothes">
+        <rdfs:isDefinedBy xml:lang="en">Represents the set of clothes (e.g. Skirt, Jeans, Shoes, etc.)  which is formed from multiple items. We need to abstract the posibility that a clothing item can be formed from one or multiple clothing items.</rdfs:isDefinedBy>
+        <rdfs:label>Clothes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ClothesMaterial -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ClothesMaterial">
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#NaturalClothesMaterial"/>
+            <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#SyntheticClothesMaterial"/>
+        </owl:disjointUnionOf>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ClothesSize -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ClothesSize">
+        <rdfs:comment>These are all the clothes sizes for each type of them</rdfs:comment>
+        <rdfs:label>ClothesSize</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Club -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Club">
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Coat -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Coat">
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperClothes"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#isSuitableToBeDressedBySeason"/>
+                <owl:hasValue rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Winter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Coat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Colour -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Colour">
+        <owl:disjointWith rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Gender"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#DinnerParty -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#DinnerParty">
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Dress -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Dress">
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperClothes"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#IsSuitableToBeDressedByEvent"/>
+                        <owl:someValuesFrom rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Club"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#IsSuitableToBeDressedByEvent"/>
+                        <owl:someValuesFrom rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Wedding"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#IsSuitableToBeDressedByTarget"/>
+                        <owl:someValuesFrom rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#WomanClothes"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label>Dress</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Earrings -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Earrings">
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Jewellery"/>
+        <rdfs:label>Earrings</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Event -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Event">
+        <rdfs:comment xml:lang="en">That&apos;s the class that describe all the event possible</rdfs:comment>
+        <rdfs:label>List of Events</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Female -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Female">
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Gender"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Formal -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Formal">
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Shoes"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#IsSuitableToBeDressedByEvent"/>
+                <owl:someValuesFrom rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#BusinessMeeting"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#IsSuitableToBeDressedByEvent"/>
+                <owl:someValuesFrom rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Funeral"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#IsSuitableToBeDressedByEvent"/>
+                <owl:someValuesFrom rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Wedding"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#HasMaterialComposition"/>
+                <owl:hasValue rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Leather"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Formal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Funeral -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Funeral">
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Gender -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Gender">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Female"/>
+                    <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Male"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Female"/>
+            <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Male"/>
+        </owl:disjointUnionOf>
+        <rdfs:comment xml:lang="en">This class describe all the gender and their restriction</rdfs:comment>
+        <rdfs:label>Genders</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Gloves -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Gloves">
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Accessory"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#isSuitableToBeDressedBySeason"/>
+                <owl:hasValue rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Winter"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Gloves</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Handbag -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Handbag">
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Bag"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#IsSuitableToBeDressedByTarget"/>
+                        <owl:someValuesFrom rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#WomanClothes"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#isSuitableToBeDressedByGender"/>
+                        <owl:someValuesFrom rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Female"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label>Handbag</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Hat -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Hat">
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Accessory"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#IsSuitableToBeDressedByTarget"/>
+                <owl:someValuesFrom rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UnisexTarget"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Hat</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Hoodie -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Hoodie">
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperClothes"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#isSuitableToBeDressedBySeason"/>
+                        <owl:hasValue rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Autumn"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#isSuitableToBeDressedBySeason"/>
+                        <owl:hasValue rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Winter"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#IsSuitableToBeDressedByTarget"/>
+                <owl:someValuesFrom rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Target"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Hoodie</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#InfantClothes -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#InfantClothes">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Target"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#hasAge"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</xsd:minInclusive>
+                                    </rdf:Description>
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment>This is the target for only infant yhat have age between 0 and 3 years old</rdfs:comment>
+        <rdfs:label>InfantTarget</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Jeans -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Jeans">
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#LowerClothes"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#IsSuitableToBeDressedByTarget"/>
+                <owl:someValuesFrom rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UnisexTarget"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Jeans</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Jewellery -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Jewellery">
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Accessory"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#IsSuitableToBeDressedByTarget"/>
+                <owl:someValuesFrom rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UnisexTarget"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Jewellery</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#LowerClothes -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#LowerClothes">
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Clothes"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#HasSize"/>
+                <owl:someValuesFrom rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#LowerSize"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>These are all the lower clothes like jeans,trousers ecc..</rdfs:comment>
+        <rdfs:label>LowerClothes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#LowerSize -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#LowerSize">
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ClothesSize"/>
+        <rdfs:label>LowerSize</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Male -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Male">
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Gender"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#MenClothes -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#MenClothes">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Target"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#isSuitableToBeDressedByGender"/>
+                        <owl:hasValue rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Male"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#hasAge"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</xsd:minExclusive>
+                                    </rdf:Description>
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">65</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment>This is the target for only men yhat have age between 18 and 65 years old</rdfs:comment>
+        <rdfs:label>MenClothes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#NaturalClothesMaterial -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#NaturalClothesMaterial">
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ClothesMaterial"/>
+        <owl:disjointWith rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#SyntheticClothesMaterial"/>
+        <rdfs:label>NaturalClothesMaterial</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Necklace -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Necklace">
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Jewellery"/>
+        <rdfs:label>Necklace</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Pattern -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Pattern"/>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Pyjama -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Pyjama">
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperClothes"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#HasPattern"/>
+                <owl:someValuesFrom rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Pattern"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#IsSuitableToBeDressedByEvent"/>
+                <owl:someValuesFrom rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#PyjamaParty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#IsSuitableToBeDressedByTarget"/>
+                <owl:someValuesFrom rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Target"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Pyjama</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#PyjamaParty -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#PyjamaParty">
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#RegularFitTrousers -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#RegularFitTrousers">
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Trousers"/>
+        <rdfs:label>RegularFitTrousers</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Ring -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Ring">
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Jewellery"/>
+        <rdfs:label>Ring</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Running -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Running">
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Shoes"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#IsSuitableToBeDressedByEvent"/>
+                <owl:someValuesFrom rdf:resource="http://dbpedia.org/ontology/SportsEvent"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Running</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Sandal -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Sandal">
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Shoes"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#isSuitableToBeDressedBySeason"/>
+                <owl:hasValue rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Summer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Sandal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Scarf -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Scarf">
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Accessory"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#isSuitableToBeDressedBySeason"/>
+                        <owl:hasValue rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Autumn"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#isSuitableToBeDressedBySeason"/>
+                        <owl:hasValue rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Winter"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label>Scarf</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Season -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Season">
+        <rdfs:comment xml:lang="en">That&apos;s a set of all the season, for categorize each type of cothes is suitable for the season</rdfs:comment>
+        <rdfs:label xml:lang="en">All the season</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Shirt -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Shirt">
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperClothes"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#HasPattern"/>
+                <owl:someValuesFrom rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Pattern"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#IsSuitableToBeDressedByTarget"/>
+                <owl:someValuesFrom rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UnisexTarget"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#isSuitableToBeDressedBySeason"/>
+                <owl:hasValue rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Summer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Shirt</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoeSize -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoeSize">
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ClothesSize"/>
+        <rdfs:label>ShoeSize</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Shoes -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Shoes">
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Clothes"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#HasSize"/>
+                <owl:someValuesFrom rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoeSize"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Boot"/>
+            <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Formal"/>
+            <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Sandal"/>
+            <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Sneakers"/>
+        </owl:disjointUnionOf>
+        <rdfs:label>Shoes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoulderBag -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoulderBag">
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Bag"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#IsSuitableToBeDressedByTarget"/>
+                <owl:someValuesFrom rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UnisexTarget"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>ShoulderBag</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#SkinnyFitTrousers -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#SkinnyFitTrousers">
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Trousers"/>
+        <rdfs:label>SkinnyFitTrousers</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Skirt -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Skirt">
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#LowerClothes"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#IsSuitableToBeDressedByTarget"/>
+                <owl:someValuesFrom rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ChildrenClothes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#IsSuitableToBeDressedByTarget"/>
+                <owl:someValuesFrom rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#WomanClothes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Skirt</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#SlimFitTrousers -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#SlimFitTrousers">
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Trousers"/>
+        <rdfs:label>SlimFitTrousers</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Sneakers -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Sneakers">
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Shoes"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#IsSuitableToBeDressedByEvent"/>
+                <owl:someValuesFrom rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Club"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Sneakers</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Socks -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Socks">
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Underwear"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#HasSize"/>
+                <owl:someValuesFrom rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoeSize"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#IsSuitableToBeDressedByTarget"/>
+                <owl:someValuesFrom rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UnisexTarget"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Socks</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Sunglasses -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Sunglasses">
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Accessory"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#isSuitableToBeDressedBySeason"/>
+                <owl:hasValue rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Summer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Sunglasses</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#SyntheticClothesMaterial -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#SyntheticClothesMaterial">
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ClothesMaterial"/>
+        <rdfs:label>SyntheticClothesMaterial</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#TShirt -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#TShirt">
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperClothes"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#HasPattern"/>
+                <owl:someValuesFrom rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Pattern"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>TShirt</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Target -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Target">
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Clothes"/>
+        <rdfs:comment xml:lang="en">This is the main set of all the target in which we want to classify our clothing by their sex and age</rdfs:comment>
+        <rdfs:label xml:lang="en">Clothes target</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#TeenagerClothes -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#TeenagerClothes">
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Target"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#hasAge"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">13</xsd:minInclusive>
+                            </rdf:Description>
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>This is the target for only man yhat have age between 13 and 18 years old</rdfs:comment>
+        <rdfs:label>TeenagerTarget</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Tie -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Tie">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Accessory"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#IsSuitableToBeDressedByEvent"/>
+                        <owl:someValuesFrom rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Funeral"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#IsSuitableToBeDressedByEvent"/>
+                        <owl:someValuesFrom rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Wedding"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#isSuitableToBeDressedByGender"/>
+                        <owl:someValuesFrom rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Male"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:label>Tie</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Trousers -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Trousers">
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#LowerClothes"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#IsSuitableToBeDressedByTarget"/>
+                <owl:someValuesFrom rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UnisexTarget"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#RegularFitTrousers"/>
+            <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#SkinnyFitTrousers"/>
+            <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#SlimFitTrousers"/>
+        </owl:disjointUnionOf>
+        <rdfs:label>Trousers</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Umbrella -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Umbrella">
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Accessory"/>
+        <rdfs:label>Umbrella</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Underpants -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Underpants">
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Underwear"/>
+        <rdfs:label>Underpants</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Underwear -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Underwear">
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Clothes"/>
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Socks"/>
+            <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Underpants"/>
+        </owl:disjointUnionOf>
+        <rdfs:label>Underwear</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UnisexTarget -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UnisexTarget">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Target"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#IsSuitableToBeDressedByTarget"/>
+                        <owl:someValuesFrom rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#MenClothes"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#IsSuitableToBeDressedByTarget"/>
+                        <owl:someValuesFrom rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#WomanClothes"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment>This is the target for every type of genderdefined that have age between 18 and 65 years old</rdfs:comment>
+        <rdfs:label>UnisexTarget</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperClothes -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperClothes">
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Clothes"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#HasSize"/>
+                <owl:someValuesFrom rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperClothingSize"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>These are all the upper clothes like tshirt, shirt, coat ecc..</rdfs:comment>
+        <rdfs:label>UpperClothes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperClothingSize -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperClothingSize">
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ClothesSize"/>
+        <rdfs:label>UpperClothingSize</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Wedding -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Wedding">
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#WomanClothes -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#WomanClothes">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Target"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#isSuitableToBeDressedByGender"/>
+                        <owl:hasValue rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Female"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#hasAge"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</xsd:minInclusive>
+                                    </rdf:Description>
+                                    <rdf:Description>
+                                        <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">65</xsd:maxInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:comment>This is the target for only woman yhat have age between 18 and 65 years old</rdfs:comment>
+        <rdfs:label>WomanTarget</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Acrylic_fiber -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Acrylic_fiber">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#SyntheticClothesMaterial"/>
+        <hasChemicalMaterial>acrylonitrile</hasChemicalMaterial>
+        <rdfs:label>Acrylic_fiber</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Autumn -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Autumn">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Season"/>
+        <owl:sameAs rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Fall"/>
+        <rdfs:label>Autumn</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Fall -->
+
+    <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Fall"/>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Black -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Black">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Colour"/>
+        <hasColorHex>000000</hasColorHex>
+        <rdfs:label>Black</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Blue -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Blue">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Colour"/>
+        <hasColorHex>0000FF</hasColorHex>
+        <rdfs:label>Blue</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Cashmere_wool -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Cashmere_wool">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#NaturalClothesMaterial"/>
+        <hasSourceFromAnimal>Goat</hasSourceFromAnimal>
+        <rdfs:label>Cashmere_wool</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ClothesMaterial -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ClothesMaterial">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#CharacteristicOfClothes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#CoinDot -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#CoinDot">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Pattern"/>
+        <ontology:thumbnail rdf:resource="https://cdn.shopify.com/s/files/1/0657/6052/6551/files/counterchange-pattern-thumb-2.png"/>
+        <rdfs:label>CoinDot</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Colour -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Colour">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#CharacteristicOfClothes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Cotton -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Cotton">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#NaturalClothesMaterial"/>
+        <hasSourceFromPlant>Cotton plant</hasSourceFromPlant>
+        <rdfs:label>Cotton</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#DiamondPattern -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#DiamondPattern">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Pattern"/>
+        <ontology:thumbnail rdf:resource="https://cdn.shopify.com/s/files/1/0657/6052/6551/files/diamond-pattern-300x299.png"/>
+        <rdfs:label>DiamondPattern</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#EU36 -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#EU36">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoeSize"/>
+        <hasSize>EU36</hasSize>
+        <rdfs:label>EU36</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#EU37 -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#EU37">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoeSize"/>
+        <hasSize>EU37</hasSize>
+        <rdfs:label>EU37</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#EU38 -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#EU38">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoeSize"/>
+        <hasSize>EU38</hasSize>
+        <rdfs:label>EU38</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#EU39 -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#EU39">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoeSize"/>
+        <hasSize>EU39</hasSize>
+        <rdfs:label>EU39</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#EU40 -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#EU40">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoeSize"/>
+        <hasSize>EU40</hasSize>
+        <rdfs:label>EU40</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#EU41 -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#EU41">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoeSize"/>
+        <hasSize>EU41</hasSize>
+        <rdfs:label>EU41</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#EU42 -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#EU42">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoeSize"/>
+        <hasSize>EU42</hasSize>
+        <rdfs:label>EU42</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#EU43 -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#EU43">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoeSize"/>
+        <hasSize>EU43</hasSize>
+        <rdfs:label>EU43</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#EU44 -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#EU44">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoeSize"/>
+        <hasSize>EU44</hasSize>
+        <rdfs:label>EU44</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#EU45 -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#EU45">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoeSize"/>
+        <hasSize>EU45</hasSize>
+        <rdfs:label>EU45</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Elastan -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Elastan">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#SyntheticClothesMaterial"/>
+        <owl:sameAs rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Spandex"/>
+        <hasChemicalMaterial>segmented polyurethane</hasChemicalMaterial>
+        <rdfs:label>Elastan</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Spandex -->
+
+    <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Spandex"/>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Fall -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Fall">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Season"/>
+        <SeasonHasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#gMonthDay">--12-20</SeasonHasEnd>
+        <SeasonHasStart rdf:datatype="http://www.w3.org/2001/XMLSchema#gMonthDay">--10-21</SeasonHasStart>
+        <rdfs:label>Fall</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Female -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Female">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Gender"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Fur -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Fur">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#NaturalClothesMaterial"/>
+        <hasSourceFromAnimal>Beaver</hasSourceFromAnimal>
+        <hasSourceFromAnimal>Fox</hasSourceFromAnimal>
+        <hasSourceFromAnimal>Mink</hasSourceFromAnimal>
+        <hasSourceFromAnimal>Rabbit</hasSourceFromAnimal>
+        <hasSourceFromAnimal>Sable</hasSourceFromAnimal>
+        <rdfs:label>Fur</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Gingham -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Gingham">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Pattern"/>
+        <ontology:thumbnail rdf:resource="https://cdn.shopify.com/s/files/1/0657/6052/6551/files/gingham-pattern-thumb.png"/>
+        <rdfs:label>Gingham</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Green -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Green">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Colour"/>
+        <hasColorHex>00FF00</hasColorHex>
+        <rdfs:label>Green</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#L -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#L">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#AccessorySize"/>
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperClothingSize"/>
+        <hasSize>L</hasSize>
+        <rdfs:label>L</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Leather -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Leather">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#NaturalClothesMaterial"/>
+        <hasSourceFromAnimal>Cow</hasSourceFromAnimal>
+        <rdfs:label>Leather</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Linen -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Linen">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#NaturalClothesMaterial"/>
+        <hasSourceFromPlant>Linen Plant</hasSourceFromPlant>
+        <rdfs:label>Linen</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Lycra -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Lycra">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#SyntheticClothesMaterial"/>
+        <owl:sameAs rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Spandex"/>
+        <hasChemicalMaterial>segmented polyurethane</hasChemicalMaterial>
+        <rdfs:label>Lycra</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Spandex -->
+
+    <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Spandex"/>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#M -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#M">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#AccessorySize"/>
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperClothingSize"/>
+        <hasSize>M</hasSize>
+        <rdfs:label>M</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Male -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Male">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Gender"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Mohair -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Mohair">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#NaturalClothesMaterial"/>
+        <hasSourceFromAnimal>Angora goat</hasSourceFromAnimal>
+        <rdfs:label>Mohair</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Nylon -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Nylon">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#SyntheticClothesMaterial"/>
+        <hasChemicalMaterial>nylon polymer chips</hasChemicalMaterial>
+        <rdfs:label>Nylon</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Paisley -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Paisley">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Pattern"/>
+        <ontology:thumbnail rdf:resource="https://cdn.shopify.com/s/files/1/0657/6052/6551/files/paisley-pattern-thumb.png"/>
+        <rdfs:label>Paisley</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Pattern -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Pattern">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#CharacteristicOfClothes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Pink -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Pink">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Colour"/>
+        <hasColorHex>FFC0CB</hasColorHex>
+        <rdfs:label>Pink</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Plaid -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Plaid">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Pattern"/>
+        <ontology:thumbnail rdf:resource="https://as1.ftcdn.net/v2/jpg/02/98/04/52/1000_F_298045204_OjJqLYWHOEmaDPLURhec7qEfmsw2eHRs.jpg"/>
+        <rdfs:label>Plaid</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Polyester -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Polyester">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#SyntheticClothesMaterial"/>
+        <hasChemicalMaterial>Ethyleneglycol</hasChemicalMaterial>
+        <hasChemicalMaterial>Polyethylene Terephthalate</hasChemicalMaterial>
+        <hasChemicalMaterial>Terephthalic Acid</hasChemicalMaterial>
+        <rdfs:label>Polyester</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Purple -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Purple">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Colour"/>
+        <hasColorHex>800080</hasColorHex>
+        <rdfs:label>Purple</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Red -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Red">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Colour"/>
+        <hasColorHex>FF0000</hasColorHex>
+        <rdfs:label>Red</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#S -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#S">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#AccessorySize"/>
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperClothingSize"/>
+        <hasSize>S</hasSize>
+        <rdfs:label>S</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Silk -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Silk">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#NaturalClothesMaterial"/>
+        <hasSourceFromAnimal>Silkworm</hasSourceFromAnimal>
+        <rdfs:label>Silk</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Spandex -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Spandex">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#SyntheticClothesMaterial"/>
+        <rdfs:label>Spandex</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Spring -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Spring">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Season"/>
+        <SeasonHasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#gMonthDay">--06-21</SeasonHasEnd>
+        <SeasonHasStart rdf:datatype="http://www.w3.org/2001/XMLSchema#gMonthDay">--02-22</SeasonHasStart>
+        <rdfs:label>Spring</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Stripes -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Stripes">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Pattern"/>
+        <ontology:thumbnail rdf:resource="https://as1.ftcdn.net/v2/jpg/02/95/17/06/1000_F_295170647_8K1XMDlkmnmb0RsrVOt5ovcBX7pIBXz9.jpg"/>
+        <rdfs:label>Stripes</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Summer -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Summer">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Season"/>
+        <SeasonHasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#gMonthDay">--10-22</SeasonHasEnd>
+        <SeasonHasStart rdf:datatype="http://www.w3.org/2001/XMLSchema#gMonthDay">--06-21</SeasonHasStart>
+        <rdfs:label>Summer</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#W28L32 -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#W28L32">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#LowerSize"/>
+        <hasSize>28x32</hasSize>
+        <rdfs:label>W28L32</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#W30L32 -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#W30L32">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#LowerSize"/>
+        <hasSize>30x32</hasSize>
+        <rdfs:label>W30L32</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#W32L34 -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#W32L34">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#LowerSize"/>
+        <hasSize>32x34</hasSize>
+        <rdfs:label>W32L34</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#W34L34 -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#W34L34">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#LowerSize"/>
+        <hasSize>34x34</hasSize>
+        <rdfs:label>W34L34</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#W36L36 -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#W36L36">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#LowerSize"/>
+        <hasSize>36x36</hasSize>
+        <rdfs:label>W36L36</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#White -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#White">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Colour"/>
+        <hasColorHex>FFFFFF</hasColorHex>
+        <rdfs:label>White</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Winter -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Winter">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Season"/>
+        <SeasonHasEnd rdf:datatype="http://www.w3.org/2001/XMLSchema#gMonthDay">--03-22</SeasonHasEnd>
+        <SeasonHasStart rdf:datatype="http://www.w3.org/2001/XMLSchema#gMonthDay">--12-21</SeasonHasStart>
+        <rdfs:label>Winter</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Wool -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Wool">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#NaturalClothesMaterial"/>
+        <hasSourceFromAnimal>Sheep</hasSourceFromAnimal>
+        <rdfs:label>Wool</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#XL -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#XL">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#AccessorySize"/>
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperClothingSize"/>
+        <hasSize>XL</hasSize>
+        <rdfs:label>XL</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#XS -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#XS">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperClothingSize"/>
+        <hasSize>XS</hasSize>
+        <rdfs:label>XS</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#XXL -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#XXL">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperClothingSize"/>
+        <hasSize>XXL</hasSize>
+        <rdfs:label>XXL</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#XXXL -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#XXXL">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperClothingSize"/>
+        <hasSize>XXXL</hasSize>
+        <rdfs:label>XXXL</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Yellow -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Yellow">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Colour"/>
+        <hasColorHex>FFFF00</hasColorHex>
+        <rdfs:label>Yellow</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://dbpedia.org/ontology/">
+        <terms:defines rdf:resource="http://dbpedia.org/ontology/SocietalEvent"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://dbpedia.org/ontology/data/definitions.ttl">
+        <terms:describes rdf:resource="http://dbpedia.org/ontology/SocietalEvent"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ClothesMaterial">
+        <rdfs:label>ClothesMaterial</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Colour">
+        <rdfs:comment xml:lang="en">That&apos;s cointain all the main colors of the clothes</rdfs:comment>
+        <rdfs:label xml:lang="en">Colours</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Female">
+        <rdfs:label>Female</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Male">
+        <rdfs:label>Male</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Pattern">
+        <rdfs:label xml:lang="en">Clothes pattern</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Bag"/>
+            <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Belt"/>
+            <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Hat"/>
+            <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Jewellery"/>
+            <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Scarf"/>
+            <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Sunglasses"/>
+            <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Tie"/>
+            <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Umbrella"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

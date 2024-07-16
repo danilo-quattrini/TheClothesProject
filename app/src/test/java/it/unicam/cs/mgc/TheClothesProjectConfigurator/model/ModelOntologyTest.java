@@ -20,7 +20,7 @@
  * SOFTWARE.
  */
 
-package it.unicam.cs.mgc.TheClothesProjectConfigurator.tester;
+package it.unicam.cs.mgc.TheClothesProjectConfigurator.model;
 
 
 import it.unicam.cs.mgc.TheClothesProjectConfigurator.model.builder.TheMainBuilder;

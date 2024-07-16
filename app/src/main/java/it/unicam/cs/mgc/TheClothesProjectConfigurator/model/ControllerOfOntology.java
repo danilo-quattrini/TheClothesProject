@@ -22,8 +22,8 @@
 
 package it.unicam.cs.mgc.TheClothesProjectConfigurator.model;
 
-import it.unicam.cs.mgc.TheClothesProjectConfigurator.model.SPARQLqueries.QueryExecutor;
 import it.unicam.cs.mgc.TheClothesProjectConfigurator.model.builder.TheInferredModel;
+import it.unicam.cs.mgc.TheClothesProjectConfigurator.model.SPARQLqueries.QueryExecutor;
 import it.unicam.cs.mgc.TheClothesProjectConfigurator.model.SPARQLqueries.SelectDataQueries;
 import it.unicam.cs.mgc.TheClothesProjectConfigurator.model.utilites.AllTheURI;
 import openllet.jena.PelletReasonerFactory;
@@ -58,11 +58,11 @@ public class ControllerOfOntology {
          * @param query the data
          * @return the data chunk result of the query
          */
-//        public ParsedData get(SelectionQuery query) {
-//            JSONParser parser = new JSONParser();
-//            QueryExecution queryExecution = queryExecutor.perform(query, this.model);
-//            return parser.parse(queryExecution);
-//        }
+        public ParsedData get(SelectDataQueries query) {
+            JSONParser parser = new JSONParser();
+            QueryExecution queryExecution = queryExecutor.perform(query, this.model);
+            return parser.parse(queryExecution);
+        }
 
         /**
          * Gets data from the ontology model passing some arguments.
@@ -71,37 +71,25 @@ public class ControllerOfOntology {
          * @param args the parameter for the query
          * @return the data chunk result of the query
          */
-/*
-        public ParsedData get(SelectionQuery query, Object...args) {
+
+        public ParsedData get(SelectDataQueries query, Object...args) {
             JSONParser parser = new JSONParser();
             QueryExecution queryExecution = queryExecutor.perform(query, this.model, args);
             return parser.parse(queryExecution);
         }
-*/
-
-        /**
-         * Posts a data update to the ontology model.
-         *
-         * @param query the SPARQL update query
-         */
-/*
-        public void post(UpdateQuery query) {
-            queryExecutor.perform(query, this.model);
-        }
-*/
 
         /**
          * Checks if the built inferred model is consistent.
          *
          * @return true if the model is consistent
          */
-/*
+
         public boolean isConsistent() {
             if(this.model instanceof InfModel) {
-                return InferredModelBuilder.isModelConsistent((InfModel) model);
+                return TheInferredModel.isModelConsistent((InfModel) model);
             }
             return false;
         }
-*/
+
 
 }

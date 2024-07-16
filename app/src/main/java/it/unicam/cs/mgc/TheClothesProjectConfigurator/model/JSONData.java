@@ -20,28 +20,30 @@
  * SOFTWARE.
  */
 
-package it.unicam.cs.mgc.TheClothesProjectConfigurator.model.SPARQLqueries;
+package it.unicam.cs.mgc.TheClothesProjectConfigurator.model;
 
-import org.apache.jena.query.Query;
-import org.apache.jena.query.QueryExecution;
-import org.apache.jena.query.QueryExecutionFactory;
-import org.apache.jena.query.QueryFactory;
-import org.apache.jena.rdf.model.Model;
+import java.util.Collection;
+import java.util.Iterator;
+import java.util.Map;
 
 /**
- * This class is used to perform SPARQL queries on the underlying application ontology
+ * This class is used as a wrapper to expose parsed JSON-like data.
  */
-public class QueryExecutor implements ExecuteQueries{
+public class JSONData implements ParsedData{
 
+    Map<String, String> data;
+
+    public JSONData(Map<String, String> data) {
+        this.data = data;
+    }
     @Override
-    public QueryExecution perform(SPARQLqueries query, Model model) {
-        Query queryToPerform = QueryFactory.create(query.getFullQuery());
-        return QueryExecutionFactory.create(queryToPerform, model);
+    public String getProperty(String property) {
+        return this.data.get(property);
     }
 
     @Override
-    public QueryExecution perform(SPARQLqueries query, Model model, Object... args) {
-        Query queryToPerform = QueryFactory.create(query.getFullQuery());
-        return QueryExecutionFactory.create(queryToPerform, model);
+    public Collection<String> getAllValues() {
+        return this.data.values();
     }
+    public Iterator<Map.Entry<String,String>> getIterator() {return this.data.entrySet().iterator();}
 }

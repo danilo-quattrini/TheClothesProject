@@ -4,17 +4,33 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5aa5aaa-134f-4c88-89b2-12ed635acc6c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/tester/CheckQueriesExecution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/tester/ModelOntologyTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/tester/RDFormatterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/tester/SPARQLChecker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/hs_err_pid15232.log" afterDir="false" />
+    <list default="true" id="c5aa5aaa-134f-4c88-89b2-12ed635acc6c" name="Changes" comment="Edited the ontology and added the test&#10; +edited the ontology and added the labels&#10; +added test and class checker for validate the ontology&#10; +imported pellet">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/controller/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/model/JSONData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/model/JSONParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/model/ParsedData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/model/QueryOntologyExecutor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/model/TheDataParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/test/resources/owl/SocietalEvent.rdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/test/resources/owl/TheClothesProject.rdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/test/resources/owl/catalog-v001.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utilities/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/model/ControllerOfOntology.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/model/ControllerOfOntology.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/model/SPARQLqueries/QueryExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/model/SPARQLqueries/QueryExecutor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/model/SPARQLqueries/SelectDataQueries.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/model/SPARQLqueries/SelectDataQueries.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/owl/TheClothesProject.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/owl/TheClothesProject.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/owl/TheClothesProject.rdf" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/owl/TheClothesProject.rdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/model/builder/TheMainBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/model/builder/TheMainBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/owl/SocietalEvent.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/owl/TheClothesProject.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/owl/catalog-v001.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/owl/catalog-v001.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/tester/CheckQueriesExecution.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/model/CheckQueryExecution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/tester/ModelOntologyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/model/ModelOntologyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/tester/RDFormatterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/model/RDFormatterTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/tester/SPARQLChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/model/SPARQLChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hs_err_pid15232.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +53,7 @@
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="it.unicam.cs.mgc.TheClothesProject" type="f1a62948:ProjectNode" />
+                <item name="TheOntologyProject" type="f1a62948:ProjectNode" />
               </path>
             </expand>
             <select />
@@ -49,8 +65,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Enum" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -63,6 +79,18 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;danilo-quattrini&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/danilo-quattrini/TheOntologyProject.git&quot;,
+    &quot;accountId&quot;: &quot;e36a9452-6625-4d22-8259-38e1fdae43fe&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 6
@@ -78,30 +106,39 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Gradle.CheckQueriesExecution (1).executor": "Debug",
+    "Gradle.CheckQueriesExecution.executor": "Run",
+    "Gradle.CheckQueriesExecution.setUp.executor": "Debug",
+    "Gradle.CheckQueryExecution.executor": "Run",
+    "Gradle.CheckQueryExecution.queryClothesDetails.executor": "Run",
+    "Gradle.CheckQueryExecution.querySearchedClothes.executor": "Run",
+    "Gradle.CheckQueryExecution.setUp.executor": "Debug",
     "Gradle.Download Sources.executor": "Run",
     "Gradle.ModelOntologyTest.executor": "Run",
     "Gradle.ModelOntologyTest.testCorrectStatementPresence.executor": "Run",
-    "Gradle.RDFormatterTest.executor": "Debug",
+    "Gradle.RDFormatterTest.executor": "Run",
     "Gradle.RDFormatterTest.testCamelCaseToSpacedString.executor": "Run",
     "Gradle.RDFormatterTest.testStringToFirstLetterUpperCase.executor": "Run",
     "Gradle.SPARQLChecker.executor": "Run",
     "Gradle.TheOntologyProject [app:run].executor": "Run",
     "Gradle.TheOntologyProject [build].executor": "Run",
     "Gradle.TheOntologyProject [builf].executor": "Run",
+    "Gradle.TheOntologyProject [clean].executor": "Run",
+    "OpenRewrite.Faces2xMigrationToJakarta4x.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/danil/Documents/University/Modellazione/TheOntologyProject",
+    "last_opened_file_path": "C:/Users/danil/Documents/University/Modellazione/ExoplanetCataloguer",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "copyright.profiles",
+    "settings.editor.selected.configurable": "editor.preferences.completion",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -111,7 +148,17 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="it.unicam.cs.mgc.TheClothesProjectConfigurator.model" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\danil\Documents\University\Modellazione\TheOntologyProject\app" />
+      <recent name="C:\Users\danil\Documents\University\Modellazione\TheOntologyProject" />
+      <recent name="C:\Users\danil\Documents\University\Modellazione\TheOntologyProject\app\src\test\resources" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\danil\Documents\University\Modellazione\TheOntologyProject\app" />
+      <recent name="C:\Users\danil\Documents\University\Modellazione\TheOntologyProject" />
       <recent name="C:\Users\danil\Documents\University\Modellazione\TheOntologyProject\app\src\main\resources\owl" />
     </key>
   </component>
@@ -119,11 +166,12 @@
     <option name="myCommands">
       <command value="gradlew builf" />
       <command value="gradlew app:run" />
+      <command value="gradlew clean" />
       <command value="gradlew build" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.SPARQLChecker">
-    <configuration name="ModelOntologyTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.TheOntologyProject">
+    <configuration name="CheckQueryExecution" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -136,7 +184,7 @@
           <list>
             <option value=":app:test" />
             <option value="--tests" />
-            <option value="&quot;it.unicam.cs.mgc.TheClothesProjectConfigurator.tester.ModelOntologyTest&quot;" />
+            <option value="&quot;it.unicam.cs.mgc.TheClothesProjectConfigurator.model.CheckQueryExecution&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -147,7 +195,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="ModelOntologyTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CheckQueryExecution.setUp" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -160,7 +208,7 @@
           <list>
             <option value=":app:test" />
             <option value="--tests" />
-            <option value="&quot;it.unicam.cs.mgc.TheClothesProjectConfigurator.tester.ModelOntologyTest&quot;" />
+            <option value="&quot;it.unicam.cs.mgc.TheClothesProjectConfigurator.model.CheckQueryExecution.setUp&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -171,7 +219,7 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="ModelOntologyTest.testCorrectStatementPresence" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="TheOntologyProject [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -182,151 +230,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value=":app:test" />
-            <option value="--tests" />
-            <option value="&quot;it.unicam.cs.mgc.TheClothesProjectConfigurator.tester.ModelOntologyTest.testCorrectStatementPresence&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="RDFormatterTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":app:test" />
-            <option value="--tests" />
-            <option value="&quot;it.unicam.cs.mgc.TheClothesProjectConfigurator.tester.RDFormatterTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="RDFormatterTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":app:test" />
-            <option value="--tests" />
-            <option value="&quot;it.unicam.cs.mgc.TheClothesProjectConfigurator.tester.RDFormatterTest&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="RDFormatterTest.testCamelCaseToSpacedString" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":app:test" />
-            <option value="--tests" />
-            <option value="&quot;it.unicam.cs.mgc.TheClothesProjectConfigurator.tester.RDFormatterTest.testCamelCaseToSpacedString&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="RDFormatterTest.testStringToFirstLetterUpperCase" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":app:test" />
-            <option value="--tests" />
-            <option value="&quot;it.unicam.cs.mgc.TheClothesProjectConfigurator.tester.RDFormatterTest.testStringToFirstLetterUpperCase&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="SPARQLChecker" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":app:test" />
-            <option value="--tests" />
-            <option value="&quot;it.unicam.cs.mgc.TheClothesProjectConfigurator.tester.SPARQLChecker&quot;" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>true</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="TheOntologyProject [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
+            <option value="clean" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -337,13 +241,38 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
+    <configuration name="TheOntologyProject" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="-D" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="Faces2xMigrationToJakarta4x" type="OpenRewriteRunConfigurationType" factoryName="OpenRewrite" temporary="true" nameIsGenerated="true">
+      <option name="activeRecipes" value="org.openrewrite.java.migrate.jakarta.Faces2xMigrationToJakarta4x" />
+      <option name="workingDirectory" value="$PROJECT_DIR$/app" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.SPARQLChecker" />
-        <item itemvalue="Gradle.RDFormatterTest.testStringToFirstLetterUpperCase" />
-        <item itemvalue="Gradle.RDFormatterTest.testCamelCaseToSpacedString" />
-        <item itemvalue="Gradle.RDFormatterTest" />
-        <item itemvalue="Gradle.ModelOntologyTest" />
+        <item itemvalue="Gradle.TheOntologyProject" />
+        <item itemvalue="Gradle.CheckQueryExecution.setUp" />
+        <item itemvalue="Gradle.CheckQueryExecution" />
+        <item itemvalue="OpenRewrite.Faces2xMigrationToJakarta4x" />
+        <item itemvalue="Gradle.TheOntologyProject [clean]" />
       </list>
     </recent_temporary>
   </component>
@@ -372,8 +301,22 @@
       <workItem from="1720946162840" duration="5315000" />
       <workItem from="1721028831909" duration="7863000" />
       <workItem from="1721040575957" duration="700000" />
-      <workItem from="1721073304579" duration="5015000" />
+      <workItem from="1721073304579" duration="5479000" />
+      <workItem from="1721120103066" duration="6294000" />
+      <workItem from="1721126451219" duration="1341000" />
+      <workItem from="1721158847925" duration="5603000" />
+      <workItem from="1721165992423" duration="3482000" />
+      <workItem from="1721170086534" duration="1007000" />
     </task>
+    <task id="LOCAL-00001" summary="Edited the ontology and added the test&#10; +edited the ontology and added the labels&#10; +added test and class checker for validate the ontology&#10; +imported pellet">
+      <option name="closed" value="true" />
+      <created>1721081219996</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1721081219996</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -392,5 +335,41 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Edited the ontology and added the test&#10; +edited the ontology and added the labels&#10; +added test and class checker for validate the ontology&#10; +imported pellet" />
+    <option name="LAST_COMMIT_MESSAGE" value="Edited the ontology and added the test&#10; +edited the ontology and added the labels&#10; +added test and class checker for validate the ontology&#10; +imported pellet" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/model/builder/TheInferredModel.java</url>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/test/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/model/CheckQueryExecution.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/app/src/test/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/model/CheckQueryExecution.java</url>
+          <line>35</line>
+          <properties class="it.unicam.cs.mgc.TheClothesProjectConfigurator.model.CheckQueryExecution" method="setUp">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="it.unicam.cs.mgc.TheClothesProjectConfigurator.model.CheckQueryExecution" memberName="ontology" />
+      </pinned-members>
+    </pin-to-top-manager>
+    <watches-manager>
+      <configuration name="GradleRunConfiguration">
+        <watch expression="((OntModelImpl)this.model).graph" language="JAVA" custom="org.apache.jena.ontology.impl.OntModelImpl" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>

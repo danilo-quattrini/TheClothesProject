@@ -20,30 +20,26 @@
  * SOFTWARE.
  */
 
-package it.unicam.cs.mgc.TheClothesProjectConfigurator.tester;
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
-import it.unicam.cs.mgc.TheClothesProjectConfigurator.model.utilites.FormatRDF;
-public class RDFormatterTest {
+package it.unicam.cs.mgc.TheClothesProjectConfigurator.model;
 
-    @Test
-    public void testRemoveUselessTypes() {
-        String test = "Thing, colors, clothes, leather, NamedIndividual";
-        String result = FormatRDF.removeUselessTypes(test);
-        assertEquals("colors, clothes, leather", result);
+import it.unicam.cs.mgc.TheClothesProjectConfigurator.model.SPARQLqueries.ExecuteQueries;
+import it.unicam.cs.mgc.TheClothesProjectConfigurator.model.SPARQLqueries.SPARQLqueries;
+import org.apache.jena.query.Query;
+import org.apache.jena.query.QueryExecution;
+import org.apache.jena.query.QueryExecutionFactory;
+import org.apache.jena.query.QueryFactory;
+import org.apache.jena.rdf.model.Model;
+
+public class QueryOntologyExecutor implements ExecuteQueries {
+    @Override
+    public QueryExecution perform(SPARQLqueries query, Model model) {
+        Query queryToPerform = QueryFactory.create(query.getFullQuery());
+        return QueryExecutionFactory.create(queryToPerform, model);
     }
 
-    @Test
-    public void testRemoveURI() {
-        String test = "http://www.w3.org/2000/01/rdf-schema#type";
-        String result = FormatRDF.removeUriPrefix(test);
-        assertEquals("type", result);
-    }
-
-    @Test
-    public void testCamelCaseToSpacedString() {
-        String test = "IsSuitableToBeDressedByTarget";
-        String result = FormatRDF.camelCaseToSpacedString(test);
-        assertEquals("is suitable to be dressed by target", result);
+    @Override
+    public QueryExecution perform(SPARQLqueries query, Model model, Object... args) {
+        Query queryToPerform = QueryFactory.create(query.getFullQuery(args));
+        return QueryExecutionFactory.create(queryToPerform, model);
     }
 }

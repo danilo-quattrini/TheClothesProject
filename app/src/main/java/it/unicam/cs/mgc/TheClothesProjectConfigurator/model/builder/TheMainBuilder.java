@@ -28,7 +28,9 @@ import org.apache.jena.rdf.model.ModelFactory;
 import org.apache.jena.util.FileManager;
 
 import java.util.Objects;
-
+/**
+ * This class is used to create default RDF models.
+ */
 public class TheMainBuilder implements RDFModelBuilder{
 
     private final FileManager managingFile = FileManager.getInternal();

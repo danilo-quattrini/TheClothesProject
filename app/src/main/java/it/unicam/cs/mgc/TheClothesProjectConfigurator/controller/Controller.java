@@ -20,16 +20,39 @@
  * SOFTWARE.
  */
 
-package it.unicam.cs.mgc.TheClothesProjectConfigurator.tester;
-import it.unicam.cs.mgc.TheClothesProjectConfigurator.model.SPARQLqueries.SelectDataQueries;
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;;
+package it.unicam.cs.mgc.TheClothesProjectConfigurator.controller;
 
-public class SPARQLChecker {
-    @Test
-    public void testQueryParameterization(){
-    String query = SelectDataQueries.SELECT_CLOTHES.getSPARQLQuery("Bra");
-    String expectedQuery = "SELECT ?label ?value WHERE { ?clothes rdf:type cp:subClassOf. BIND(?clothes AS ?label) . ?clothes rdfs:label ?value . FILTER(STRSTARTS(?value, \"Bra\")) }";
-    assertEquals(expectedQuery, query);
+import it.unicam.cs.mgc.TheClothesProjectConfigurator.model.ParsedData;
+import it.unicam.cs.mgc.TheClothesProjectConfigurator.model.ControllerOfOntology;
+import it.unicam.cs.mgc.TheClothesProjectConfigurator.model.SPARQLqueries.SelectDataQueries;
+
+/**
+ * This class is used to manage the application state.
+ */
+
+public class Controller {
+
+    private final ControllerOfOntology ontology = new ControllerOfOntology();
+
+    /**
+     * Returns the list of clothes in the ontology.
+     *
+     * @return data containing the list of clothes
+     */
+    public ParsedData getClothesList() {
+        return ontology.get(SelectDataQueries.CLOTHES_LIST);
+    }
+
+    /**
+     * Returns the ontology consistency status
+     *
+     * @return the ontology consistency status as a string
+     */
+    public String getOntologyConsistencyStatus() {
+        if (ontology.isConsistent()) {
+            return "Ontology consistent ✓";
+        } else {
+            return "Inconsistent ontology ｘ";
+        }
     }
 }
