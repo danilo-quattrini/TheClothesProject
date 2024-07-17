@@ -41,22 +41,21 @@ public class CheckQueryExecution {
 
     @Test
     public void queryAllClothes() {
-        ParsedData data = ontology.get(SelectDataQueries.NATURAL_LIST);
-        Collection<String> clothes = data.getAllValues();
-        assertEquals(8, clothes.size());
+        ParsedData data = ontology.get(SelectDataQueries.CLOTHES_LIST);
+        Collection<String> clothesList = data.getAllValues();
+        assertEquals(46, clothesList.size());
     }
 
     @Test
     public void querySearchedClothes() {
-        ParsedData data = ontology.get(SelectDataQueries.SELECT_CLOTHES, "Hand");
+        ParsedData data = ontology.get(SelectDataQueries.SELECT_CLOTHES, "Bag");
         Collection<String> clothes = data.getAllValues();
         assertEquals(1, clothes.size());
     }
-
     @Test
-    public void queryClothesDetails() {
-        ParsedData data = ontology.get(SelectDataQueries.COLOR_LIST_WITH_HEX, "Black");
-        assertFalse(data.getAllValues().isEmpty());
+    public void queryAllGender() {
+        ParsedData data = ontology.get(SelectDataQueries.GENDER_LIST);
+        Collection<String> genderList = data.getAllValues();
+        assertEquals(2, genderList.size());
     }
-
    }

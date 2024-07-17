@@ -1,0 +1,234 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 268435456 bytes for G1 virtual space
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+#   JVM is running with Zero Based Compressed Oops mode in which the Java heap is
+#     placed in the first 32GB address space. The Java Heap base address is the
+#     maximum limit for the native heap growth. Please use -XX:HeapBaseMinAddress
+#     to set the Java Heap base and to place the Java Heap above 32GB virtual address.
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (os_windows.cpp:3600), pid=10864, tid=11360
+#
+# JRE version:  (21.0.3+7) (build )
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (21.0.3+7-LTS-152, mixed mode, sharing, tiered, compressed oops, compressed class ptrs, g1 gc, windows-amd64)
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -Dfile.encoding=windows-1252 -Duser.country=IT -Duser.language=it -Duser.variant it.unicam.cs.mgc.TheClothesProjectConfigurator.App
+
+Host: AMD Ryzen 5 3600 6-Core Processor              , 12 cores, 15G,  Windows 11 , 64 bit Build 22621 (10.0.22621.3672)
+Time: Wed Jul 17 16:34:38 2024 ora legale Europa occidentale elapsed time: 0.008886 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000027f86b32430):  JavaThread "Unknown thread" [_thread_in_vm, id=11360, stack(0x000000cd65e00000,0x000000cd65f00000) (1024K)]
+
+Stack: [0x000000cd65e00000,0x000000cd65f00000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x6c63b9]
+V  [jvm.dll+0x84fa11]
+V  [jvm.dll+0x851f3e]
+V  [jvm.dll+0x852613]
+V  [jvm.dll+0x27cd46]
+V  [jvm.dll+0x6c2b55]
+V  [jvm.dll+0x6b76da]
+V  [jvm.dll+0x35051a]
+V  [jvm.dll+0x358176]
+V  [jvm.dll+0x3aa84e]
+V  [jvm.dll+0x3aaaf8]
+V  [jvm.dll+0x32491c]
+V  [jvm.dll+0x32547b]
+V  [jvm.dll+0x818f69]
+V  [jvm.dll+0x3b7771]
+V  [jvm.dll+0x802358]
+V  [jvm.dll+0x44c7ce]
+V  [jvm.dll+0x44e2a1]
+C  [jli.dll+0x52a3]
+C  [ucrtbase.dll+0x29333]
+C  [KERNEL32.DLL+0x1257d]
+C  [ntdll.dll+0x5af28]
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x00007ffd56dd1b88, length=0, elements={
+}
+
+Java Threads: ( => current thread )
+Total: 0
+
+Other Threads:
+  0x0000027f88ebb530 WorkerThread "GC Thread#0"                     [id=9480, stack(0x000000cd65f00000,0x000000cd66000000) (1024K)]
+  0x0000027f88ecc600 ConcurrentGCThread "G1 Main Marker"            [id=9120, stack(0x000000cd66000000,0x000000cd66100000) (1024K)]
+  0x0000027f88ece0b0 WorkerThread "G1 Conc#0"                       [id=14884, stack(0x000000cd66100000,0x000000cd66200000) (1024K)]
+
+[error occurred during error reporting (printing all threads), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffd56547077]
+VM state: not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x00007ffd56e42ea8] Heap_lock - owner thread: 0x0000027f86b32430
+
+Heap address: 0x0000000700c00000, size: 4084 MB, Compressed Oops mode: Zero based, Oop shift amount: 3
+
+CDS archive(s) mapped at: [0x0000000000000000-0x0000000000000000-0x0000000000000000), size 0, SharedBaseAddress: 0x0000000800000000, ArchiveRelocationMode: 1.
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 0, Narrow klass range: 0x0
+
+GC Precious Log:
+ CardTable entry size: 512
+ Card Set container configuration: InlinePtr #cards 4 size 8 Array Of Cards #cards 16 size 48 Howl #buckets 8 coarsen threshold 3686 Howl Bitmap #cards 512 size 80 coarsen threshold 460 Card regions per heap region 1 cards per card region 4096
+
+Heap:
+ garbage-first heap   total 0K, used 0K [0x0000000700c00000, 0x0000000800000000)
+  region size 2048K, 0 young (0K), 0 survivors (0K)
+
+[error occurred during error reporting (printing heap information), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffd5692e669]
+GC Heap History (0 events):
+No events
+
+Dll operation events (1 events):
+Event: 0.006 Loaded shared library C:\Program Files\Java\jdk-21\bin\java.dll
+
+Deoptimization events (0 events):
+No events
+
+Classes loaded (0 events):
+No events
+
+Classes unloaded (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+ZGC Phase Switch (0 events):
+No events
+
+VM Operations (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x00007ff6a8a90000 - 0x00007ff6a8aa0000 	C:\Program Files\Java\jdk-21\bin\java.exe
+0x00007ffdba930000 - 0x00007ffdbab47000 	C:\Windows\SYSTEM32\ntdll.dll
+0x00007ffdba070000 - 0x00007ffdba134000 	C:\Windows\System32\KERNEL32.DLL
+0x00007ffdb7f90000 - 0x00007ffdb833d000 	C:\Windows\System32\KERNELBASE.dll
+0x00007ffdb7e70000 - 0x00007ffdb7f81000 	C:\Windows\System32\ucrtbase.dll
+0x00007ffd9f180000 - 0x00007ffd9f19b000 	C:\Program Files\Java\jdk-21\bin\VCRUNTIME140.dll
+0x00007ffda0d60000 - 0x00007ffda0d79000 	C:\Program Files\Java\jdk-21\bin\jli.dll
+0x00007ffdb8f40000 - 0x00007ffdb8ff2000 	C:\Windows\System32\ADVAPI32.dll
+0x00007ffdba500000 - 0x00007ffdba5a7000 	C:\Windows\System32\msvcrt.dll
+0x00007ffdba640000 - 0x00007ffdba6e9000 	C:\Windows\System32\sechost.dll
+0x00007ffdb8640000 - 0x00007ffdb8668000 	C:\Windows\System32\bcrypt.dll
+0x00007ffdba220000 - 0x00007ffdba334000 	C:\Windows\System32\RPCRT4.dll
+0x00007ffdb9950000 - 0x00007ffdb9afe000 	C:\Windows\System32\USER32.dll
+0x00007ffdb7e40000 - 0x00007ffdb7e66000 	C:\Windows\System32\win32u.dll
+0x00007ffd9bfb0000 - 0x00007ffd9c243000 	C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.22621.3672_none_2713b9d173822955\COMCTL32.dll
+0x00007ffdba850000 - 0x00007ffdba879000 	C:\Windows\System32\GDI32.dll
+0x00007ffdb7c60000 - 0x00007ffdb7d79000 	C:\Windows\System32\gdi32full.dll
+0x00007ffdb83b0000 - 0x00007ffdb844a000 	C:\Windows\System32\msvcp_win.dll
+0x00007ffdac360000 - 0x00007ffdac36a000 	C:\Windows\SYSTEM32\VERSION.dll
+0x00007ffdba880000 - 0x00007ffdba8b1000 	C:\Windows\System32\IMM32.DLL
+0x00007ffda13a0000 - 0x00007ffda13ac000 	C:\Program Files\Java\jdk-21\bin\vcruntime140_1.dll
+0x00007ffd9cfd0000 - 0x00007ffd9d05e000 	C:\Program Files\Java\jdk-21\bin\msvcp140.dll
+0x00007ffd56210000 - 0x00007ffd56f1d000 	C:\Program Files\Java\jdk-21\bin\server\jvm.dll
+0x00007ffdba5b0000 - 0x00007ffdba621000 	C:\Windows\System32\WS2_32.dll
+0x00007ffdb7970000 - 0x00007ffdb79bd000 	C:\Windows\SYSTEM32\POWRPROF.dll
+0x00007ffdab990000 - 0x00007ffdab9c4000 	C:\Windows\SYSTEM32\WINMM.dll
+0x00007ffdb7950000 - 0x00007ffdb7963000 	C:\Windows\SYSTEM32\UMPDC.dll
+0x00007ffdb6c50000 - 0x00007ffdb6c68000 	C:\Windows\SYSTEM32\kernel.appcore.dll
+0x00007ffda0d50000 - 0x00007ffda0d5a000 	C:\Program Files\Java\jdk-21\bin\jimage.dll
+0x00007ffdb5660000 - 0x00007ffdb5892000 	C:\Windows\SYSTEM32\DBGHELP.DLL
+0x00007ffdb88d0000 - 0x00007ffdb8c58000 	C:\Windows\System32\combase.dll
+0x00007ffdba140000 - 0x00007ffdba217000 	C:\Windows\System32\OLEAUT32.dll
+0x00007ffdb3490000 - 0x00007ffdb34c2000 	C:\Windows\SYSTEM32\dbgcore.DLL
+0x00007ffdb8450000 - 0x00007ffdb84cb000 	C:\Windows\System32\bcryptPrimitives.dll
+0x00007ffd9e870000 - 0x00007ffd9e88f000 	C:\Program Files\Java\jdk-21\bin\java.dll
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;C:\Program Files\Java\jdk-21\bin;C:\Windows\SYSTEM32;C:\Windows\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.22621.3672_none_2713b9d173822955;C:\Program Files\Java\jdk-21\bin\server
+
+VM Arguments:
+jvm_args: -Dfile.encoding=windows-1252 -Duser.country=IT -Duser.language=it -Duser.variant 
+java_command: it.unicam.cs.mgc.TheClothesProjectConfigurator.App
+java_class_path (initial): C:\Users\danil\Documents\University\Modellazione\TheOntologyProject\app\build\classes\java\main;C:\Users\danil\Documents\University\Modellazione\TheOntologyProject\app\build\resources\main;C:\Users\danil\.gradle\caches\modules-2\files-2.1\com.github.galigator.openllet\openllet-jena\2.6.5\b5e7a3fd2502bcd23abbd6781233334f0167618e\openllet-jena-2.6.5.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\org.apache.jena\jena-arq\4.8.0\e074dd9b496245dda3339e07459b988130c17787\jena-arq-4.8.0.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\com.github.galigator.openllet\openllet-owlapi\2.6.5\1e414ceff0434cae0fb284f6ea0b8f2a7a43c9c9\openllet-owlapi-2.6.5.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\org.apache.jena\jena-core\4.8.0\1b842ba9eb111c69cf3c7fb42434f63392f5988c\jena-core-4.8.0.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\net.sourceforge.owlapi\owlapi-distribution\5.5.0\88bdac758eb3c0c08d096e6c21a7000b95367d5d\owlapi-distribution-5.5.0.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\net.sourceforge.owlapi\owlapi-compatibility\5.5.0\ac9d93f3501d4d2ed6cb0d85f0e304b5bdcf7a62\owlapi-compatibility-5.5.0.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\net.sourceforge.owlapi\owlapi-apibinding\5.5.0\b35c379d607bb6e2e51d34f079233fd7dbe098de\owlapi-apibinding-5.5.0.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\net.sourceforge.owlapi\owlapi-rio\5.5.0\4671a6ce698e469f1d78ec00ac92122d4fa16a52\owlapi-rio-5.5.0.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\org.eclipse.rdf4j\rdf4j-rio-jsonld\4.2.0\f7bba6a0b611c9e382a0f5344c29d8ceeaa7906b\rdf4j-rio-jsonld-4.2.0.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\org.eclipse.rdf4j\rdf4j-rio-binary\4.2.0\2beaa0a9d8dbc32e2a40e945b961706b9c43d798\rdf4j-rio-binary-4.2.0.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\org.eclipse.rdf4j\rdf4j-rio-n3\4.2.0\7fc55dfd24327c502e75beca723e389637822863\rdf4j-rio-n3-4.2.0.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\org.eclipse.rdf4j\rdf4j-rio-nquads\4.2.0\2ecbfc0edaa93d4227af88ab0a11cad634ec9ae2\rdf4j-rio-nquads-4.2.0.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\org.eclipse.rdf4j\rdf4j-rio-ntriples\4.2.0\6f5102f0246769a7e9a5bcf5c10e44f5400e2032\rdf4j-rio-ntriples-4.2.0.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\org.eclipse.rdf4j\rdf4j-rio-rdfjson\4.2.0\5c794bb2eaab17e35d4f7d1dca7f96bbca566a1a\rdf4j-rio-rdfjson-4.2.0.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\org.eclipse.rdf4j\rdf4j-rio-rdfxml\4.2.0\4736fc7671b376867fd3fa4c5dd461941ca7f80\rdf4j-rio-rdfxml-4.2.0.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\org.eclipse.rdf4j\rdf4j-rio-trix\4.2.0\a915da642e31f04196ce0965e7db1161f2320c43\rdf4j-rio-trix-4.2.0.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\org.eclipse.rdf4j\rdf4j-rio-trig\4.2.0\cc6b6111c4ec0d84780840fdb5b0146f9c3de419\rdf4j-rio-trig-4.2.0.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\org.eclipse.rdf4j\rdf4j-rio-turtle\4.2.0\f8dbc239be8f8e25cc18d94f2c7feecf314ada34\rdf4j-rio-turtle-4.2.0.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\org.eclipse.rdf4j\rdf4j-rio-languages\4.2.0\401d606e2484540c723e326f22dc4334e29bc5e2\rdf4j-rio-languages-4.2.0.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\org.eclipse.rdf4j\rdf4j-rio-datatypes\4.2.0\d432233defab8bf5355583f8edf49d275f4fb4be\rdf4j-rio-datatypes-4.2.0.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\org.eclipse.rdf4j\rdf4j-rio-hdt\4.2.0\18b40eced1977f1056fbed428a40d6c8fa001317\rdf4j-rio-hdt-4.2.0.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\org.eclipse.rdf4j\rdf4j-rio-api\4.2.0\1cf6ae5e917b913c2d55e845fa0c2d00a30f98c1\rdf4j-rio-api-4.2.0.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\com.github.jsonld-java\jsonld-java\0.13.4\206e302e18e4e1f5c723a90764e50c7eef954887\jsonld-java-0.13.4.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.10.1\b3add478d4382b78ea20b1671390a858002feb6c\gson-2.10.1.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpclient-osgi\4.5.13\e0347d8cea23eda97f1a214f84d29f38f7727304\httpclient-osgi-4.5.13.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpclient-cache\4.5.14\17e68860da010d0002c2cd05349d6013ef67ab64\httpclient-cache-4.5.14.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpmime\4.5.13\efc110bad4a0d45cda7858e6beee1d8a8313da5a\httpmime-4.5.13.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\fluent-hc\4.5.13\300bf1846737e34b9ea10faae257ca8fdcd0616f\fluent-hc-4.5.13.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpclient\4.5.14\1194890e6f56ec29177673f2f12d0b8e627dec98\httpclient-4.5.14.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\org.slf4j\jcl-over-slf4j\1.7.36\d877e195a05aca4a2f1ad2ff14bfec1393af4b5e\jcl-over-slf4j-1.7.36.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-annotations\2.14.2\a7aae9525864930723e3453ab799521fdfd9d873\jackson-annotations-2.14.2.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-databind\2.14.2\1e71fddbc80bb86f71a6345ac1e8ab8a00e7134\jackson-databind-2.14.2.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-core\2.14.2\f804090e6399ce0cf78242db086017512dd71fcc\jackson-core-2.14.2.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\com.apicatalog\titanium-json-ld\1.3.2\13603148fc54d936eb6f6867ce56dfbd5a90dec2\titanium-json-ld-1.3.2.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\org.glassfish\jakarta.json\2.0.1\da6c75e591cf2a89ddc479cbdbd8fe5f41d3efc9\jakarta.json-2.0.1.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\com.google.protobuf\protobuf-java\3.22.2\fdee98b8f6abab73f146a4edb4c09e56f8278d03\protobuf-java-3.22.2.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\org.apache.thrift\libthrift\0.18.1\75e84bdd4d2ad32037fd74877a8bb430b8777d8e\libthrift-0.18.1.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\org.apache.jena\jena-base\4.8.0\f9f617d0fab107e45505917684c4c7a5c610ee5c\jena-base-4.8.0.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\com.github.galigator.openllet\openllet-query\2.6.5\5825afa107553ee6b881ba52cc83bb342de48bdb\openllet-query-2.6.5.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\com.github.galigator.openllet\openllet-core\2.6.5\42e2ea4b2155be53e26d98d97e05938f658b7c68\openllet-core-2.6.5.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\org.jgrapht\jgrapht-ext\1.1.0\efeba0f7a166dbf4b66deab7fda4d71c65c95e9c\jgrapht-ext-1.1.0.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\org.jgrapht\jgrapht-io\1.1.0\31c4be52e84a8feb536d4ebd9c1d80ae3653215b\jgrapht-io-1.1.0.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\org.apache.commons\commons-lang3\3.12.0\c6842c86792ff03b9f1d1fe2aab8dc23aa6c6f0e\commons-lang3-3.12.0.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\org.antlr\antlr-runtime\3.5.3\9011fb189c5ed6d99e5f3322514848d1ec1e1416\antlr-runtime-3.5.3.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\javax.xml.bind\jaxb-api\2.3.0\99f802e0cb3e953ba3d6e698795c4aeb98d37c48\jaxb-api-2.3.0.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\org.apache.jena\jena-iri\4.8.0\950137193f2387a74c96e8f7e4f339b021d509e6\jena-iri-4.8.0.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\commons-cli\commons-cli\1.5.0\dc98be5d5390230684a092589d70ea76a147925c\commons-cli-1.5.0.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpcore-osgi\4.4.14\16da2fa4ba5911ded1e2a424eb347cf278b5c745\httpcore-osgi-4.4.14.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpcore-nio\4.4.14\175aeb59b09cf2ebbec622fe1704904a092ee291\httpcore-nio-4.4.14.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\org.apache.httpcomponents\httpcore\4.4.16\51cf043c87253c9f58b539c9f7e44c8894223850\httpcore-4.4.16.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\com.github.galigator.openllet\openllet-functions\2.6.5\758d1f56e35cf040bfef76687fffc7e0b0309465\openllet-functions-2.6.5.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\org.eclipse.rdf4j\rdf4j-model\4.2.0\d5d09c0cb15f755f2870279303295bd23e9f56b1\rdf4j-model-4.2.0.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\org.eclipse.rdf4j\rdf4j-common-io\4.2.0\fdc9af86ebb53f8af2e063c3f2ab99297aa3505d\rdf4j-common-io-4.2.0.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\org.eclipse.rdf4j\rdf4j-common-util\4.2.0\ed73749d8b8724310b28ed15ba221d16e1606396\rdf4j-common-util-4.2.0.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\org.eclipse.rdf4j\rdf4j-common-text\4.2.0\427ce33318df57542c28c291f4ff99d780d14ad7\rdf4j-common-text-4.2.0.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\org.eclipse.rdf4j\rdf4j-common-iterator\4.2.0\7b2e55c0f470748d3c1bf0d04ba0280a43a67bc3\rdf4j-common-iterator-4.2.0.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\org.eclipse.rdf4j\rdf4j-common-xml\4.2.0\860f4e9e8bbf398e59d8eaa42d815719e8633552\rdf4j-common-xml-4.2.0.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\net.sourceforge.owlapi\owlapi-impl\5.5.0\b1b91b746ef258d540393901bd236603e0fb2e0d\owlapi-impl-5.5.0.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\net.sourceforge.owlapi\owlapi-oboformat\5.5.0\78504ca705fe5a9636c7d61a808a3d338bdff477\owlapi-oboformat-5.5.0.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\net.sourceforge.owlapi\owlapi-parsers\5.5.0\2185aec2132a670e176a9811f76f35fde7d0393c\owlapi-parsers-5.5.0.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\net.sourceforge.owlapi\owlapi-tools\5.5.0\6be30396564f43e660d9498ca844bab734be1bd2\owlapi-tools-5.5.0.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\net.sourceforge.owlapi\owlapi-api\5.5.0\811d301088b33a89c559641c08c1fbbcbb2f5ddf\owlapi-api-5.5.0.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\org.slf4j\slf4j-api\1.7.36\6c62681a2f655b49963a5983b8b0950a6120ae14\slf4j-api-1.7.36.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\org.apache.commons\commons-rdf-api\0.5.0\df2d4451dee5b311cb4f51ced214dfaab5838291\commons-rdf-api-0.5.0.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\org.tukaani\xz\1.9\1ea4bec1a921180164852c65006d928617bd2caf\xz-1.9.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\org.eclipse.rdf4j\rdf4j-model-vocabulary\4.2.0\eab9f32120ec61e6af4f50b70a1038223e91d6be\rdf4j-model-vocabulary-4.2.0.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\org.eclipse.rdf4j\rdf4j-common-exception\4.2.0\88bc97f7302645d38af7f19ba5718bdfd9817392\rdf4j-common-exception-4.2.0.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\org.eclipse.rdf4j\rdf4j-model-api\4.2.0\c381b48d4ef9be47f41fa8c8ef8a85268524bcb3\rdf4j-model-api-4.2.0.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\com.github.vsonnier\hppcrt\0.7.5\62ddbac53e3d718ee391994d31802ad18b701dac\hppcrt-0.7.5.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\com.github.ben-manes.caffeine\caffeine\3.1.1\b08f9f234ae51adf8b7a3dcdfcf115aa258fafcb\caffeine-3.1.1.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\com.google.guava\guava\31.1-jre\60458f877d055d0c9114d9e1a2efb737b4bc282c\guava-31.1-jre.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\3.0.2\25ea2e8b0c338a877313bd4672d3fe056ea78f0d\jsr305-3.0.2.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\commons-io\commons-io\2.11.0\a2503f302b11ebde7ebc3df41daebe0e4eea3689\commons-io-2.11.0.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\org.apache.jena\jena-shaded-guava\4.8.0\5aaed5deaa989cb638097ecc65f0d8fe7f58a1f0\jena-shaded-guava-4.8.0.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\org.apache.commons\commons-csv\1.10.0\8669bee353424c3223c93723291b5c3753260c1c\commons-csv-1.10.0.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\commons-codec\commons-codec\1.15\49d94806b6e3dc933dacbd8acb0fdbab8ebd1e5d\commons-codec-1.15.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\org.apache.commons\commons-compress\1.23.0\4af2060ea9b0c8b74f1854c6cafe4d43cfc161fc\commons-compress-1.23.0.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\com.github.andrewoma.dexx\collection\0.7\264efc08bdcd22126bd429aaea9efaf5158b2b90\collection-0.7.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\org.jgrapht\jgrapht-core\1.1.0\b0b4357e6eea77945ca1c1920f865e0cfbbd67f2\jgrapht-core-1.1.0.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\org.tinyjee.jgraphx\jgraphx\2.0.0.1\ba31c747a124ea12652d453cf174cb910a702ca3\jgraphx-2.0.0.1.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\jgraph\jgraph\5.13.0.0\577a30b3c2cf7decbb68471f5c96bfa1647b98dd\jgraph-5.13.0.0.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\org.eclipse.rdf4j\rdf4j-common-annotation\4.2.0\59b0562f34dd55e304e13aa8cd9bce91b53ce2cf\rdf4j-common-annotation-4.2.0.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\org.checkerframework\checker-qual\3.22.0\8e37f79d2cfe45a670e13f728b5e536ba65ac3ef\checker-qual-3.22.0.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\com.google.errorprone\error_prone_annotations\2.14.0\9f01b3654d3c536859705f09f8d267ee977b4004\error_prone_annotations-2.14.0.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\com.google.guava\failureaccess\1.0.1\1dcf1de382a0bf95a3d8b0849546c88bac1292c9\failureaccess-1.0.1.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\com.google.guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\b421526c5f297295adef1c886e5246c39d4ac629\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\com.google.j2objc\j2objc-annotations\1.3\ba035118bc8bac37d7eff77700720999acd9986d\j2objc-annotations-1.3.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\org.antlr\antlr4-runtime\4.6\eea6f8cd6f36208355dc2c0a8775503b907ce73\antlr4-runtime-4.6.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\jakarta.xml.bind\jakarta.xml.bind-api\2.3.3\48e3b9cfc10752fba3521d6511f4165bea951801\jakarta.xml.bind-api-2.3.3.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\javax.inject\javax.inject\1\6975da39a7040257bd51d21a231b76c915872d38\javax.inject-1.jar;C:\Users\danil\.gradle\caches\modules-2\files-2.1\jakarta.activation\jakarta.activation-api\1.2.2\99f53adba383cb1bf7c3862844488574b559621f\jakarta.activation-api-1.2.2.jar
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     intx CICompilerCount                          = 4                                         {product} {ergonomic}
+     uint ConcGCThreads                            = 3                                         {product} {ergonomic}
+     uint G1ConcRefinementThreads                  = 10                                        {product} {ergonomic}
+   size_t G1HeapRegionSize                         = 2097152                                   {product} {ergonomic}
+    uintx GCDrainStackTargetSize                   = 64                                        {product} {ergonomic}
+   size_t InitialHeapSize                          = 268435456                                 {product} {ergonomic}
+   size_t MarkStackSize                            = 4194304                                   {product} {ergonomic}
+   size_t MaxHeapSize                              = 4282384384                                {product} {ergonomic}
+   size_t MinHeapDeltaBytes                        = 2097152                                   {product} {ergonomic}
+   size_t MinHeapSize                              = 8388608                                   {product} {ergonomic}
+    uintx NonNMethodCodeHeapSize                   = 5839372                                {pd product} {ergonomic}
+    uintx NonProfiledCodeHeapSize                  = 122909434                              {pd product} {ergonomic}
+    uintx ProfiledCodeHeapSize                     = 122909434                              {pd product} {ergonomic}
+    uintx ReservedCodeCacheSize                    = 251658240                              {pd product} {ergonomic}
+     bool SegmentedCodeCache                       = true                                      {product} {ergonomic}
+   size_t SoftMaxHeapSize                          = 4282384384                             {manageable} {ergonomic}
+     bool UseCompressedOops                        = true                           {product lp64_product} {ergonomic}
+     bool UseG1GC                                  = true                                      {product} {ergonomic}
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags foldmultilines=false
+ #1: stderr all=off uptime,level,tags foldmultilines=false
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk-21
+PATH=C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\ProgramData\chocolatey\bin;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\PowerShell\7\;C:\Program Files\Java\jdk-21\bin;C:\Program Files\Graphviz\bin;C:\Users\danil\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA 2023.2.4\bin;C:\Users\danil\AppData\Local\spicetify;C:\Gradle\gradle-8.8\bin;
+USERNAME=danil
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=AMD64 Family 23 Model 113 Stepping 0, AuthenticAMD
+TMP=C:\Users\danil\AppData\Local\Temp
+TEMP=C:\Users\danil\AppData\Local\Temp
+
+
+
+
+Periodic native trim disabled
+
+---------------  S Y S T E M  ---------------
+
+OS:
+ Windows 11 , 64 bit Build 22621 (10.0.22621.3672)
+OS uptime: 0 days 2:02 hours
+Hyper-V role detected
+
+CPU: total 12 (initial active 12) (12 cores per cpu, 2 threads per core) family 23 model 113 stepping 0 microcode 0x0, cx8, cmov, fxsr, ht, mmx, 3dnowpref, sse, sse2, sse3, ssse3, sse4a, sse4.1, sse4.2, popcnt, lzcnt, tsc, tscinvbit, avx, avx2, aes, clmul, bmi1, bmi2, adx, sha, fma, vzeroupper, clflush, clflushopt, hv, rdtscp, rdpid, f16c
+Processor Information for all 12 processors :
+  Max Mhz: 3593, Current Mhz: 3593, Mhz Limit: 3593
+
+Memory: 4k page, system-wide physical 16332M (2885M free)
+TotalPageFile size 16332M (AvailPageFile size 64M)
+current process WorkingSet (physical memory assigned to process): 11M, peak: 11M
+current process commit charge ("private bytes"): 64M, peak: 320M
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (21.0.3+7-LTS-152) for windows-amd64 JRE (21.0.3+7-LTS-152), built on 2024-03-11T17:42:26Z by "mach5one" with MS VC++ 17.6 (VS2022)
+
+END.

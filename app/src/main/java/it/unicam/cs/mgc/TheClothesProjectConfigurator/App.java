@@ -22,8 +22,15 @@
 
 package it.unicam.cs.mgc.TheClothesProjectConfigurator;
 
+import it.unicam.cs.mgc.TheClothesProjectConfigurator.model.ControllerOfOntology;
+import it.unicam.cs.mgc.TheClothesProjectConfigurator.model.ParsedData;
+import it.unicam.cs.mgc.TheClothesProjectConfigurator.model.SPARQLqueries.SelectDataQueries;
+
+import java.util.Collection;
+
 public class App {
     public static void main(String[] args) {
 
     }
+
 }

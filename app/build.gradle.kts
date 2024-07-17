@@ -38,8 +38,6 @@ dependencies {
 
 application {
     // Define the main class for the application.
-    mainModule.set("it.unicam.cs.mgc.TheClothesProjectConfigurator")
-    // Define the main class for the application.
     mainClass.set(/* value = */ "it.unicam.cs.mgc.TheClothesProjectConfigurator.App")
 }
 

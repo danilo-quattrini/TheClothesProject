@@ -41,7 +41,7 @@ public class QueryExecutor implements ExecuteQueries{
 
     @Override
     public QueryExecution perform(SPARQLqueries query, Model model, Object... args) {
-        Query queryToPerform = QueryFactory.create(query.getFullQuery());
+        Query queryToPerform = QueryFactory.create(query.getFullQuery(args));
         return QueryExecutionFactory.create(queryToPerform, model);
     }
 }

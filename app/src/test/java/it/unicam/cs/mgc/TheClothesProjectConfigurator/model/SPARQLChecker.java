@@ -29,7 +29,7 @@ public class SPARQLChecker {
     @Test
     public void testQueryParameterization(){
     String query = SelectDataQueries.SELECT_CLOTHES.getSPARQLQuery("Bra");
-    String expectedQuery = "SELECT ?label ?value WHERE { ?clothes rdfs:subClassOf cp:Clothes. BIND(?clothes AS ?label) . ?clothes rdfs:label ?value . FILTER(STRSTARTS(?value, \"Bra\")) }";
+    String expectedQuery = "SELECT ?label ?value WHERE { ?clothes rdfs:subClassOf cp:Clothes. BIND((?clothes) AS ?label) . ?clothes rdfs:label ?value . FILTER(STRSTARTS(?value, \"Bra\")) }";
     assertEquals(expectedQuery, query);
     }
 }
