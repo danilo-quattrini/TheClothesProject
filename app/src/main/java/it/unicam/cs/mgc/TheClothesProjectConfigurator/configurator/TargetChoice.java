@@ -20,20 +20,44 @@
  * SOFTWARE.
  */
 
-package it.unicam.cs.mgc.TheClothesProjectConfigurator;
+package it.unicam.cs.mgc.TheClothesProjectConfigurator.configurator;
 
-
-import it.unicam.cs.mgc.TheClothesProjectConfigurator.configurator.TheConfigurator;
-import it.unicam.cs.mgc.TheClothesProjectConfigurator.model.ControllerOfOntology;
 import it.unicam.cs.mgc.TheClothesProjectConfigurator.controller.Controller;
+import it.unicam.cs.mgc.TheClothesProjectConfigurator.model.ParsedData;
+
+import java.util.Collection;
 import java.util.Scanner;
 
-public class App {
-    public static void main(String[] args) {
-            Controller controller = new Controller();
-            System.out.println(controller.getOntologyConsistencyStatus());
-            ControllerOfOntology ontology = new ControllerOfOntology();
-            TheConfigurator configurator = new TheConfigurator(new Scanner(System.in), ontology,controller);
-            configurator.startConfiguration();
-        }
+public class TargetChoice implements ChoiserInCase {
+    private final Controller controller;
+
+    public TargetChoice(Controller controller) {
+        this.controller = controller;
+    }
+
+    @Override
+    public String choiser(Scanner scanner) {
+        String TheChoice = "";
+        System.out.println("Choose Target:");
+        Collection<String> targetList = SubjecList();
+
+        int index = 1;
+        for (String gender : targetList) System.out.println(index++ + ". " + gender);
+
+        int choice = scanner.nextInt();
+        scanner.nextLine();
+
+        if (choice > 0 && choice <= targetList.size()) {
+            TheChoice = targetList.toArray(new String[0])[choice - 1];
+            System.out.println("You chose: " + TheChoice);
+        } else System.out.println("Invalid choice. Please try again.");
+
+        return TheChoice;
+    }
+
+    @Override
+    public Collection<String> SubjecList() {
+        ParsedData data = controller.targetList();
+        return data.getAllValues();
+    }
 }

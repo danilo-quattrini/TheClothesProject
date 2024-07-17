@@ -445,7 +445,6 @@
             <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Tie"/>
             <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Umbrella"/>
         </owl:disjointUnionOf>
-        <rdfs:label>Accessory</rdfs:label>
     </owl:Class>
     
 
@@ -886,8 +885,6 @@
                 <owl:someValuesFrom rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#LowerSize"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>These are all the lower clothes like jeans,trousers ecc..</rdfs:comment>
-        <rdfs:label>LowerClothes</rdfs:label>
     </owl:Class>
     
 
@@ -1382,7 +1379,6 @@
             <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Socks"/>
             <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Underpants"/>
         </owl:disjointUnionOf>
-        <rdfs:label>Underwear</rdfs:label>
     </owl:Class>
     
 
@@ -1421,8 +1417,6 @@
                 <owl:someValuesFrom rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperClothingSize"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:comment>These are all the upper clothes like tshirt, shirt, coat ecc..</rdfs:comment>
-        <rdfs:label>UpperClothes</rdfs:label>
     </owl:Class>
     
 
@@ -1488,6 +1482,14 @@
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Accessory -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Accessory">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Clothes"/>
+    </owl:NamedIndividual>
     
 
 
@@ -1794,6 +1796,14 @@
     
 
 
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#LowerClothes -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#LowerClothes">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Clothes"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Lycra -->
 
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Lycra">
@@ -1982,6 +1992,22 @@
     
 
 
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Underwear -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Underwear">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Clothes"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperClothes -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperClothes">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Clothes"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#W28L32 -->
 
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#W28L32">
@@ -2128,6 +2154,9 @@
     <rdf:Description rdf:about="http://dbpedia.org/ontology/data/definitions.ttl">
         <terms:describes rdf:resource="http://dbpedia.org/ontology/SocietalEvent"/>
     </rdf:Description>
+    <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Accessory">
+        <rdfs:label>Accessory</rdfs:label>
+    </rdf:Description>
     <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ClothesMaterial">
         <rdfs:label>ClothesMaterial</rdfs:label>
     </rdf:Description>
@@ -2138,11 +2167,22 @@
     <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Female">
         <rdfs:label>Female</rdfs:label>
     </rdf:Description>
+    <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#LowerClothes">
+        <rdfs:comment>These are all the lower clothes like jeans,trousers ecc..</rdfs:comment>
+        <rdfs:label>LowerClothes</rdfs:label>
+    </rdf:Description>
     <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Male">
         <rdfs:label>Male</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Pattern">
         <rdfs:label xml:lang="en">Clothes pattern</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Underwear">
+        <rdfs:label>Underwear</rdfs:label>
+    </rdf:Description>
+    <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperClothes">
+        <rdfs:comment>These are all the upper clothes like tshirt, shirt, coat ecc..</rdfs:comment>
+        <rdfs:label>UpperClothes</rdfs:label>
     </rdf:Description>
     
 

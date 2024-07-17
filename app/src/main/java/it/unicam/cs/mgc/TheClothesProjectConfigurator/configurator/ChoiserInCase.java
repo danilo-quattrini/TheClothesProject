@@ -20,34 +20,16 @@
  * SOFTWARE.
  */
 
-plugins {
-    id("java")
-    id("application")
-}
-group ="it.unicam.cs.mgc.TheClothesProjecConfigurator.app"
-version = "1.0-SNAPSHOT"
+package it.unicam.cs.mgc.TheClothesProjectConfigurator.configurator;
 
-dependencies {
-    implementation("org.apache.jena:jena-arq:4.8.0")
-    implementation("com.github.galigator.openllet:openllet-jena:2.6.5")
-    implementation("com.github.galigator.openllet:openllet-owlapi:2.6.5")
-    testImplementation(platform("org.junit:junit-bom:5.10.3"))
-    testImplementation("org.junit.jupiter:junit-jupiter")
-    testRuntimeOnly("org.junit.platform:junit-platform-launcher")
-}
+import java.util.Collection;
+import java.util.Scanner;
+/**
+ * The choiser interface is used to inizialize the scanner and return the choised
+ * */
+public interface ChoiserInCase {
 
-application {
-    // Define the main class for the application.
-    mainClass.set(/* value = */ "it.unicam.cs.mgc.TheClothesProjectConfigurator.App")
-}
+    String choiser(Scanner scanner);
 
-
-tasks.test {
-    useJUnitPlatform()
-}
-repositories {
-    mavenCentral()
-}
-tasks.getByName("run", JavaExec::class) {
-    standardInput = System.`in`
+    Collection<?> SubjecList();
 }

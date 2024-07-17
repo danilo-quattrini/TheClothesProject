@@ -39,10 +39,27 @@ public class Controller {
      *
      * @return data containing the list of clothes
      */
-    public ParsedData getClothesList() {
-        return ontology.get(SelectDataQueries.CLOTHES_LIST);
+    public ParsedData getClothesCategory() {
+        return ontology.get(SelectDataQueries.CLOTHES_CATEGORIES);
     }
-
+    /**
+     * Returns the list of clothes of specif category in the ontology.
+     *
+     * @return data containing the list of specified cateogy clothes
+     */
+    public ParsedData getCLothesFromCategory(String value) {return ontology.get(SelectDataQueries. CLOTHES_LIST_OF_SPECIF_CATEGORY,value);}
+    /**
+     * Returns the list of gender in the ontology.
+     *
+     * @return data containing the list of gender
+     */
+    public ParsedData genderList(){return ontology.get(SelectDataQueries.GENDER_LIST);}
+    /**
+     * Returns the list of gender in the ontology.
+     *
+     * @return data containing the list of gender
+     */
+    public ParsedData targetList(){return ontology.get(SelectDataQueries.TARGET_LIST);}
     /**
      * Returns the ontology consistency status
      *

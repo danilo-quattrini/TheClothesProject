@@ -5,17 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c5aa5aaa-134f-4c88-89b2-12ed635acc6c" name="Changes" comment="CRAZY AREA edited the ontology added controller but is not working NoClass found error">
-      <change afterPath="$PROJECT_DIR$/app/hs_err_pid10864.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/hs_err_pid12024.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/hs_err_pid13032.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/configurator/ChoiserInCase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/configurator/ClothesCatogoryChoice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/configurator/ClothesFromCategoy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/configurator/GenderChoice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/configurator/TargetChoice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/configurator/TheConfigurator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/hs_err_pid10864.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/hs_err_pid12024.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/hs_err_pid13032.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/model/SPARQLqueries/QueryExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/model/SPARQLqueries/QueryExecutor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/controller/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/model/SPARQLqueries/SelectDataQueries.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/model/SPARQLqueries/SelectDataQueries.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/owl/catalog-v001.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/owl/catalog-v001.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/model/CheckQueryExecution.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/model/CheckQueryExecution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/model/SPARQLChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/model/SPARQLChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/owl/TheClothesProject.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/owl/TheClothesProject.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/owl/TheClothesProject.rdf" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/owl/TheClothesProject.rdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hs_err_pid9688.log" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,56 +94,57 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;Gradle.CheckQueriesExecution (1).executor&quot;: &quot;Debug&quot;,
-    &quot;Gradle.CheckQueriesExecution.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CheckQueriesExecution.setUp.executor&quot;: &quot;Debug&quot;,
-    &quot;Gradle.CheckQueryExecution.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CheckQueryExecution.queryAllClothes.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CheckQueryExecution.queryAllGender.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CheckQueryExecution.queryAllMaterial.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CheckQueryExecution.queryClothesDetails.executor&quot;: &quot;Debug&quot;,
-    &quot;Gradle.CheckQueryExecution.querySearchedClothes.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CheckQueryExecution.querySelectClothes.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.CheckQueryExecution.setUp.executor&quot;: &quot;Debug&quot;,
-    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.ModelOntologyTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.ModelOntologyTest.testCorrectStatementPresence.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.RDFormatterTest.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.RDFormatterTest.testCamelCaseToSpacedString.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.RDFormatterTest.testStringToFirstLetterUpperCase.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.SPARQLChecker.executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TheOntologyProject [app:run].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TheOntologyProject [build].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TheOntologyProject [builf].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TheOntologyProject [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TheOntologyProject [run].executor&quot;: &quot;Run&quot;,
-    &quot;Gradle.TheOntologyProject.executor&quot;: &quot;Run&quot;,
-    &quot;OpenRewrite.Faces2xMigrationToJakarta4x.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/danil/Documents/University/Modellazione/ExoplanetCataloguer&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.completion&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Gradle.CheckQueriesExecution (1).executor": "Debug",
+    "Gradle.CheckQueriesExecution.executor": "Run",
+    "Gradle.CheckQueriesExecution.setUp.executor": "Debug",
+    "Gradle.CheckQueryExecution.executor": "Run",
+    "Gradle.CheckQueryExecution.queryAllClothes.executor": "Run",
+    "Gradle.CheckQueryExecution.queryAllGender.executor": "Debug",
+    "Gradle.CheckQueryExecution.queryAllMaterial.executor": "Run",
+    "Gradle.CheckQueryExecution.queryClothesDetails.executor": "Debug",
+    "Gradle.CheckQueryExecution.querySearchedClothes.executor": "Run",
+    "Gradle.CheckQueryExecution.querySelectClothes.executor": "Run",
+    "Gradle.CheckQueryExecution.setUp.executor": "Debug",
+    "Gradle.Download Sources.executor": "Run",
+    "Gradle.ModelOntologyTest.executor": "Run",
+    "Gradle.ModelOntologyTest.testCorrectStatementPresence.executor": "Run",
+    "Gradle.RDFormatterTest.executor": "Run",
+    "Gradle.RDFormatterTest.testCamelCaseToSpacedString.executor": "Run",
+    "Gradle.RDFormatterTest.testStringToFirstLetterUpperCase.executor": "Run",
+    "Gradle.SPARQLChecker.executor": "Run",
+    "Gradle.TheOntologyProject [app:run].executor": "Run",
+    "Gradle.TheOntologyProject [build].executor": "Run",
+    "Gradle.TheOntologyProject [builf].executor": "Run",
+    "Gradle.TheOntologyProject [clean].executor": "Run",
+    "Gradle.TheOntologyProject [run].executor": "Run",
+    "Gradle.TheOntologyProject.executor": "Run",
+    "Gradle.TheOntologyProject:app [:app:App.main()].executor": "Run",
+    "OpenRewrite.Faces2xMigrationToJakarta4x.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/danil/Documents/University/Modellazione/ExoplanetCataloguer",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "editor.preferences.completion",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;kotlin-gradle-user-dirs&quot;: [
-      &quot;C:\\Users\\danil\\.gradle&quot;
+  "keyToStringList": {
+    "kotlin-gradle-user-dirs": [
+      "C:\\Users\\danil\\.gradle"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="it.unicam.cs.mgc.TheClothesProjectConfigurator.model" />
@@ -169,7 +176,20 @@
     </option>
   </component>
   <component name="RunManager" selected="Gradle.TheOntologyProject [run]">
-    <configuration name="SPARQLChecker" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="it.unicam.cs.mgc.TheClothesProjectConfigurator.App" />
+      <module name="TheOntologyProject.app.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="it.unicam.cs.mgc.TheClothesProjectConfigurator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CheckQueryExecution.queryAllGender" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -182,7 +202,7 @@
           <list>
             <option value=":app:test" />
             <option value="--tests" />
-            <option value="&quot;it.unicam.cs.mgc.TheClothesProjectConfigurator.model.SPARQLChecker&quot;" />
+            <option value="&quot;it.unicam.cs.mgc.TheClothesProjectConfigurator.model.CheckQueryExecution.queryAllGender&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -237,28 +257,6 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="TheOntologyProject [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="clean" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
     <configuration name="TheOntologyProject [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -283,11 +281,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.CheckQueryExecution.queryAllGender" />
+        <item itemvalue="Application.App" />
         <item itemvalue="Gradle.TheOntologyProject [build]" />
         <item itemvalue="Gradle.TheOntologyProject [run]" />
         <item itemvalue="Gradle.TheOntologyProject [app:run]" />
-        <item itemvalue="Gradle.SPARQLChecker" />
-        <item itemvalue="Gradle.TheOntologyProject [clean]" />
       </list>
     </recent_temporary>
   </component>
@@ -325,7 +323,8 @@
       <workItem from="1721204217782" duration="2547000" />
       <workItem from="1721222221889" duration="3653000" />
       <workItem from="1721225928157" duration="287000" />
-      <workItem from="1721226225676" duration="1473000" />
+      <workItem from="1721226225676" duration="1650000" />
+      <workItem from="1721241365742" duration="12113000" />
     </task>
     <task id="LOCAL-00001" summary="Edited the ontology and added the test&#10; +edited the ontology and added the labels&#10; +added test and class checker for validate the ontology&#10; +imported pellet">
       <option name="closed" value="true" />
