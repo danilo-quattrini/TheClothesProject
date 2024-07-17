@@ -1,0 +1,54 @@
+Index: app/build.gradle.kts
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>plugins {\r\n    id(\"buildlogic.java-application-conventions\")\r\n}\r\n\r\ndependencies {\r\n    implementation(\"org.apache.commons:commons-text\")\r\n    implementation(\"org.apache.jena:jena-arq:5.0.0\")\r\n    implementation(\"org.apache.jena:jena-core:5.0.0\")\r\n\r\n}\r\n\r\napplication {\r\n    // Define the main class for the application.\r\n    mainClass = \"it.unicam.cs.mgc.TheClothesProjectConfigurator.App\"\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/build.gradle.kts b/app/build.gradle.kts
+--- a/app/build.gradle.kts	
++++ b/app/build.gradle.kts	
+@@ -6,7 +6,6 @@
+     implementation("org.apache.commons:commons-text")
+     implementation("org.apache.jena:jena-arq:5.0.0")
+     implementation("org.apache.jena:jena-core:5.0.0")
+-
+ }
+ 
+ application {
+Index: app/src/test/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/tester/ModelOntologyTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/test/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/tester/ModelOntologyTest.java b/app/src/test/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/tester/ModelOntologyTest.java
+new file mode 100644
+--- /dev/null	
++++ b/app/src/test/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/tester/ModelOntologyTest.java	
+@@ -0,0 +1,26 @@
++/*
++ * Copyright (c) 2024 Danilo Quattrini
++ *
++ * Permission is hereby granted, free of charge, to any person obtaining a copy
++ * of this software and associated documentation files (the "Software"), to deal
++ * in the Software without restriction, including without limitation the rights
++ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
++ * copies of the Software, and to permit persons to whom the Software is
++ * furnished to do so, subject to the following conditions:
++ *
++ * The above copyright notice and this permission notice shall be included in all
++ * copies or substantial portions of the Software.
++ *
++ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
++ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
++ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
++ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
++ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
++ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
++ * SOFTWARE.
++ */
++
++package it.unicam.cs.mgc.TheClothesProjectConfigurator.tester;
++
++public class ModelOntologyTest {
++}

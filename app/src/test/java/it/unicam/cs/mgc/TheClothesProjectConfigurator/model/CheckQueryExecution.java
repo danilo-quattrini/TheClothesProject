@@ -41,9 +41,9 @@ public class CheckQueryExecution {
 
     @Test
     public void queryAllClothes() {
-        ParsedData data = ontology.get(SelectDataQueries.CLOTHES_LIST);
+        ParsedData data = ontology.get(SelectDataQueries.NATURAL_LIST);
         Collection<String> clothes = data.getAllValues();
-        assertEquals(48, clothes.size());
+        assertEquals(8, clothes.size());
     }
 
     @Test

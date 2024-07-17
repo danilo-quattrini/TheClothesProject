@@ -4,33 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5aa5aaa-134f-4c88-89b2-12ed635acc6c" name="Changes" comment="Edited the ontology and added the test&#10; +edited the ontology and added the labels&#10; +added test and class checker for validate the ontology&#10; +imported pellet">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/controller/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/model/JSONData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/model/JSONParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/model/ParsedData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/model/QueryOntologyExecutor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/model/TheDataParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/resources/owl/SocietalEvent.rdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/resources/owl/TheClothesProject.rdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/resources/owl/catalog-v001.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utilities/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+    <list default="true" id="c5aa5aaa-134f-4c88-89b2-12ed635acc6c" name="Changes" comment="CRAZY AREA edited the ontology added controller but is not working NoClass found error">
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/owl/TheClothesProject.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hs_err_pid9688.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/model/ControllerOfOntology.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/model/ControllerOfOntology.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/model/SPARQLqueries/QueryExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/model/SPARQLqueries/QueryExecutor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/model/SPARQLqueries/SelectDataQueries.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/model/SPARQLqueries/SelectDataQueries.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/model/builder/TheMainBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/model/builder/TheMainBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/owl/SocietalEvent.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/owl/TheClothesProject.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/resources/owl/catalog-v001.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/owl/catalog-v001.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/tester/CheckQueriesExecution.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/model/CheckQueryExecution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/tester/ModelOntologyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/model/ModelOntologyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/tester/RDFormatterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/model/RDFormatterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/tester/SPARQLChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/model/SPARQLChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/hs_err_pid15232.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/owl/TheClothesProject.rdf" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/owl/TheClothesProject.rdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/model/CheckQueryExecution.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/model/CheckQueryExecution.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,6 +91,7 @@
     "Gradle.CheckQueriesExecution.executor": "Run",
     "Gradle.CheckQueriesExecution.setUp.executor": "Debug",
     "Gradle.CheckQueryExecution.executor": "Run",
+    "Gradle.CheckQueryExecution.queryAllClothes.executor": "Debug",
     "Gradle.CheckQueryExecution.queryClothesDetails.executor": "Run",
     "Gradle.CheckQueryExecution.querySearchedClothes.executor": "Run",
     "Gradle.CheckQueryExecution.setUp.executor": "Debug",
@@ -124,6 +106,7 @@
     "Gradle.TheOntologyProject [build].executor": "Run",
     "Gradle.TheOntologyProject [builf].executor": "Run",
     "Gradle.TheOntologyProject [clean].executor": "Run",
+    "Gradle.TheOntologyProject.executor": "Run",
     "OpenRewrite.Faces2xMigrationToJakarta4x.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -165,12 +148,13 @@
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="gradlew builf" />
+      <command value="gradlew -D" />
       <command value="gradlew app:run" />
       <command value="gradlew clean" />
       <command value="gradlew build" />
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.TheOntologyProject">
+  <component name="RunManager" selected="Gradle.CheckQueryExecution.setUp">
     <configuration name="CheckQueryExecution" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -195,12 +179,36 @@
       <RunAsTest>true</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="CheckQueryExecution.setUp" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="CheckQueryExecution.queryAllClothes" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":app:test" />
+            <option value="--tests" />
+            <option value="&quot;it.unicam.cs.mgc.TheClothesProjectConfigurator.model.CheckQueryExecution.queryAllClothes&quot;" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="CheckQueryExecution.setUp" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--scan" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -217,6 +225,28 @@
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
       <RunAsTest>true</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="TheOntologyProject [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
     <configuration name="TheOntologyProject [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -241,37 +271,12 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="TheOntologyProject" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="-D" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list />
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="Faces2xMigrationToJakarta4x" type="OpenRewriteRunConfigurationType" factoryName="OpenRewrite" temporary="true" nameIsGenerated="true">
-      <option name="activeRecipes" value="org.openrewrite.java.migrate.jakarta.Faces2xMigrationToJakarta4x" />
-      <option name="workingDirectory" value="$PROJECT_DIR$/app" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.TheOntologyProject" />
         <item itemvalue="Gradle.CheckQueryExecution.setUp" />
+        <item itemvalue="Gradle.TheOntologyProject [build]" />
+        <item itemvalue="Gradle.CheckQueryExecution.queryAllClothes" />
         <item itemvalue="Gradle.CheckQueryExecution" />
-        <item itemvalue="OpenRewrite.Faces2xMigrationToJakarta4x" />
         <item itemvalue="Gradle.TheOntologyProject [clean]" />
       </list>
     </recent_temporary>
@@ -306,7 +311,8 @@
       <workItem from="1721126451219" duration="1341000" />
       <workItem from="1721158847925" duration="5603000" />
       <workItem from="1721165992423" duration="3482000" />
-      <workItem from="1721170086534" duration="1007000" />
+      <workItem from="1721170086534" duration="3860000" />
+      <workItem from="1721204217782" duration="2547000" />
     </task>
     <task id="LOCAL-00001" summary="Edited the ontology and added the test&#10; +edited the ontology and added the labels&#10; +added test and class checker for validate the ontology&#10; +imported pellet">
       <option name="closed" value="true" />
@@ -316,7 +322,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721081219996</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="CRAZY AREA edited the ontology added controller but is not working NoClass found error">
+      <option name="closed" value="true" />
+      <created>1721171580272</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1721171580272</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -336,7 +350,8 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Edited the ontology and added the test&#10; +edited the ontology and added the labels&#10; +added test and class checker for validate the ontology&#10; +imported pellet" />
-    <option name="LAST_COMMIT_MESSAGE" value="Edited the ontology and added the test&#10; +edited the ontology and added the labels&#10; +added test and class checker for validate the ontology&#10; +imported pellet" />
+    <MESSAGE value="CRAZY AREA edited the ontology added controller but is not working NoClass found error" />
+    <option name="LAST_COMMIT_MESSAGE" value="CRAZY AREA edited the ontology added controller but is not working NoClass found error" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -347,28 +362,52 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/test/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/model/CheckQueryExecution.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="64" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/test/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/model/CheckQueryExecution.java</url>
           <line>38</line>
-          <option name="timeStamp" value="45" />
+          <option name="timeStamp" value="69" />
+        </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NoClassDefFoundError" package="java.lang" />
+          <option name="timeStamp" value="48" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.opentest4j.AssertionFailedError" package="org.opentest4j" />
+          <option name="timeStamp" value="60" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/app/src/test/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/model/CheckQueryExecution.java</url>
+          <line>42</line>
+          <properties class="it.unicam.cs.mgc.TheClothesProjectConfigurator.model.CheckQueryExecution" method="queryAllClothes">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="63" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/app/src/test/java/it/unicam/cs/mgc/TheClothesProjectConfigurator/model/CheckQueryExecution.java</url>
-          <line>35</line>
+          <line>36</line>
           <properties class="it.unicam.cs.mgc.TheClothesProjectConfigurator.model.CheckQueryExecution" method="setUp">
             <option name="EMULATED" value="true" />
             <option name="WATCH_EXIT" value="false" />
           </properties>
-          <option name="timeStamp" value="44" />
+          <option name="timeStamp" value="68" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
+        <PinnedItemInfo parentTag="it.unicam.cs.mgc.TheClothesProjectConfigurator.model.ControllerOfOntology" memberName="model" />
         <PinnedItemInfo parentTag="it.unicam.cs.mgc.TheClothesProjectConfigurator.model.CheckQueryExecution" memberName="ontology" />
       </pinned-members>
     </pin-to-top-manager>
     <watches-manager>
       <configuration name="GradleRunConfiguration">
         <watch expression="((OntModelImpl)this.model).graph" language="JAVA" custom="org.apache.jena.ontology.impl.OntModelImpl" />
+        <watch expression="((HashMap)((JSONData)data).data).entrySet().toArray()[0]" custom="it.unicam.cs.mgc.TheClothesProjectConfigurator.model.JSONData,java.util.HashMap" />
       </configuration>
     </watches-manager>
   </component>

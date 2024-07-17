@@ -35,9 +35,9 @@ public enum SelectDataQueries implements SPARQLqueries {
     ACCESORY_SIZES("SELECT DISTINCT ?accessoysize  WHERE { ?accessoysize rdf:type cp:AccessorySize}"),
     CLOTHES_LIST("SELECT ?clothes  WHERE { ?clothes rdfs:subClassOf cp:Clothes} "),
     SYNTHETIC_LIST("SELECT ?synthetic  WHERE { ?synthetic rdf:type cp:SyntheticClothesMaterial} "),
-    NATURAL_LIST("SELECT ?natural  WHERE { ?natural rdf:type cp:NaturalClothesMaterial} "),
+    NATURAL_LIST("SELECT ?natural  WHERE { ?natural rdf:type cp:NaturalClothesMaterial. BIND(?natural AS ?label) .?natural rdfs:label ?value . } "),
     SEASON_LIST("SELECT ?season WHERE { ?season rdf:type cp:Season }"),
-    SELECT_CLOTHES("SELECT ?label ?value WHERE { (?clothes) rdfs:subClassOf cp:Clothes. BIND(?clothes AS ?label) . ?clothes rdfs:label ?value . FILTER(STRSTARTS(?value, \"%s\")) }"),
+    SELECT_CLOTHES("SELECT ?label ?value WHERE { (?clothes rdfs:subClassOf cp:Clothes. BIND((?clothes) AS ?label) . ?clothes rdfs:label ?value . FILTER(STRSTARTS(?value, \"%s\")) }"),
     SELECT_MATERIAL_NATURAL("SELECT ?label ?value WHERE { ?naturalmaterial rdf:type cp:NaturalClothesMaterial. BIND(?naturalmaterial AS ?label) . ?naturalmaterial rdfs:label ?value . FILTER(STRSTARTS(?value, \"%s\")) }");
     private final String sparqlQuery;
 

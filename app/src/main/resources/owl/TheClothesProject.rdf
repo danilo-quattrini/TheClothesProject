@@ -114,15 +114,6 @@
     
 
 
-    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#GenderHasSuitableClothingForDressing -->
-
-    <owl:ObjectProperty rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#GenderHasSuitableClothingForDressing">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <owl:inverseOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#isSuitableToBeDressedByGender"/>
-    </owl:ObjectProperty>
-    
-
-
     <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#HasColor -->
 
     <owl:ObjectProperty rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#HasColor">
