@@ -20,46 +20,46 @@
  * SOFTWARE.
  */
 
-package it.unicam.cs.mgc.TheClothesProjectConfigurator.configurator;
+package it.unicam.cs.mgc.TheClothesProjectConfigurator.configurator.choiser;
 
 import it.unicam.cs.mgc.TheClothesProjectConfigurator.controller.Controller;
 import it.unicam.cs.mgc.TheClothesProjectConfigurator.model.ParsedData;
 
 import java.util.Collection;
-import java.util.List;
 import java.util.Scanner;
 
-public class ColorChoice implements ChoiserInCase{
+public class ClothesCatogoryChoice implements ChoiserInCase {
+
     private final Controller controller;
-    public ColorChoice(Controller controller){this.controller = controller;}
+    public ClothesCatogoryChoice( Controller controller) {
+        this.controller = controller;
+    }
+
     @Override
     public String choiser(Scanner scanner) {
         String TheChoice = "";
+        System.out.println("Choose specific clothes category:");
+        Collection<String> categoryList = SubjecList();
         boolean validChoice = false;
-        Collection<String> colorList = SubjecList();
         while (!validChoice) {
-            System.out.println("Scegli il colore del tuo vestito");
             int index = 1;
-            for (String color : colorList) System.out.println(index++ + ". " + color);
-
+            for (String category : categoryList) System.out.println(index++ + ". " + category);
             int choice = scanner.nextInt();
             scanner.nextLine();
-
-            if (choice > 0 && choice <= colorList.size()) {
-                TheChoice = colorList.toArray(new String[0])[choice - 1];
-                System.out.println("Hai scelto: " + TheChoice+"\n");
+            if (choice > 0 && choice <= categoryList.size()) {
+                TheChoice = categoryList.toArray(new String[0])[choice - 1];
+                System.out.println("Hai scelto:" + TheChoice);
                 validChoice = true;
             } else System.out.println("Invalid choice. Please try again.");
 
-
         }
-
         return TheChoice;
     }
 
     @Override
     public Collection<String> SubjecList() {
-        ParsedData data = controller.getColorList();
+        ParsedData data = controller.getClothesCategory();
         return data.getAllValues();
     }
+
 }

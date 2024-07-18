@@ -20,7 +20,7 @@
  * SOFTWARE.
  */
 
-package it.unicam.cs.mgc.TheClothesProjectConfigurator.configurator;
+package it.unicam.cs.mgc.TheClothesProjectConfigurator.configurator.choiser;
 
 import it.unicam.cs.mgc.TheClothesProjectConfigurator.controller.Controller;
 import it.unicam.cs.mgc.TheClothesProjectConfigurator.model.ParsedData;
@@ -28,37 +28,39 @@ import it.unicam.cs.mgc.TheClothesProjectConfigurator.model.ParsedData;
 import java.util.Collection;
 import java.util.Scanner;
 
-public class CategorySizeChoser implements ChoiserInCase {
+public class TargetChoice implements ChoiserInCase {
     private final Controller controller;
-    private final String category;
-    public CategorySizeChoser(Controller controller,String category) {
+
+    public TargetChoice(Controller controller) {
         this.controller = controller;
-        this.category = category;
     }
+
     @Override
     public String choiser(Scanner scanner) {
         String TheChoice = "";
-        System.out.println("Choose now the specific clothes size:");
-        Collection<String> sizesOfClothes = SubjecList();
         boolean validChoice = false;
+        Collection<String> targetList = SubjecList();
         while (!validChoice) {
+            System.out.println("Scegli il target");
             int index = 1;
-            for (String gender : sizesOfClothes) System.out.println(index++ + ". " + gender);
+            for (String target : targetList) System.out.println(index++ + ". " + target);
             int choice = scanner.nextInt();
             scanner.nextLine();
-            if (choice > 0 && choice <= sizesOfClothes.size()) {
-                TheChoice = sizesOfClothes.toArray(new String[0])[choice - 1];
-                System.out.println("Hai scelto: " + TheChoice);
+
+            if (choice > 0 && choice <= targetList.size()) {
+                TheChoice = targetList.toArray(new String[0])[choice - 1];
+                System.out.println("Hai scelto: " + TheChoice+"\n");
                 validChoice = true;
             } else System.out.println("Invalid choice. Please try again.");
 
         }
+
         return TheChoice;
     }
 
     @Override
     public Collection<String> SubjecList() {
-        ParsedData data = controller.getCategorySizes(category);
+        ParsedData data = controller.targetList();
         return data.getAllValues();
     }
 }

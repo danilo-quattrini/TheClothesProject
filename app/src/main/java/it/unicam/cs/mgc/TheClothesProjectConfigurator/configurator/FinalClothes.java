@@ -30,10 +30,6 @@ public class FinalClothes {
     private String material;
     private String size;
 
-    // Getter e setter per ogni campo
-    public String getTarget() {
-        return target;
-    }
 
     public void setTarget(String target) {
         this.target = target;
@@ -55,24 +51,14 @@ public class FinalClothes {
         this.clothes = clothes;
     }
 
-    public String getColor() {
-        return color;
-    }
 
     public void setColor(String color) {
         this.color = color;
     }
 
-    public String getMaterial() {
-        return material;
-    }
 
     public void setMaterial(String material) {
         this.material = material;
-    }
-
-    public String getSize() {
-        return size;
     }
 
     public void setSize(String size) {
@@ -81,8 +67,7 @@ public class FinalClothes {
 
     @Override
     public String toString() {
-        System.out.print("\033[H\033[2J");
-        System.out.flush();
+        cleanTerminal();
         StringBuilder sb = new StringBuilder();
         sb.append("+------------------------------------------+\n");
         sb.append("|            Final Configuration           |\n");
@@ -95,6 +80,11 @@ public class FinalClothes {
         sb.append("| Size:        ").append(padRight(size, 30)).append("|\n");
         sb.append("+------------------------------------------+\n");
         return sb.toString();
+    }
+
+    private void cleanTerminal() {
+        System.out.print("\033[H\033[2J");
+        System.out.flush();
     }
 
     private String padRight(String s, int n) {

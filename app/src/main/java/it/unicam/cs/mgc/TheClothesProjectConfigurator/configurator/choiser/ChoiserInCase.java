@@ -20,7 +20,7 @@
  * SOFTWARE.
  */
 
-package it.unicam.cs.mgc.TheClothesProjectConfigurator.configurator;
+package it.unicam.cs.mgc.TheClothesProjectConfigurator.configurator.choiser;
 
 import java.util.Collection;
 import java.util.Scanner;
@@ -28,8 +28,17 @@ import java.util.Scanner;
  * The choiser interface is used to inizialize the scanner and return the choised
  * */
 public interface ChoiserInCase {
-
+    /**
+     * Prompts the user to make a choice from a list of options provided by {@link #SubjecList()}.
+     *
+     * @param scanner the {@link Scanner} object used to read the user's input.
+     * @return the user's choice as a {@link String}.
+     */
     String choiser(Scanner scanner);
-
+    /**
+     * Retrieves a collection of subjects/options to be presented to the user for making a choice.
+     *
+     * @return a {@link Collection} of {@link String} representing the available choices.
+     */
     Collection<String> SubjecList();
 }

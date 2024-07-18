@@ -25,7 +25,7 @@ plugins {
     id("application")
 }
 group ="it.unicam.cs.mgc.TheClothesProjecConfigurator.app"
-version = "1.0-SNAPSHOT"
+version = "1.0"
 
 dependencies {
     implementation("org.apache.jena:jena-arq:4.8.0")

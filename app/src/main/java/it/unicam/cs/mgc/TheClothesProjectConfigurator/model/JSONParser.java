@@ -35,7 +35,12 @@ import java.util.Map;
 public class JSONParser implements TheDataParser{
 
     private final Map<String, String> data = new HashMap<>();
-
+    /**
+     * Parses the results of a SPARQL query execution and returns the parsed data.
+     *
+     * @param queryExecution the {@link QueryExecution} object used to execute the SPARQL query.
+     * @return a {@link ParsedData} object containing the parsed results of the SPARQL query.
+     */
     @Override
     public ParsedData parse(QueryExecution queryExecution) {
         ResultSet results = queryExecution.execSelect();
