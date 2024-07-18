@@ -47,13 +47,26 @@ public class Controller {
      *
      * @return data containing the list of specified cateogy clothes
      */
-    public ParsedData getCLothesFromCategory(String value) {return ontology.get(SelectDataQueries. CLOTHES_LIST_OF_SPECIF_CATEGORY,value);}
+    public ParsedData getClothesFromCategory(String value) {return ontology.get(SelectDataQueries. CLOTHES_LIST_OF_SPECIF_CATEGORY,value);}
     /**
-     * Returns the list of gender in the ontology.
+     * Retrieves the list of available colors.
      *
-     * @return data containing the list of gender
+     * @return ParsedData containing the list of colors.
      */
-    public ParsedData genderList(){return ontology.get(SelectDataQueries.GENDER_LIST);}
+    public ParsedData getColorList() {return ontology.get(SelectDataQueries.COLOR_LIST);}
+    /**
+     * Retrieves materials from a specific category.
+     *
+     * @return ParsedData containing the list of materials in the specified category.
+     */
+    public ParsedData getMaterialFromCategoy(){return ontology.get(SelectDataQueries.MATERIAL_CATEGORIES);}
+    /**
+     * Retrieves sizes for a specific category.
+     *
+     * @param value The category value to filter sizes by.
+     * @return ParsedData containing the list of sizes in the specified category.
+     */
+    public ParsedData getCategorySizes(String value){return ontology.get(SelectDataQueries.CATEGORIES_SIZES,value);}
     /**
      * Returns the list of gender in the ontology.
      *

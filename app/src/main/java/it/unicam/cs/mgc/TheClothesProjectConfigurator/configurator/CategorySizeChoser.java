@@ -22,43 +22,43 @@
 
 package it.unicam.cs.mgc.TheClothesProjectConfigurator.configurator;
 
-import it.unicam.cs.mgc.TheClothesProjectConfigurator.model.ParsedData;
 import it.unicam.cs.mgc.TheClothesProjectConfigurator.controller.Controller;
+import it.unicam.cs.mgc.TheClothesProjectConfigurator.model.ParsedData;
 
 import java.util.Collection;
 import java.util.Scanner;
 
-public class GenderChoice implements ChoiserInCase{
+public class CategorySizeChoser implements ChoiserInCase {
     private final Controller controller;
-    public GenderChoice(Controller controller) {
+    private final String category;
+    public CategorySizeChoser(Controller controller,String category) {
         this.controller = controller;
+        this.category = category;
     }
-
     @Override
     public String choiser(Scanner scanner) {
         String TheChoice = "";
-        System.out.println("Choose Gender:");
-        Collection<String> genderList = SubjecList();
+        System.out.println("Choose now the specific clothes size:");
+        Collection<String> sizesOfClothes = SubjecList();
+        boolean validChoice = false;
+        while (!validChoice) {
+            int index = 1;
+            for (String gender : sizesOfClothes) System.out.println(index++ + ". " + gender);
+            int choice = scanner.nextInt();
+            scanner.nextLine();
+            if (choice > 0 && choice <= sizesOfClothes.size()) {
+                TheChoice = sizesOfClothes.toArray(new String[0])[choice - 1];
+                System.out.println("Hai scelto: " + TheChoice);
+                validChoice = true;
+            } else System.out.println("Invalid choice. Please try again.");
 
-        int index = 1;
-        for (String gender : genderList) System.out.println(index++ + ". " + gender);
-
-
-        int choice = scanner.nextInt();
-        scanner.nextLine(); // consume newline
-
-        if (choice > 0 && choice <= genderList.size()) {
-            TheChoice = genderList.toArray(new String[0])[choice - 1];
-            System.out.println("You chose: " + TheChoice);
-        } else System.out.println("Invalid choice. Please try again.");
-
+        }
         return TheChoice;
     }
 
     @Override
     public Collection<String> SubjecList() {
-        ParsedData data = controller.genderList();
+        ParsedData data = controller.getCategorySizes(category);
         return data.getAllValues();
     }
-
 }

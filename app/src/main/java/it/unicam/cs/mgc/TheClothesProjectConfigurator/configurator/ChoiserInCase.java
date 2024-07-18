@@ -31,5 +31,5 @@ public interface ChoiserInCase {
 
     String choiser(Scanner scanner);
 
-    Collection<?> SubjecList();
+    Collection<String> SubjecList();
 }

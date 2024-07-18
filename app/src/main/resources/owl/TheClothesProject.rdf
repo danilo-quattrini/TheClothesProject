@@ -588,7 +588,7 @@
     <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Coat -->
 
     <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Coat">
-        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperClothes"/>
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Upper"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#isSuitableToBeDressedBySeason"/>
@@ -619,7 +619,7 @@
     <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Dress -->
 
     <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Dress">
-        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperClothes"/>
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Upper"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -787,7 +787,7 @@
     <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Hoodie -->
 
     <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Hoodie">
-        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperClothes"/>
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Upper"/>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -848,7 +848,7 @@
     <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Jeans -->
 
     <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Jeans">
-        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#LowerClothes"/>
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Lower"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#IsSuitableToBeDressedByTarget"/>
@@ -875,9 +875,9 @@
     
 
 
-    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#LowerClothes -->
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Lower -->
 
-    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#LowerClothes">
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Lower">
         <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Clothes"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -947,7 +947,6 @@
     <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#NaturalClothesMaterial">
         <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ClothesMaterial"/>
         <owl:disjointWith rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#SyntheticClothesMaterial"/>
-        <rdfs:label>NaturalClothesMaterial</rdfs:label>
     </owl:Class>
     
 
@@ -970,7 +969,7 @@
     <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Pyjama -->
 
     <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Pyjama">
-        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperClothes"/>
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Upper"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#HasPattern"/>
@@ -1085,7 +1084,7 @@
     <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Shirt -->
 
     <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Shirt">
-        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperClothes"/>
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Upper"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#HasPattern"/>
@@ -1109,15 +1108,6 @@
     
 
 
-    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoeSize -->
-
-    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoeSize">
-        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ClothesSize"/>
-        <rdfs:label>ShoeSize</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Shoes -->
 
     <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Shoes">
@@ -1125,7 +1115,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#HasSize"/>
-                <owl:someValuesFrom rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoeSize"/>
+                <owl:someValuesFrom rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoesSize"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointUnionOf rdf:parseType="Collection">
@@ -1134,7 +1124,15 @@
             <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Sandal"/>
             <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Sneakers"/>
         </owl:disjointUnionOf>
-        <rdfs:label>Shoes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoesSize -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoesSize">
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ClothesSize"/>
+        <rdfs:label>ShoesSize</rdfs:label>
     </owl:Class>
     
 
@@ -1166,7 +1164,7 @@
     <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Skirt -->
 
     <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Skirt">
-        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#LowerClothes"/>
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Lower"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#IsSuitableToBeDressedByTarget"/>
@@ -1211,13 +1209,8 @@
     <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Socks -->
 
     <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Socks">
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Shoes"/>
         <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Underwear"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#HasSize"/>
-                <owl:someValuesFrom rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoeSize"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#IsSuitableToBeDressedByTarget"/>
@@ -1248,7 +1241,6 @@
 
     <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#SyntheticClothesMaterial">
         <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ClothesMaterial"/>
-        <rdfs:label>SyntheticClothesMaterial</rdfs:label>
     </owl:Class>
     
 
@@ -1256,7 +1248,7 @@
     <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#TShirt -->
 
     <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#TShirt">
-        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperClothes"/>
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Upper"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#HasPattern"/>
@@ -1336,7 +1328,7 @@
     <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Trousers -->
 
     <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Trousers">
-        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#LowerClothes"/>
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Lower"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#IsSuitableToBeDressedByTarget"/>
@@ -1365,6 +1357,7 @@
     <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Underpants -->
 
     <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Underpants">
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Lower"/>
         <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Underwear"/>
         <rdfs:label>Underpants</rdfs:label>
     </owl:Class>
@@ -1407,25 +1400,25 @@
     
 
 
-    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperClothes -->
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Upper -->
 
-    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperClothes">
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Upper">
         <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Clothes"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#HasSize"/>
-                <owl:someValuesFrom rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperClothingSize"/>
+                <owl:someValuesFrom rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperSize"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperClothingSize -->
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperSize -->
 
-    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperClothingSize">
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperSize">
         <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ClothesSize"/>
-        <rdfs:label>UpperClothingSize</rdfs:label>
+        <rdfs:label>UpperSize</rdfs:label>
     </owl:Class>
     
 
@@ -1598,7 +1591,7 @@
     <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#EU36 -->
 
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#EU36">
-        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoeSize"/>
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoesSize"/>
         <hasSize>EU36</hasSize>
         <rdfs:label>EU36</rdfs:label>
     </owl:NamedIndividual>
@@ -1608,7 +1601,7 @@
     <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#EU37 -->
 
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#EU37">
-        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoeSize"/>
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoesSize"/>
         <hasSize>EU37</hasSize>
         <rdfs:label>EU37</rdfs:label>
     </owl:NamedIndividual>
@@ -1618,7 +1611,7 @@
     <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#EU38 -->
 
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#EU38">
-        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoeSize"/>
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoesSize"/>
         <hasSize>EU38</hasSize>
         <rdfs:label>EU38</rdfs:label>
     </owl:NamedIndividual>
@@ -1628,7 +1621,7 @@
     <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#EU39 -->
 
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#EU39">
-        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoeSize"/>
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoesSize"/>
         <hasSize>EU39</hasSize>
         <rdfs:label>EU39</rdfs:label>
     </owl:NamedIndividual>
@@ -1638,7 +1631,7 @@
     <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#EU40 -->
 
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#EU40">
-        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoeSize"/>
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoesSize"/>
         <hasSize>EU40</hasSize>
         <rdfs:label>EU40</rdfs:label>
     </owl:NamedIndividual>
@@ -1648,7 +1641,7 @@
     <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#EU41 -->
 
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#EU41">
-        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoeSize"/>
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoesSize"/>
         <hasSize>EU41</hasSize>
         <rdfs:label>EU41</rdfs:label>
     </owl:NamedIndividual>
@@ -1658,7 +1651,7 @@
     <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#EU42 -->
 
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#EU42">
-        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoeSize"/>
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoesSize"/>
         <hasSize>EU42</hasSize>
         <rdfs:label>EU42</rdfs:label>
     </owl:NamedIndividual>
@@ -1668,7 +1661,7 @@
     <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#EU43 -->
 
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#EU43">
-        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoeSize"/>
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoesSize"/>
         <hasSize>EU43</hasSize>
         <rdfs:label>EU43</rdfs:label>
     </owl:NamedIndividual>
@@ -1678,7 +1671,7 @@
     <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#EU44 -->
 
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#EU44">
-        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoeSize"/>
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoesSize"/>
         <hasSize>EU44</hasSize>
         <rdfs:label>EU44</rdfs:label>
     </owl:NamedIndividual>
@@ -1688,7 +1681,7 @@
     <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#EU45 -->
 
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#EU45">
-        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoeSize"/>
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#ShoesSize"/>
         <hasSize>EU45</hasSize>
         <rdfs:label>EU45</rdfs:label>
     </owl:NamedIndividual>
@@ -1769,7 +1762,7 @@
 
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#L">
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#AccessorySize"/>
-        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperClothingSize"/>
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperSize"/>
         <hasSize>L</hasSize>
         <rdfs:label>L</rdfs:label>
     </owl:NamedIndividual>
@@ -1796,9 +1789,9 @@
     
 
 
-    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#LowerClothes -->
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Lower -->
 
-    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#LowerClothes">
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Lower">
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Clothes"/>
     </owl:NamedIndividual>
     
@@ -1825,7 +1818,7 @@
 
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#M">
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#AccessorySize"/>
-        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperClothingSize"/>
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperSize"/>
         <hasSize>M</hasSize>
         <rdfs:label>M</rdfs:label>
     </owl:NamedIndividual>
@@ -1934,9 +1927,17 @@
 
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#S">
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#AccessorySize"/>
-        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperClothingSize"/>
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperSize"/>
         <hasSize>S</hasSize>
         <rdfs:label>S</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Shoes -->
+
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Shoes">
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Clothes"/>
     </owl:NamedIndividual>
     
 
@@ -1992,17 +1993,9 @@
     
 
 
-    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Underwear -->
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Upper -->
 
-    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Underwear">
-        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Clothes"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperClothes -->
-
-    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperClothes">
+    <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Upper">
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Clothes"/>
     </owl:NamedIndividual>
     
@@ -2093,7 +2086,7 @@
 
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#XL">
         <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#AccessorySize"/>
-        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperClothingSize"/>
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperSize"/>
         <hasSize>XL</hasSize>
         <rdfs:label>XL</rdfs:label>
     </owl:NamedIndividual>
@@ -2103,7 +2096,7 @@
     <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#XS -->
 
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#XS">
-        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperClothingSize"/>
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperSize"/>
         <hasSize>XS</hasSize>
         <rdfs:label>XS</rdfs:label>
     </owl:NamedIndividual>
@@ -2113,7 +2106,7 @@
     <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#XXL -->
 
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#XXL">
-        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperClothingSize"/>
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperSize"/>
         <hasSize>XXL</hasSize>
         <rdfs:label>XXL</rdfs:label>
     </owl:NamedIndividual>
@@ -2123,7 +2116,7 @@
     <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#XXXL -->
 
     <owl:NamedIndividual rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#XXXL">
-        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperClothingSize"/>
+        <rdf:type rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperSize"/>
         <hasSize>XXXL</hasSize>
         <rdfs:label>XXXL</rdfs:label>
     </owl:NamedIndividual>
@@ -2167,9 +2160,9 @@
     <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Female">
         <rdfs:label>Female</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#LowerClothes">
+    <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Lower">
         <rdfs:comment>These are all the lower clothes like jeans,trousers ecc..</rdfs:comment>
-        <rdfs:label>LowerClothes</rdfs:label>
+        <rdfs:label>Lower</rdfs:label>
     </rdf:Description>
     <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Male">
         <rdfs:label>Male</rdfs:label>
@@ -2177,12 +2170,12 @@
     <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Pattern">
         <rdfs:label xml:lang="en">Clothes pattern</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Underwear">
-        <rdfs:label>Underwear</rdfs:label>
+    <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Shoes">
+        <rdfs:label>Shoes</rdfs:label>
     </rdf:Description>
-    <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#UpperClothes">
+    <rdf:Description rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Upper">
         <rdfs:comment>These are all the upper clothes like tshirt, shirt, coat ecc..</rdfs:comment>
-        <rdfs:label>UpperClothes</rdfs:label>
+        <rdfs:label>Upper</rdfs:label>
     </rdf:Description>
     
 

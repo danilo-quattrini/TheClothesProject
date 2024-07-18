@@ -24,16 +24,16 @@ package it.unicam.cs.mgc.TheClothesProjectConfigurator;
 
 
 import it.unicam.cs.mgc.TheClothesProjectConfigurator.configurator.TheConfigurator;
-import it.unicam.cs.mgc.TheClothesProjectConfigurator.model.ControllerOfOntology;
 import it.unicam.cs.mgc.TheClothesProjectConfigurator.controller.Controller;
+
 import java.util.Scanner;
 
 public class App {
     public static void main(String[] args) {
-            Controller controller = new Controller();
-            System.out.println(controller.getOntologyConsistencyStatus());
-            ControllerOfOntology ontology = new ControllerOfOntology();
-            TheConfigurator configurator = new TheConfigurator(new Scanner(System.in), ontology,controller);
-            configurator.startConfiguration();
-        }
+        Scanner scanner = new Scanner(System.in);
+        Controller controller = new Controller();
+        System.out.println(controller.getOntologyConsistencyStatus());
+        TheConfigurator configurator = new TheConfigurator(scanner, controller);
+        configurator.startConfiguration();
+    }
 }

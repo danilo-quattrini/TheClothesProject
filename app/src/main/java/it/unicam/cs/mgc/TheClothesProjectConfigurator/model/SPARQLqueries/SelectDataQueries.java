@@ -24,23 +24,19 @@ package it.unicam.cs.mgc.TheClothesProjectConfigurator.model.SPARQLqueries;
 
 public enum SelectDataQueries implements SPARQLqueries {
 
-    COLOR_LIST_WITH_HEX("SELECT ?individual ?value WHERE {  ?individual rdf:type cp:Colour. ?individual cp:hasColorHex ?value.}"),
+    COLOR_LIST("SELECT ?label ?value WHERE {  ?individual rdf:type cp:Colour. BIND((?individual) AS ?label) .?individual rdfs:label ?value.}"),
     GENDER_LIST("SELECT DISTINCT ?label ?value WHERE { ?genders rdf:type cp:Gender. BIND((?genders) AS ?label) .?genders rdfs:label ?value }"),
     TARGET_LIST("SELECT DISTINCT ?label ?value WHERE { ?target rdfs:subClassOf cp:Target. BIND((?target) AS ?label). ?target rdfs:label ?value  }"),
     EVENT_LIST("SELECT DISTINCT ?label ?value WHERE { ?events rdfs:subClassOf cp:Event }"),
     PATTERN_LIST("SELECT DISTINCT ?label ?value WHERE { ?patterns rdf:type cp:Pattern. ?patterns dbo:thumbnail ?thumbnail}"),
-    UPPER_SIZES("SELECT DISTINCT ?label ?value  WHERE { ?uppersizes rdf:type cp:UpperClothingSize}"),
-    LOWER_SIZES("SELECT DISTINCT ?label ?value  WHERE { ?lowersizes rdf:type cp:LowerSize}"),
-    SHOES_SIZES("SELECT DISTINCT ?label ?value  WHERE { ?shoesize rdf:type cp:ShoeSize}"),
-    ACCESORY_SIZES("SELECT DISTINCT ?label ?value  WHERE { ?accessoysize rdf:type cp:AccessorySize}"),
-    CLOTHES_CATEGORIES("SELECT ?label ?value WHERE{?clothescategory rdf:type cp:Clothes. BIND((?clothescategory) AS ?label). ?clothescategory rdfs:label ?value}"),
+    CATEGORIES_SIZES("SELECT DISTINCT ?label ?value  WHERE { ?categorysize rdf:type cp:%sSize. BIND((?categorysize) AS ?label) .?categorysize rdfs:label ?value .}"),
     CLOTHES_LIST("SELECT ?label ?value  WHERE { ?clothes rdfs:subClassOf cp:Clothes. BIND((?clothes) AS ?label) .?clothes rdfs:label ?value .} "),
     CLOTHES_LIST_OF_SPECIF_CATEGORY("SELECT ?label ?value  WHERE { ?clotheOfCategory rdfs:subClassOf cp:%s. BIND((?clotheOfCategory) AS ?label).?clotheOfCategory rdfs:label ?value . }"),
-    SYNTHETIC_LIST("SELECT ?synthetic  WHERE { ?synthetic rdf:type cp:SyntheticClothesMaterial} "),
-    NATURAL_LIST("SELECT ?label ?value  WHERE { ?natural rdf:type cp:NaturalClothesMaterial. BIND((?natural) AS ?label) .?natural rdfs:label ?value . } "),
     SEASON_LIST("SELECT ?label ?value WHERE { ?season rdf:type cp:Season. BIND((?season) AS ?label) .?season rdfs:label ?value .  }"),
     SELECT_CLOTHES("SELECT ?label ?value WHERE { ?clothes rdfs:subClassOf cp:Clothes. BIND((?clothes) AS ?label) . ?clothes rdfs:label ?value . FILTER(STRSTARTS(?value, \"%s\")) }"),
-    SELECT_MATERIAL_NATURAL("SELECT ?label ?value WHERE { ?naturalmaterial rdf:type cp:NaturalClothesMaterial. BIND(?naturalmaterial AS ?label) . ?naturalmaterial rdfs:label ?value . FILTER(STRSTARTS(?value, \"%s\")) }");
+    SELECT_MATERIAL_NATURAL("SELECT ?label ?value WHERE { ?naturalmaterial rdf:type cp:NaturalClothesMaterial. BIND(?naturalmaterial AS ?label) . ?naturalmaterial rdfs:label ?value . FILTER(STRSTARTS(?value, \"%s\")) }"),
+    CLOTHES_CATEGORIES("SELECT ?label ?value WHERE{?clothescategory rdf:type cp:Clothes. BIND((?clothescategory) AS ?label). ?clothescategory rdfs:label ?value}"),
+    MATERIAL_CATEGORIES("SELECT ?label ?value WHERE{?materialcategory rdf:type cp:ClothesMaterial. BIND((?materialcategory) AS ?label). ?materialcategory rdfs:label ?value}");
     private final String sparqlQuery;
 
     SelectDataQueries(String sparqlQuery){

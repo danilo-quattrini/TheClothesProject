@@ -38,21 +38,21 @@ public class ClothesCatogoryChoice implements ChoiserInCase{
     @Override
     public String choiser(Scanner scanner) {
         String TheChoice = "";
-        System.out.println("Choose Clothes categoy:");
+        System.out.println("Choose specific clothes category:");
         Collection<String> categoryList = SubjecList();
+        boolean validChoice = false;
+        while (!validChoice) {
+            int index = 1;
+            for (String category : categoryList) System.out.println(index++ + ". " + category);
+            int choice = scanner.nextInt();
+            scanner.nextLine();
+            if (choice > 0 && choice <= categoryList.size()) {
+                TheChoice = categoryList.toArray(new String[0])[choice - 1];
+                System.out.println("Hai scelto:" + TheChoice);
+                validChoice = true;
+            } else System.out.println("Invalid choice. Please try again.");
 
-        int index = 1;
-        for (String gender : categoryList) System.out.println(index++ + ". " + gender);
-
-
-        int choice = scanner.nextInt();
-        scanner.nextLine(); // consume newline
-
-        if (choice > 0 && choice <= categoryList.size()) {
-            TheChoice = categoryList.toArray(new String[0])[choice - 1];
-            System.out.println("You chose: " + TheChoice);
-        } else System.out.println("Invalid choice. Please try again.");
-
+        }
         return TheChoice;
     }
 

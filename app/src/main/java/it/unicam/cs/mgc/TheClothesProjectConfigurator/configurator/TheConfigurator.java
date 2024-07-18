@@ -23,31 +23,47 @@
 package it.unicam.cs.mgc.TheClothesProjectConfigurator.configurator;
 
 import it.unicam.cs.mgc.TheClothesProjectConfigurator.controller.Controller;
-import it.unicam.cs.mgc.TheClothesProjectConfigurator.model.ControllerOfOntology;
 
 import java.util.Scanner;
 
 public class TheConfigurator {
     private final Scanner scanner;
-    private final ControllerOfOntology ontology;
     private final Controller controller;
-
-    public TheConfigurator(Scanner scanner, ControllerOfOntology ontology, Controller controller) {
+    private final FinalClothes completedClothes;
+    public TheConfigurator(Scanner scanner,  Controller controller) {
         this.scanner = scanner;
-        this.ontology = ontology;
         this.controller = controller;
+        this.completedClothes = new FinalClothes();
     }
 
     public void startConfiguration() {
-        GenderChoicer();
-        TargetChoicer();
-        String categoryChoised = ClothesCategoyChoicer();
-        ClothesList(categoryChoised);
+        completedClothes.setTarget(TargetChoicer());
+        completedClothes.setCategory(ClothesCategoyChoicer());
+        completedClothes.setClothes(ClothesList(completedClothes.getCategory()));
+        completedClothes.setColor(ColorList());
+        completedClothes.setMaterial(MaterialCategoryChoicer());
+        completedClothes.setSize(SizeListOfCategoy(completedClothes.getCategory()));
+        showFinalConfiguration();
     }
 
-    private void ClothesList(String categoryChoised) {
-        ClothesFromCategoy allCLothes = new ClothesFromCategoy(controller,categoryChoised);
-        allCLothes.choiser(scanner);
+    private String SizeListOfCategoy(String categoryChoised) {
+        CategorySizeChoser allCategorySizes = new CategorySizeChoser(controller,categoryChoised);
+        return allCategorySizes.choiser(scanner);
+    }
+
+    private String MaterialCategoryChoicer() {
+        MaterialChoiser allCategoy = new MaterialChoiser(controller);
+        return allCategoy.choiser(scanner);
+    }
+
+    private String ColorList() {
+        ColorChoice allColor = new ColorChoice(controller);
+        return allColor.choiser(scanner);
+    }
+
+    private String ClothesList(String categoryChoised) {
+        ClothesFromCategory allCLothes = new ClothesFromCategory(controller,categoryChoised);
+        return allCLothes.choiser(scanner);
     }
 
     private String ClothesCategoyChoicer() {
@@ -55,13 +71,14 @@ public class TheConfigurator {
         return chooseCategory.choiser(scanner);
     }
 
-    private void TargetChoicer() {
+    private String TargetChoicer() {
         TargetChoice TargetChoice = new TargetChoice(controller);
-        TargetChoice.choiser(scanner);
+        return TargetChoice.choiser(scanner);
     }
 
-    private void GenderChoicer() {
-        GenderChoice genderChoice = new GenderChoice(controller);
-        genderChoice.choiser(scanner);
+    private void showFinalConfiguration() {
+        System.out.println("Final Configuration:");
+        System.out.println(completedClothes);
     }
+
 }

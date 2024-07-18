@@ -26,32 +26,31 @@ import it.unicam.cs.mgc.TheClothesProjectConfigurator.controller.Controller;
 import it.unicam.cs.mgc.TheClothesProjectConfigurator.model.ParsedData;
 
 import java.util.Collection;
+import java.util.List;
 import java.util.Scanner;
 
-public class TargetChoice implements ChoiserInCase {
+public class ColorChoice implements ChoiserInCase{
     private final Controller controller;
-
-    public TargetChoice(Controller controller) {
-        this.controller = controller;
-    }
-
+    public ColorChoice(Controller controller){this.controller = controller;}
     @Override
     public String choiser(Scanner scanner) {
         String TheChoice = "";
         boolean validChoice = false;
-        Collection<String> targetList = SubjecList();
+        Collection<String> colorList = SubjecList();
         while (!validChoice) {
-            System.out.println("Scegli il target");
+            System.out.println("Scegli il colore del tuo vestito");
             int index = 1;
-            for (String target : targetList) System.out.println(index++ + ". " + target);
+            for (String color : colorList) System.out.println(index++ + ". " + color);
+
             int choice = scanner.nextInt();
             scanner.nextLine();
 
-            if (choice > 0 && choice <= targetList.size()) {
-                TheChoice = targetList.toArray(new String[0])[choice - 1];
+            if (choice > 0 && choice <= colorList.size()) {
+                TheChoice = colorList.toArray(new String[0])[choice - 1];
                 System.out.println("Hai scelto: " + TheChoice+"\n");
                 validChoice = true;
             } else System.out.println("Invalid choice. Please try again.");
+
 
         }
 
@@ -60,7 +59,7 @@ public class TargetChoice implements ChoiserInCase {
 
     @Override
     public Collection<String> SubjecList() {
-        ParsedData data = controller.targetList();
+        ParsedData data = controller.getColorList();
         return data.getAllValues();
     }
 }
