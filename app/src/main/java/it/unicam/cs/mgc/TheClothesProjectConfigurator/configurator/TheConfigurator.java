@@ -50,6 +50,7 @@ public class TheConfigurator {
      * Once all selections are made, the final configuration is displayed.
      */
     public void startConfiguration() {
+        System.out.println(controller.getOntologyConsistencyStatus());
         completedClothes.setTarget(TargetChoicer());
         completedClothes.setCategory(ClothesCategoyChoicer());
         completedClothes.setClothes(ClothesList(completedClothes.getCategory()));

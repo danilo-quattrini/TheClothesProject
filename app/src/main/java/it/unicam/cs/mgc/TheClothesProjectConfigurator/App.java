@@ -32,7 +32,6 @@ public class App {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Controller controller = new Controller();
-        System.out.println(controller.getOntologyConsistencyStatus());
         TheConfigurator configurator = new TheConfigurator(scanner, controller);
         configurator.startConfiguration();
     }
