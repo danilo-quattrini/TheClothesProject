@@ -12,7 +12,7 @@ The TheClothesProject is designed to facilitate the configuration and selection 
 
 ## How It Works
 
-1. **Initialization**: The configuration process starts by initializing the necessary components, including a scanner for user input and a controller to interact with the ontology.
+1. **Initialization**: The configuration process starts by initializing the necessary components, including a scanner for user input and a controller to interact with the ontology for more info read the [project repo](./RelazioneProgetto.pdf).
 2. **User Choices**: Users make selections for:
     - **Target Audience**
     - **Clothing Category**
