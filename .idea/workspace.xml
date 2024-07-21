@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c5aa5aaa-134f-4c88-89b2-12ed635acc6c" name="Changes" comment="CRAZY AREA edited the ontology added controller but is not working NoClass found error">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utilities/build.gradle.kts" beforeDir="false" />
-    </list>
+    <list default="true" id="c5aa5aaa-134f-4c88-89b2-12ed635acc6c" name="Changes" comment="CRAZY AREA edited the ontology added controller but is not working NoClass found error" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -324,7 +320,7 @@
       <workItem from="1721374256994" duration="4829000" />
       <workItem from="1721399039592" duration="753000" />
       <workItem from="1721418462139" duration="170000" />
-      <workItem from="1721418694045" duration="175000" />
+      <workItem from="1721418694045" duration="883000" />
     </task>
     <task id="LOCAL-00001" summary="Edited the ontology and added the test&#10; +edited the ontology and added the labels&#10; +added test and class checker for validate the ontology&#10; +imported pellet">
       <option name="closed" value="true" />
