@@ -1,0 +1,164 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://dbpedia.org/ontology/SocietalEvent#"
+     xml:base="https://dbpedia.org/ontology/SocietalEvent"
+     xmlns:ov="http://open.vocab.org/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:prov="http://www.w3.org/ns/prov#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:wdrs="http://www.w3.org/2007/05/powder-s#">
+    <owl:Ontology rdf:about="https://dbpedia.org/ontology/SocietalEvent"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://open.vocab.org/terms/defines -->
+
+    <owl:AnnotationProperty rdf:about="http://open.vocab.org/terms/defines"/>
+    
+
+
+    <!-- http://open.vocab.org/terms/describes -->
+
+    <owl:AnnotationProperty rdf:about="http://open.vocab.org/terms/describes"/>
+    
+
+
+    <!-- http://www.w3.org/2007/05/powder-s#describedby -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2007/05/powder-s#describedby"/>
+    
+
+
+    <!-- http://www.w3.org/ns/prov#wasDerivedFrom -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/ns/prov#wasDerivedFrom"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/ontology/AcademicConference -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/AcademicConference">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SocietalEvent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Convention -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Convention">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SocietalEvent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Election -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Election">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SocietalEvent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/Meeting -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/Meeting">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SocietalEvent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/SocietalEvent -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/SocietalEvent">
+        <rdfs:subClassOf rdf:resource="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Event"/>
+    </owl:Class>
+    
+
+
+    <!-- http://dbpedia.org/ontology/SportsEvent -->
+
+    <owl:Class rdf:about="http://dbpedia.org/ontology/SportsEvent">
+        <rdfs:subClassOf rdf:resource="http://dbpedia.org/ontology/SocietalEvent"/>
+    </owl:Class>
+    
+
+
+    <!-- https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Event -->
+
+    <owl:Class rdf:about="https://www.unicam.it/cs/daniloquattrini/TheClothesProject#Event"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://dbpedia.org/ontology/SocietalEvent -->
+
+    <owl:NamedIndividual rdf:about="http://dbpedia.org/ontology/SocietalEvent"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://dbpedia.org/ontology/">
+        <ov:defines rdf:resource="http://dbpedia.org/ontology/SocietalEvent"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://dbpedia.org/ontology/SocietalEvent">
+        <rdfs:comment xml:lang="en">an event that is clearly different from strictly personal events</rdfs:comment>
+        <rdfs:comment xml:lang="ur">ایک ایسا واقعہ جو سختی سے ذاتی واقعات سے واضح طور پر مختلف ہو</rdfs:comment>
+        <rdfs:isDefinedBy rdf:resource="http://dbpedia.org/ontology/"/>
+        <rdfs:label xml:lang="de">gesellschatliches Ereignis</rdfs:label>
+        <rdfs:label xml:lang="nl">maatschappelijke gebeurtenis</rdfs:label>
+        <rdfs:label xml:lang="en">societal event</rdfs:label>
+        <rdfs:label xml:lang="fr">évènement collectif</rdfs:label>
+        <rdfs:label xml:lang="ur">معاشرتی واقعہ</rdfs:label>
+        <wdrs:describedby rdf:resource="http://dbpedia.org/ontology/data/definitions.ttl"/>
+        <prov:wasDerivedFrom rdf:resource="http://mappings.dbpedia.org/index.php/OntologyClass:SocietalEvent"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://dbpedia.org/ontology/data/definitions.ttl">
+        <ov:describes rdf:resource="http://dbpedia.org/ontology/SocietalEvent"/>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
