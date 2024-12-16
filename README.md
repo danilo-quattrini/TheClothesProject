@@ -37,10 +37,10 @@ The TheClothesProject is designed to facilitate the configuration and selection 
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/ontology-configuration-project.git
+   git clone https://github.com/danilo-quattrini/the-clothes-project.git
 2. **Navigate to the repository**
     ```bash
-   cd TheClothesProject
+   cd the-clothes-project
 3. **Build the project**
     ```bash
    ./gradlew build
